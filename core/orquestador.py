@@ -247,8 +247,8 @@ class Orquestador:
                     except Exception as e:
                         resultado.errores.append(f"Error scraping {url}: {e}")
             
-            # Paso 4: Consolidación
-            print(f"\n[Consolidador] Procesando {len(todos_resultados)} resultados...")
+            # Paso 4: Consolidación con filtrado automático
+            print(f"\n[Consolidador] Procesando {len(todos_resultados)} resultados con filtros...")
             
             # Convertir SearchResult a dict
             registros = [
@@ -256,8 +256,8 @@ class Orquestador:
                 for r in todos_resultados
             ]
             
-            # Procesar batch
-            consolidacion = self.consolidador.procesar_batch(registros)
+            # Procesar batch con filtrado verbose
+            consolidacion = self.consolidador.procesar_batch(registros, verbose=True)
             resultado.consolidacion = consolidacion
             resultado.total_encontrados = len(todos_resultados)
             
@@ -271,6 +271,13 @@ class Orquestador:
             print(f"  - Nuevos agregados: {consolidacion.total_nuevos}")
             print(f"  - Actualizados: {len(consolidacion.actualizados)}")
             print(f"  - Duplicados: {len(consolidacion.duplicados_ignorados)}")
+            print(f"  - Filtrados (rechazados): {len(consolidacion.filtrados)}")
+            
+            # Mostrar razones de filtrado si hay
+            if consolidacion.razones_filtrado:
+                print(f"\n[Filtrado] Razones:")
+                for razon, count in sorted(consolidacion.razones_filtrado.items(), key=lambda x: -x[1])[:5]:
+                    print(f"  - {razon}: {count}")
             
         except Exception as e:
             resultado.errores.append(f"Error general: {e}")

@@ -1,6 +1,7 @@
 """
 Motor de consolidación y deduplicación de registros.
 Detecta duplicados con 3 niveles de precisión y fusiona datos.
+Incluye sistema de filtrado para eliminar listados, blogs, etc.
 """
 import json
 import hashlib
@@ -17,6 +18,13 @@ try:
 except ImportError:
     RAPIDFUZZ_DISPONIBLE = False
 
+# Importar sistema de filtros
+try:
+    from utils.filtros import es_registro_valido, limpiar_nombre, DOMINIOS_EXCLUIR
+    FILTROS_DISPONIBLES = True
+except ImportError:
+    FILTROS_DISPONIBLES = False
+
 
 @dataclass
 class ConsolidacionResult:
@@ -25,11 +33,13 @@ class ConsolidacionResult:
     actualizados: List[Dict] = field(default_factory=list)
     duplicados_ignorados: List[Dict] = field(default_factory=list)
     invalidos: List[Dict] = field(default_factory=list)
+    filtrados: List[Dict] = field(default_factory=list)  # Nuevo: rechazados por filtros
+    razones_filtrado: Dict[str, int] = field(default_factory=dict)  # Estadísticas
     
     @property
     def total_procesados(self) -> int:
         return (len(self.agregados) + len(self.actualizados) + 
-                len(self.duplicados_ignorados) + len(self.invalidos))
+                len(self.duplicados_ignorados) + len(self.invalidos) + len(self.filtrados))
     
     @property
     def total_nuevos(self) -> int:
@@ -41,6 +51,8 @@ class ConsolidacionResult:
             "actualizados": len(self.actualizados),
             "duplicados_ignorados": len(self.duplicados_ignorados),
             "invalidos": len(self.invalidos),
+            "filtrados": len(self.filtrados),
+            "razones_filtrado": self.razones_filtrado,
             "total_procesados": self.total_procesados,
         }
 
@@ -326,25 +338,40 @@ class Consolidador:
         
         return fusionado
     
-    def es_valido(self, registro: Dict) -> bool:
-        """Verifica si un registro cumple los requisitos mínimos."""
-        # Debe tener nombre
+    def es_valido(self, registro: Dict) -> Tuple[bool, str]:
+        """
+        Verifica si un registro cumple los requisitos mínimos Y pasa los filtros.
+        
+        Returns:
+            Tuple[bool, str]: (es_valido, razon_si_invalido)
+        """
+        # Validación básica: debe tener nombre
         if not registro.get("nombre"):
-            return False
+            return False, "sin_nombre"
         
         # Debe tener al menos un método de contacto
         tiene_telefono = bool(registro.get("telefono"))
         tiene_email = bool(registro.get("email"))
         tiene_web = bool(registro.get("web"))
         
-        return tiene_telefono or tiene_email or tiene_web
+        if not (tiene_telefono or tiene_email or tiene_web):
+            return False, "sin_contacto"
+        
+        # Aplicar filtros avanzados si están disponibles
+        if FILTROS_DISPONIBLES:
+            es_valido_filtro, razon = es_registro_valido(registro)
+            if not es_valido_filtro:
+                return False, razon
+        
+        return True, "ok"
     
-    def procesar_batch(self, nuevos: List[Dict]) -> ConsolidacionResult:
+    def procesar_batch(self, nuevos: List[Dict], verbose: bool = False) -> ConsolidacionResult:
         """
-        Procesa un lote de registros nuevos.
+        Procesa un lote de registros nuevos con validación y filtrado.
         
         Args:
             nuevos: Lista de registros a procesar
+            verbose: Si True, imprime detalles de filtrado
             
         Returns:
             ConsolidacionResult con estadísticas
@@ -352,9 +379,23 @@ class Consolidador:
         resultado = ConsolidacionResult()
         
         for registro in nuevos:
-            # Validar
-            if not self.es_valido(registro):
-                resultado.invalidos.append(registro)
+            # Limpiar nombre si filtros disponibles
+            if FILTROS_DISPONIBLES and registro.get("nombre"):
+                registro["nombre"] = limpiar_nombre(registro["nombre"])
+            
+            # Validar con filtros
+            valido, razon = self.es_valido(registro)
+            
+            if not valido:
+                if razon.startswith("dominio_excluido") or razon.startswith("nombre_invalido") or razon == "url_blog":
+                    # Es un registro filtrado (listado, blog, etc.)
+                    resultado.filtrados.append({"registro": registro, "razon": razon})
+                    resultado.razones_filtrado[razon] = resultado.razones_filtrado.get(razon, 0) + 1
+                    if verbose:
+                        print(f"  [FILTRADO] {razon}: {registro.get('nombre', '')[:40]}")
+                else:
+                    # Es inválido por falta de datos
+                    resultado.invalidos.append(registro)
                 continue
             
             # Buscar duplicado
@@ -386,6 +427,12 @@ class Consolidador:
                 idx = len(self.registros) - 1
                 self._actualizar_indices(idx, registro)
                 resultado.agregados.append(registro)
+        
+        # Imprimir resumen de filtrado si hay filtrados
+        if resultado.filtrados and verbose:
+            print(f"\n[Consolidador] Filtrados: {len(resultado.filtrados)} registros no válidos")
+            for razon, count in sorted(resultado.razones_filtrado.items(), key=lambda x: -x[1])[:5]:
+                print(f"  - {razon}: {count}")
         
         return resultado
     
