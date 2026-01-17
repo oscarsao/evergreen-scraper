@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "fecha_actualizacion": "2026-01-17T05:07:25.705070",
+    "fecha_actualizacion": "2026-01-17T05:46:06.118041",
     "total_registros": 627,
     "fuente": "consolidador_multiagente"
   },
@@ -147,11 +147,14 @@
       "nombre": "GEMOVIR Abogados",
       "tipo": "despacho",
       "telefono": [
-        "+34 910 783 147"
+        "+34 910 783 147",
+        "+34910783147",
+        "+34605097839",
+        "+34766939655"
       ],
       "email": null,
       "web": "https://www.gemovir.com",
-      "direccion": null,
+      "direccion": "C/ de Velázquez 15, 1º dcha. 28001 Madrid",
       "ciudad": "Madrid",
       "distrito": null,
       "especialidades": [
@@ -161,13 +164,17 @@
       ],
       "valoracion": "4.8/5 (+100 reseñas)",
       "idiomas": [],
-      "fecha_actualizacion": "2026-01-17T04:53:56.253410"
+      "fecha_actualizacion": "2026-01-17T05:45:34.888932"
     },
     {
       "nombre": "Ventura Extranjería",
       "tipo": "despacho",
-      "telefono": [],
-      "email": null,
+      "telefono": [
+        "+34768243954",
+        "+34768243711",
+        "+34747292493"
+      ],
+      "email": "info@venturaextranjeria.com",
       "web": "https://venturaextranjeria.com",
       "direccion": null,
       "ciudad": "Madrid",
@@ -176,15 +183,19 @@
         "extranjería",
         "online"
       ],
-      "valoracion": "4.9/5 (+14.000 reseñas)"
+      "valoracion": "4.9/5 (+14.000 reseñas)",
+      "fecha_actualizacion": "2026-01-17T05:45:35.424093"
     },
     {
       "nombre": "Tolentino Abogados",
       "tipo": "despacho",
       "telefono": [
-        "+34 918 272 222"
+        "+34 918 272 222",
+        "+34784038809",
+        "+34628345372",
+        "+34857142857"
       ],
-      "email": null,
+      "email": "administracion@tolentinoabogados.com",
       "web": "https://tolentinoabogados.com",
       "direccion": "Paseo de la Castellana, Madrid",
       "ciudad": "Madrid",
@@ -193,7 +204,8 @@
         "recursos",
         "denegaciones"
       ],
-      "valoracion": "4.7/5 (+1.000 reseñas)"
+      "valoracion": "4.7/5 (+1.000 reseñas)",
+      "fecha_actualizacion": "2026-01-17T05:45:39.372138"
     },
     {
       "nombre": "ES Abogado Extranjería",
@@ -251,8 +263,12 @@
     {
       "nombre": "Longobardo Pérez Abogado",
       "tipo": "despacho",
-      "telefono": [],
-      "email": null,
+      "telefono": [
+        "+34612115517",
+        "+34635730423",
+        "+34783302243"
+      ],
+      "email": "info@longobardoperezabogado.com",
       "web": "https://longobardoperezabogado.com",
       "direccion": "Calle Marcelino Álvarez, Madrid",
       "ciudad": "Madrid",
@@ -269,7 +285,7 @@
       ],
       "valoracion": "5/5 (~150 reseñas)",
       "idiomas": [],
-      "fecha_actualizacion": "2026-01-17T04:55:25.419180"
+      "fecha_actualizacion": "2026-01-17T05:45:40.330601"
     },
     {
       "nombre": "EX24 Lawyers (Extranjería 24h)",
@@ -367,7 +383,10 @@
       "telefono": [
         "91 057 78 38",
         "644 56 57 54",
-        "644 40 82 31"
+        "644 40 82 31",
+        "+34982132708",
+        "+34607639392",
+        "+34956214905"
       ],
       "email": null,
       "web": "https://sanchezycalderon.com",
@@ -377,7 +396,8 @@
       "especialidades": [
         "extranjería"
       ],
-      "valoracion": null
+      "valoracion": null,
+      "fecha_actualizacion": "2026-01-17T05:45:40.804938"
     },
     {
       "nombre": "Sanchidrián Abogados",
@@ -450,9 +470,12 @@
       "nombre": "Bedera Abogados",
       "tipo": "despacho",
       "telefono": [
-        "+34 625 315 030"
+        "+34 625 315 030",
+        "+34929333958",
+        "+34751886635",
+        "+34929708896"
       ],
-      "email": null,
+      "email": "%20%20bederadespachonline@gmail.com",
       "web": "https://extranjeriabedera.com",
       "direccion": "Calle de Salas Barbadillo 70, 28017 Madrid",
       "ciudad": "Madrid",
@@ -464,15 +487,18 @@
       ],
       "valoracion": null,
       "idiomas": [],
-      "fecha_actualizacion": "2026-01-17T04:55:26.291538"
+      "fecha_actualizacion": "2026-01-17T05:45:44.723676"
     },
     {
       "nombre": "Plusextranjería",
       "tipo": "despacho",
       "telefono": [
-        "+34 614 165 725"
+        "+34 614 165 725",
+        "+34649123004",
+        "+34824546210",
+        "+34695895430"
       ],
-      "email": null,
+      "email": "plusextranjeria@gmail.com",
       "web": "https://plusextranjeria.com",
       "direccion": "Calle Gutiérre de Cetina 33, 28017 Madrid",
       "ciudad": "Madrid",
@@ -480,7 +506,8 @@
       "especialidades": [
         "extranjería"
       ],
-      "valoracion": null
+      "valoracion": null,
+      "fecha_actualizacion": "2026-01-17T05:45:52.647090"
     },
     {
       "nombre": "Orozco Abogados",
@@ -581,9 +608,12 @@
       "tipo": "ong",
       "telefono": [
         "+34 91 532 74 78",
-        "+34 91 532 74 79"
+        "+34 91 532 74 79",
+        "+34655124083",
+        "+34915312312",
+        "+34915329368"
       ],
-      "email": null,
+      "email": "accem@accem.es",
       "web": "https://www.accem.es",
       "direccion": "Calle Magallanes 3, 8ª planta, 28015 Madrid",
       "ciudad": "Madrid",
@@ -593,7 +623,8 @@
         "inmigrantes",
         "gratuito"
       ],
-      "valoracion": null
+      "valoracion": null,
+      "fecha_actualizacion": "2026-01-17T05:45:53.723675"
     },
     {
       "nombre": "Cruz Roja Española - Madrid",
@@ -682,9 +713,12 @@
       "tipo": "abogado",
       "telefono": [
         "+34 91 060 19 78",
-        "+34 608 807 336"
+        "+34 608 807 336",
+        "+34768594414",
+        "+34675430864",
+        "+34641563662"
       ],
-      "email": null,
+      "email": "consulta@machelidiaz.com",
       "web": "https://machelindiaz.com",
       "direccion": "Calle Fortunata y Jacinta 23, 1-C, 28020 Madrid",
       "ciudad": "Madrid",
@@ -693,13 +727,17 @@
         "inmigración",
         "extranjería"
       ],
-      "valoracion": null
+      "valoracion": null,
+      "fecha_actualizacion": "2026-01-17T05:45:57.343240"
     },
     {
       "nombre": "Sánchez Cabral Abogados",
       "tipo": "despacho",
       "telefono": [
-        "+34 651 69 59 01"
+        "+34 651 69 59 01",
+        "+34768436836",
+        "+34805484446",
+        "+34717005242"
       ],
       "email": null,
       "web": "https://sanchezcabralabogados.com",
@@ -713,23 +751,27 @@
       ],
       "valoracion": null,
       "idiomas": [],
-      "fecha_actualizacion": "2026-01-17T04:56:57.383525"
+      "fecha_actualizacion": "2026-01-17T05:45:57.918858"
     },
     {
       "nombre": "Molinares Abogados",
       "tipo": "despacho",
       "telefono": [
-        "+34 914 361 695"
+        "+34 914 361 695",
+        "+34929333958",
+        "+34929708896",
+        "+34758706239"
       ],
       "email": null,
       "web": "https://molinaresabogados.com",
-      "direccion": null,
+      "direccion": "C/ Esparteros, 8, 2-1, 28012, Madrid",
       "ciudad": "Madrid",
       "distrito": null,
       "especialidades": [
         "extranjería"
       ],
-      "valoracion": null
+      "valoracion": null,
+      "fecha_actualizacion": "2026-01-17T05:46:00.005345"
     },
     {
       "nombre": "Elena Abella - Abogada Extranjería",
@@ -953,7 +995,10 @@
       "nombre": "Servicio Municipal Extranjería - Moratalaz",
       "tipo": "oficial",
       "telefono": [
-        "915 021 915"
+        "915 021 915",
+        "+34668139460",
+        "+34669824910",
+        "+34768625160"
       ],
       "email": null,
       "web": "https://www.madrid.es",
@@ -964,13 +1009,17 @@
         "orientación jurídica",
         "gratuito"
       ],
-      "valoracion": null
+      "valoracion": null,
+      "fecha_actualizacion": "2026-01-17T05:46:00.925480"
     },
     {
       "nombre": "Servicio Municipal Extranjería - Vicálvaro",
       "tipo": "oficial",
       "telefono": [
-        "917 753 150"
+        "917 753 150",
+        "+34768625161",
+        "+34668139460",
+        "+34669824910"
       ],
       "email": null,
       "web": "https://www.madrid.es",
@@ -981,14 +1030,18 @@
         "orientación jurídica",
         "gratuito"
       ],
-      "valoracion": null
+      "valoracion": null,
+      "fecha_actualizacion": "2026-01-17T05:46:01.382115"
     },
     {
       "nombre": "Servicio Municipal Extranjería - San Blas",
       "tipo": "oficial",
       "telefono": [
         "913 717 384",
-        "917 432 406"
+        "917 432 406",
+        "+34768625161",
+        "+34668139460",
+        "+34669824910"
       ],
       "email": null,
       "web": "https://www.madrid.es",
@@ -999,7 +1052,8 @@
         "orientación jurídica",
         "gratuito"
       ],
-      "valoracion": null
+      "valoracion": null,
+      "fecha_actualizacion": "2026-01-17T05:46:01.801078"
     },
     {
       "nombre": "Abogado extranjería en Madrid | Rafael de la Vega Churruca",
@@ -1026,8 +1080,12 @@
     {
       "nombre": "Permiso de residencia por arraigo en España",
       "tipo": "despacho",
-      "telefono": [],
-      "email": null,
+      "telefono": [
+        "+34982132708",
+        "+34956214905",
+        "+34691423468"
+      ],
+      "email": "liliya.mykolayiv@icam.es",
       "web": "https://liliyamykolayiv.net/abogados-solicitud-de-arraigo-social-para-extranjeros-espana/",
       "direccion": null,
       "ciudad": null,
@@ -1037,17 +1095,20 @@
       "fuente": "firecrawl_search",
       "url_origen": "https://liliyamykolayiv.net/abogados-solicitud-de-arraigo-social-para-extranjeros-espana/",
       "fecha_extraccion": "2026-01-17T03:44:40.963084",
-      "fecha_actualizacion": "2026-01-17T03:45:25.365440"
+      "fecha_actualizacion": "2026-01-17T05:46:02.906216"
     },
     {
       "nombre": "Cruz Guillén Abogados | CONTACTO",
       "tipo": "despacho",
       "telefono": [
-        "+34950531810"
+        "+34950531810",
+        "+34863011125",
+        "+34658068838",
+        "+34768538521"
       ],
-      "email": null,
+      "email": "info@cruzguillenabogados.com",
       "web": "https://cruzguillenabogados.com/contacto/",
-      "direccion": null,
+      "direccion": "C/ Jorge Juan, 6 – 28001 Madrid.",
       "ciudad": null,
       "distrito": null,
       "especialidades": [],
@@ -1055,16 +1116,20 @@
       "fuente": "firecrawl_search",
       "url_origen": "https://cruzguillenabogados.com/contacto/",
       "fecha_extraccion": "2026-01-17T03:44:40.963119",
-      "fecha_actualizacion": "2026-01-17T05:02:05.193374",
+      "fecha_actualizacion": "2026-01-17T05:46:05.500195",
       "idiomas": []
     },
     {
       "nombre": "Contacta con un abogado de extranjería",
       "tipo": "despacho",
-      "telefono": [],
-      "email": null,
+      "telefono": [
+        "+34700809183",
+        "+34692862161",
+        "+34700757743"
+      ],
+      "email": "info@quinteroabogado.com",
       "web": "https://quinteroabogado.com/contacto-abogado-extranjeria/",
-      "direccion": null,
+      "direccion": "C/ Jorge Juan, 6 – 28001 Madrid.",
       "ciudad": null,
       "distrito": null,
       "especialidades": [],
@@ -1072,7 +1137,7 @@
       "fuente": "firecrawl_search",
       "url_origen": "https://quinteroabogado.com/contacto-abogado-extranjeria/",
       "fecha_extraccion": "2026-01-17T03:44:40.963136",
-      "fecha_actualizacion": "2026-01-17T04:35:23.833357",
+      "fecha_actualizacion": "2026-01-17T05:46:06.118016",
       "idiomas": []
     },
     {

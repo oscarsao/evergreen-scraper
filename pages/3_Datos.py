@@ -1,19 +1,28 @@
 """
-Página de exploración y gestión de datos.
+Gestión de Base de Datos - Vista y Edición Avanzada
+====================================================
+- Vista de tabla con ordenación
+- Edición en lote con checkboxes
+- Limpieza de nombres
+- Detección de tipo (abogado/despacho/web)
+- Agrupación por web/teléfono
+- Historial de cambios
 """
 import streamlit as st
-import pandas as pd
 import json
+import re
+import pandas as pd
 from pathlib import Path
+from datetime import datetime
 
-st.set_page_config(page_title="Datos", page_icon="📊", layout="wide")
+st.set_page_config(page_title="Gestión de Datos", page_icon="📊", layout="wide")
 
-st.title("📊 Explorar Datos")
-st.caption("Visualiza, filtra y gestiona los registros")
+st.title("📊 Gestión de Base de Datos")
 
+# === FUNCIONES AUXILIARES ===
 
 def cargar_datos_ciudad(ciudad: str):
-    """Carga datos de una ciudad específica."""
+    """Carga datos de una ciudad."""
     archivo = Path("data") / f"{ciudad.lower()}.json"
     if archivo.exists():
         with open(archivo, "r", encoding="utf-8") as f:
@@ -24,7 +33,8 @@ def cargar_datos_ciudad(ciudad: str):
 def guardar_datos_ciudad(ciudad: str, data: dict):
     """Guarda datos de una ciudad."""
     archivo = Path("data") / f"{ciudad.lower()}.json"
-    archivo.parent.mkdir(exist_ok=True)
+    data["metadata"]["fecha_actualizacion"] = datetime.now().isoformat()
+    data["metadata"]["total_registros"] = len(data.get("registros", []))
     with open(archivo, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
 
@@ -34,19 +44,151 @@ def listar_ciudades():
     data_dir = Path("data")
     if not data_dir.exists():
         return []
-    
     ciudades = []
     for archivo in data_dir.glob("*.json"):
-        if "config" not in archivo.name:
+        if "config" not in archivo.name and "api_usage" not in archivo.name:
             ciudades.append(archivo.stem.title())
     return sorted(ciudades)
 
 
-# Sidebar - Filtros
-with st.sidebar:
-    st.header("🔍 Filtros")
+def limpiar_nombre(nombre: str) -> tuple:
+    """
+    Limpia el nombre y extrae descripción.
+    Returns: (nombre_limpio, descripcion, tipo_detectado)
+    """
+    if not nombre:
+        return "", "", "desconocido"
     
-    # Seleccionar ciudad
+    nombre_original = nombre
+    descripcion = ""
+    tipo = "despacho"  # Por defecto
+    
+    # Patrones para detectar tipo
+    patrones_abogado = [
+        r'^(Abogad[oa]|Letrad[oa])\s+',
+        r'\b(Abogad[oa]|Letrad[oa])\s+\w+\s+\w+$',
+        r'^[A-Z][a-záéíóú]+\s+[A-Z][a-záéíóú]+\s*$',  # Nombre Apellido simple
+    ]
+    
+    patrones_despacho = [
+        r'\b(Despacho|Bufete|Abogados|& Asociados|Asociados|S\.?L\.?|Law|Legal|Lawyers)\b',
+    ]
+    
+    patrones_web = [
+        r'^(Contacto|Contact[ae]|Inicio|Home|Sobre|About|Blog|Artículo)',
+        r'^\d+\s+(mejores|top)',
+        r'^(Los|Las)\s+\d+\s+mejores',
+        r'^\►|^\▸|^►|^→',
+    ]
+    
+    # Detectar si es una página web (no un despacho real)
+    for patron in patrones_web:
+        if re.search(patron, nombre, re.IGNORECASE):
+            tipo = "pagina"
+            break
+    
+    # Detectar abogado individual
+    if tipo != "pagina":
+        for patron in patrones_abogado:
+            if re.search(patron, nombre, re.IGNORECASE):
+                tipo = "abogado"
+                break
+    
+    # Detectar despacho
+    if tipo != "pagina" and tipo != "abogado":
+        for patron in patrones_despacho:
+            if re.search(patron, nombre, re.IGNORECASE):
+                tipo = "despacho"
+                break
+    
+    # Limpiar nombre
+    # Eliminar separadores y lo que viene después
+    separadores = [' - ', ' | ', ' – ', ' — ', ' · ', ' • ', ':', ' ⚖️', ' ►', ' ▸']
+    
+    for sep in separadores:
+        if sep in nombre:
+            partes = nombre.split(sep, 1)
+            nombre = partes[0].strip()
+            if len(partes) > 1 and len(partes[1]) > 5:
+                descripcion = partes[1].strip()
+            break
+    
+    # Eliminar sufijos comunes de webs
+    sufijos_web = [
+        r'\s*\|\s*.*$',
+        r'\s*[-–—]\s*(Abogados?|Despacho|Bufete|Madrid|Barcelona|Valencia|España).*$',
+        r'\s*【.*】\s*$',
+        r'\s*\(.*\)\s*$',
+        r'\.{3,}$',
+    ]
+    
+    for patron in sufijos_web:
+        nombre = re.sub(patron, '', nombre, flags=re.IGNORECASE)
+    
+    # Capitalizar correctamente
+    nombre = nombre.strip()
+    
+    # Si es muy corto o genérico, marcar como revisar
+    if len(nombre) < 3 or nombre.lower() in ['contacto', 'inicio', 'home', 'about']:
+        tipo = "revisar"
+    
+    return nombre, descripcion, tipo
+
+
+def extraer_dominio(url: str) -> str:
+    """Extrae dominio de URL."""
+    if not url:
+        return ""
+    url = url.lower().replace("https://", "").replace("http://", "").replace("www.", "")
+    return url.split("/")[0]
+
+
+def normalizar_telefono(tel: str) -> str:
+    """Normaliza teléfono para comparación."""
+    if not tel:
+        return ""
+    limpio = re.sub(r'[^\d]', '', tel)
+    if len(limpio) >= 9:
+        return limpio[-9:]  # Últimos 9 dígitos
+    return limpio
+
+
+def detectar_grupos(registros: list) -> dict:
+    """Detecta grupos de registros por dominio web o teléfono."""
+    grupos_web = {}
+    grupos_tel = {}
+    
+    for i, r in enumerate(registros):
+        # Por dominio
+        dominio = extraer_dominio(r.get("web", ""))
+        if dominio:
+            if dominio not in grupos_web:
+                grupos_web[dominio] = []
+            grupos_web[dominio].append(i)
+        
+        # Por teléfono
+        tels = r.get("telefono", [])
+        if isinstance(tels, str):
+            tels = [tels]
+        for tel in tels:
+            tel_norm = normalizar_telefono(tel)
+            if tel_norm:
+                if tel_norm not in grupos_tel:
+                    grupos_tel[tel_norm] = []
+                if i not in grupos_tel[tel_norm]:
+                    grupos_tel[tel_norm].append(i)
+    
+    # Solo grupos con más de 1 registro
+    grupos_web = {k: v for k, v in grupos_web.items() if len(v) > 1}
+    grupos_tel = {k: v for k, v in grupos_tel.items() if len(v) > 1}
+    
+    return {"por_web": grupos_web, "por_telefono": grupos_tel}
+
+
+# === SIDEBAR ===
+with st.sidebar:
+    st.header("⚙️ Configuración")
+    
     ciudades = listar_ciudades()
     if not ciudades:
         st.warning("No hay datos cargados")
@@ -54,194 +196,442 @@ with st.sidebar:
     
     ciudad_sel = st.selectbox("Ciudad", ["Todas"] + ciudades)
     
-    # Filtro por tipo
-    tipo_filtro = st.selectbox(
+    st.divider()
+    
+    # Filtros
+    st.subheader("🔍 Filtros")
+    
+    filtro_tipo = st.multiselect(
         "Tipo",
-        ["Todos", "despacho", "abogado", "ong"]
+        ["despacho", "abogado", "ong", "oficial", "pagina", "revisar", "desconocido"],
+        default=["despacho", "abogado"]
     )
     
-    # Filtro por contacto
-    st.subheader("Contacto")
-    filtro_telefono = st.checkbox("Con teléfono", value=False)
-    filtro_email = st.checkbox("Con email", value=False)
-    filtro_web = st.checkbox("Con web", value=False)
+    filtro_datos = st.radio(
+        "Datos",
+        ["Todos", "Completos", "Incompletos", "Sin teléfono", "Sin email"]
+    )
     
-    # Búsqueda por nombre
     busqueda = st.text_input("Buscar por nombre", "")
+    
+    st.divider()
+    
+    # Ordenación
+    st.subheader("📊 Ordenar por")
+    orden_campo = st.selectbox(
+        "Campo",
+        ["nombre", "tipo", "fecha_actualizacion", "ciudad"],
+        label_visibility="collapsed"
+    )
+    orden_dir = st.radio("Dirección", ["Ascendente", "Descendente"], horizontal=True)
 
-# Cargar datos
+
+# === CARGAR DATOS ===
 if ciudad_sel == "Todas":
     registros = []
     for ciudad in ciudades:
         data = cargar_datos_ciudad(ciudad)
         for r in data.get("registros", []):
             r["_ciudad"] = ciudad
+            r["_idx_original"] = len(registros)
             registros.append(r)
 else:
     data = cargar_datos_ciudad(ciudad_sel)
     registros = data.get("registros", [])
-    for r in registros:
+    for i, r in enumerate(registros):
         r["_ciudad"] = ciudad_sel
+        r["_idx_original"] = i
 
 # Aplicar filtros
-registros_filtrados = registros.copy()
+registros_filtrados = []
+for r in registros:
+    # Filtro tipo
+    tipo = r.get("tipo", "despacho")
+    if filtro_tipo and tipo not in filtro_tipo:
+        continue
+    
+    # Filtro datos
+    if filtro_datos == "Completos":
+        if not (r.get("telefono") and r.get("email") and r.get("web")):
+            continue
+    elif filtro_datos == "Incompletos":
+        if r.get("telefono") and r.get("email") and r.get("web"):
+            continue
+    elif filtro_datos == "Sin teléfono":
+        if r.get("telefono"):
+            continue
+    elif filtro_datos == "Sin email":
+        if r.get("email"):
+            continue
+    
+    # Búsqueda
+    if busqueda:
+        if busqueda.lower() not in r.get("nombre", "").lower():
+            continue
+    
+    registros_filtrados.append(r)
 
-if tipo_filtro != "Todos":
-    registros_filtrados = [r for r in registros_filtrados if r.get("tipo") == tipo_filtro]
+# Ordenar
+reverse = orden_dir == "Descendente"
+registros_filtrados.sort(
+    key=lambda x: (x.get(orden_campo) or "").lower() if isinstance(x.get(orden_campo), str) else str(x.get(orden_campo, "")),
+    reverse=reverse
+)
 
-if filtro_telefono:
-    registros_filtrados = [r for r in registros_filtrados if r.get("telefono")]
 
-if filtro_email:
-    registros_filtrados = [r for r in registros_filtrados if r.get("email")]
-
-if filtro_web:
-    registros_filtrados = [r for r in registros_filtrados if r.get("web")]
-
-if busqueda:
-    registros_filtrados = [
-        r for r in registros_filtrados 
-        if busqueda.lower() in r.get("nombre", "").lower()
-    ]
-
-# Mostrar métricas
-col1, col2, col3 = st.columns(3)
+# === MÉTRICAS ===
+col1, col2, col3, col4, col5 = st.columns(5)
 with col1:
-    st.metric("Total Filtrados", len(registros_filtrados))
+    st.metric("Total", len(registros))
 with col2:
-    st.metric("Total en Base", len(registros))
+    st.metric("Filtrados", len(registros_filtrados))
 with col3:
-    if registros:
-        porcentaje = len(registros_filtrados) / len(registros) * 100
-        st.metric("% Mostrado", f"{porcentaje:.1f}%")
+    tipos = {}
+    for r in registros:
+        t = r.get("tipo", "despacho")
+        tipos[t] = tipos.get(t, 0) + 1
+    st.metric("Despachos", tipos.get("despacho", 0))
+with col4:
+    st.metric("Abogados", tipos.get("abogado", 0))
+with col5:
+    sin_tel = sum(1 for r in registros if not r.get("telefono"))
+    st.metric("Sin Tel.", sin_tel)
 
 st.divider()
 
-# Tabs para diferentes vistas
-tab1, tab2, tab3 = st.tabs(["📋 Tabla", "🗂️ Tarjetas", "✏️ Editar"])
+# === TABS PRINCIPALES ===
+tab1, tab2, tab3, tab4 = st.tabs([
+    "📋 Vista de Tabla", 
+    "✏️ Edición en Lote", 
+    "🔗 Agrupar Duplicados",
+    "🧹 Limpiar Nombres"
+])
 
+
+# === TAB 1: VISTA DE TABLA ===
 with tab1:
-    if registros_filtrados:
-        # Convertir a DataFrame
-        df = pd.DataFrame(registros_filtrados)
+    if not registros_filtrados:
+        st.info("No hay registros que mostrar con los filtros actuales")
+    else:
+        # Preparar DataFrame
+        tabla_data = []
+        for r in registros_filtrados:
+            tels = r.get("telefono", [])
+            tel_str = ", ".join(tels[:2]) if isinstance(tels, list) else str(tels) if tels else ""
+            if len(tels) > 2:
+                tel_str += f" (+{len(tels)-2})"
+            
+            fecha = r.get("fecha_actualizacion", "")[:16] if r.get("fecha_actualizacion") else ""
+            
+            tabla_data.append({
+                "Nombre": r.get("nombre", "")[:50],
+                "Tipo": r.get("tipo", "despacho"),
+                "Ciudad": r.get("_ciudad", ""),
+                "Teléfono": tel_str[:30],
+                "Email": (r.get("email") or "")[:30],
+                "Web": extraer_dominio(r.get("web", ""))[:25],
+                "Actualizado": fecha,
+                "_idx": r.get("_idx_original", 0)
+            })
         
-        # Seleccionar columnas a mostrar
-        columnas_disponibles = list(df.columns)
-        columnas_default = ["nombre", "tipo", "_ciudad", "email", "web"]
-        columnas_mostrar = [c for c in columnas_default if c in columnas_disponibles]
+        df = pd.DataFrame(tabla_data)
         
-        # Procesar teléfono para mostrar
-        if "telefono" in df.columns:
-            df["telefono_str"] = df["telefono"].apply(
-                lambda x: ", ".join(x) if isinstance(x, list) else str(x) if x else ""
-            )
-            columnas_mostrar.insert(3, "telefono_str")
-        
+        # Mostrar tabla
         st.dataframe(
-            df[columnas_mostrar],
+            df[["Nombre", "Tipo", "Ciudad", "Teléfono", "Email", "Web", "Actualizado"]],
             use_container_width=True,
             hide_index=True,
             height=500
         )
         
-        # Opción de descarga
-        csv = df[columnas_mostrar].to_csv(index=False)
-        st.download_button(
-            "📥 Descargar CSV",
-            csv,
-            f"abogados_{ciudad_sel.lower()}.csv",
-            "text/csv"
-        )
-    else:
-        st.info("No hay registros que coincidan con los filtros")
+        # Exportar
+        col1, col2 = st.columns([3, 1])
+        with col2:
+            csv = df.to_csv(index=False)
+            st.download_button("📥 Exportar CSV", csv, "registros.csv", "text/csv")
 
+
+# === TAB 2: EDICIÓN EN LOTE ===
 with tab2:
-    if registros_filtrados:
-        # Vista de tarjetas
-        cols = st.columns(2)
-        
-        for i, registro in enumerate(registros_filtrados[:20]):
-            col = cols[i % 2]
-            
-            with col:
-                with st.container(border=True):
-                    st.markdown(f"**{registro.get('nombre', 'Sin nombre')}**")
-                    st.caption(f"{registro.get('tipo', 'despacho')} | {registro.get('_ciudad', '')}")
-                    
-                    if registro.get("telefono"):
-                        tels = registro["telefono"]
-                        if isinstance(tels, list):
-                            st.write(f"📞 {', '.join(tels)}")
-                        else:
-                            st.write(f"📞 {tels}")
-                    
-                    if registro.get("email"):
-                        st.write(f"📧 {registro['email']}")
-                    
-                    if registro.get("web"):
-                        st.write(f"🌐 [{registro['web'][:30]}...]({registro['web']})")
-                    
-                    if registro.get("direccion"):
-                        st.caption(f"📍 {registro['direccion'][:50]}...")
-        
-        if len(registros_filtrados) > 20:
-            st.info(f"Mostrando 20 de {len(registros_filtrados)} registros")
-    else:
-        st.info("No hay registros que mostrar")
-
-with tab3:
-    st.subheader("Editar Registro")
+    st.subheader("Edición en Lote")
+    st.caption("Selecciona registros para editar múltiples a la vez")
     
-    if registros_filtrados:
-        # Selector de registro
-        nombres = [r.get("nombre", f"Sin nombre {i}") for i, r in enumerate(registros_filtrados)]
-        registro_sel = st.selectbox("Seleccionar registro", nombres)
-        
-        idx = nombres.index(registro_sel)
-        registro = registros_filtrados[idx]
-        
-        # Formulario de edición
-        with st.form("editar_registro"):
-            nombre_edit = st.text_input("Nombre", registro.get("nombre", ""))
-            tipo_edit = st.selectbox(
-                "Tipo", 
-                ["despacho", "abogado", "ong"],
-                index=["despacho", "abogado", "ong"].index(registro.get("tipo", "despacho"))
-            )
-            
-            tels = registro.get("telefono", [])
-            telefono_edit = st.text_input(
-                "Teléfono(s)", 
-                ", ".join(tels) if isinstance(tels, list) else str(tels) if tels else ""
-            )
-            
-            email_edit = st.text_input("Email", registro.get("email", "") or "")
-            web_edit = st.text_input("Web", registro.get("web", "") or "")
-            direccion_edit = st.text_area("Dirección", registro.get("direccion", "") or "")
-            
-            submitted = st.form_submit_button("💾 Guardar Cambios")
-            
-            if submitted:
-                # Actualizar registro
-                registro["nombre"] = nombre_edit
-                registro["tipo"] = tipo_edit
-                registro["telefono"] = [t.strip() for t in telefono_edit.split(",") if t.strip()]
-                registro["email"] = email_edit if email_edit else None
-                registro["web"] = web_edit if web_edit else None
-                registro["direccion"] = direccion_edit if direccion_edit else None
-                
-                # Guardar en archivo
-                ciudad = registro.get("_ciudad", ciudad_sel)
-                data = cargar_datos_ciudad(ciudad)
-                
-                # Buscar y actualizar en la lista
-                for i, r in enumerate(data.get("registros", [])):
-                    if r.get("nombre") == nombres[idx]:
-                        data["registros"][i] = {k: v for k, v in registro.items() if k != "_ciudad"}
-                        break
-                
-                guardar_datos_ciudad(ciudad, data)
-                st.success("Registro actualizado")
-                st.rerun()
-    else:
+    if not registros_filtrados:
         st.info("No hay registros para editar")
+    else:
+        # Estado de selección
+        if "seleccionados" not in st.session_state:
+            st.session_state.seleccionados = set()
+        
+        # Botones de selección
+        col1, col2, col3 = st.columns(3)
+        with col1:
+            if st.button("✅ Seleccionar todos"):
+                st.session_state.seleccionados = set(r.get("_idx_original", i) for i, r in enumerate(registros_filtrados))
+                st.rerun()
+        with col2:
+            if st.button("❌ Deseleccionar todos"):
+                st.session_state.seleccionados = set()
+                st.rerun()
+        with col3:
+            st.write(f"**{len(st.session_state.seleccionados)}** seleccionados")
+        
+        st.divider()
+        
+        # Lista con checkboxes
+        for i, r in enumerate(registros_filtrados[:100]):
+            idx = r.get("_idx_original", i)
+            
+            col_check, col_info, col_actions = st.columns([0.5, 4, 1])
+            
+            with col_check:
+                checked = st.checkbox(
+                    "sel",
+                    value=idx in st.session_state.seleccionados,
+                    key=f"check_{idx}",
+                    label_visibility="collapsed"
+                )
+                if checked:
+                    st.session_state.seleccionados.add(idx)
+                else:
+                    st.session_state.seleccionados.discard(idx)
+            
+            with col_info:
+                nombre = r.get("nombre", "Sin nombre")[:45]
+                tipo = r.get("tipo", "despacho")
+                ciudad = r.get("_ciudad", "")
+                
+                # Indicadores
+                indicadores = []
+                if r.get("telefono"):
+                    indicadores.append("📞")
+                if r.get("email"):
+                    indicadores.append("📧")
+                if r.get("web"):
+                    indicadores.append("🌐")
+                
+                st.write(f"**{nombre}** | {tipo} | {ciudad} {' '.join(indicadores)}")
+            
+            with col_actions:
+                if st.button("✏️", key=f"edit_{idx}", help="Editar"):
+                    st.session_state.editando = idx
+        
+        if len(registros_filtrados) > 100:
+            st.caption(f"Mostrando 100 de {len(registros_filtrados)}")
+        
+        st.divider()
+        
+        # Acciones en lote
+        if st.session_state.seleccionados:
+            st.subheader(f"Acciones para {len(st.session_state.seleccionados)} registros")
+            
+            col1, col2 = st.columns(2)
+            
+            with col1:
+                nuevo_tipo = st.selectbox(
+                    "Cambiar tipo a:",
+                    ["(sin cambio)", "despacho", "abogado", "ong", "oficial", "pagina", "revisar"]
+                )
+            
+            with col2:
+                nueva_ciudad = st.selectbox(
+                    "Cambiar ciudad a:",
+                    ["(sin cambio)"] + ciudades
+                )
+            
+            if st.button("💾 Aplicar cambios", type="primary"):
+                # Cargar datos por ciudad y aplicar cambios
+                cambios_por_ciudad = {}
+                
+                for idx in st.session_state.seleccionados:
+                    # Encontrar el registro
+                    for r in registros:
+                        if r.get("_idx_original") == idx:
+                            ciudad = r.get("_ciudad")
+                            if ciudad not in cambios_por_ciudad:
+                                cambios_por_ciudad[ciudad] = cargar_datos_ciudad(ciudad)
+                            
+                            # Buscar índice real
+                            for i, reg in enumerate(cambios_por_ciudad[ciudad]["registros"]):
+                                if reg.get("nombre") == r.get("nombre") and reg.get("web") == r.get("web"):
+                                    if nuevo_tipo != "(sin cambio)":
+                                        cambios_por_ciudad[ciudad]["registros"][i]["tipo"] = nuevo_tipo
+                                    if nueva_ciudad != "(sin cambio)":
+                                        cambios_por_ciudad[ciudad]["registros"][i]["ciudad"] = nueva_ciudad
+                                    cambios_por_ciudad[ciudad]["registros"][i]["fecha_actualizacion"] = datetime.now().isoformat()
+                                    break
+                            break
+                
+                # Guardar
+                for ciudad, data in cambios_por_ciudad.items():
+                    guardar_datos_ciudad(ciudad, data)
+                
+                st.success(f"✓ {len(st.session_state.seleccionados)} registros actualizados")
+                st.session_state.seleccionados = set()
+                st.rerun()
+
+
+# === TAB 3: AGRUPAR DUPLICADOS ===
+with tab3:
+    st.subheader("Detectar Posibles Duplicados")
+    
+    grupos = detectar_grupos(registros)
+    
+    # Por dominio web
+    st.markdown("### 🌐 Mismo Dominio Web")
+    
+    if grupos["por_web"]:
+        for dominio, indices in list(grupos["por_web"].items())[:20]:
+            with st.expander(f"**{dominio}** ({len(indices)} registros)"):
+                for idx in indices:
+                    r = registros[idx]
+                    col1, col2 = st.columns([4, 1])
+                    with col1:
+                        st.write(f"• {r.get('nombre', 'Sin nombre')[:50]}")
+                        st.caption(f"Tipo: {r.get('tipo')} | Ciudad: {r.get('_ciudad')}")
+                    with col2:
+                        if st.button("🔗 Fusionar", key=f"merge_web_{dominio}_{idx}"):
+                            st.info("Funcionalidad de fusión en desarrollo")
+    else:
+        st.success("✓ No hay registros con el mismo dominio")
+    
+    st.divider()
+    
+    # Por teléfono
+    st.markdown("### 📞 Mismo Teléfono")
+    
+    if grupos["por_telefono"]:
+        for tel, indices in list(grupos["por_telefono"].items())[:20]:
+            with st.expander(f"**{tel}** ({len(indices)} registros)"):
+                for idx in indices:
+                    r = registros[idx]
+                    st.write(f"• {r.get('nombre', 'Sin nombre')[:50]} | {r.get('_ciudad')}")
+    else:
+        st.success("✓ No hay registros con el mismo teléfono")
+
+
+# === TAB 4: LIMPIAR NOMBRES ===
+with tab4:
+    st.subheader("Limpiar y Clasificar Nombres")
+    st.caption("Analiza nombres para separar nombre real de descripción y detectar tipo")
+    
+    if st.button("🔍 Analizar nombres", type="primary"):
+        resultados_limpieza = []
+        
+        for r in registros[:200]:
+            nombre_original = r.get("nombre", "")
+            nombre_limpio, descripcion, tipo_detectado = limpiar_nombre(nombre_original)
+            
+            if nombre_limpio != nombre_original or tipo_detectado != r.get("tipo", "despacho"):
+                resultados_limpieza.append({
+                    "original": nombre_original[:40],
+                    "limpio": nombre_limpio[:40],
+                    "descripcion": descripcion[:30] if descripcion else "",
+                    "tipo_actual": r.get("tipo", "despacho"),
+                    "tipo_sugerido": tipo_detectado,
+                    "ciudad": r.get("_ciudad", ""),
+                    "_idx": r.get("_idx_original", 0),
+                    "_registro": r
+                })
+        
+        st.session_state.resultados_limpieza = resultados_limpieza
+    
+    # Mostrar resultados
+    if "resultados_limpieza" in st.session_state and st.session_state.resultados_limpieza:
+        st.write(f"**{len(st.session_state.resultados_limpieza)}** nombres a revisar:")
+        
+        # Filtro por tipo sugerido
+        tipos_sugeridos = list(set(r["tipo_sugerido"] for r in st.session_state.resultados_limpieza))
+        filtro_tipo_limpieza = st.multiselect("Filtrar por tipo sugerido", tipos_sugeridos, default=tipos_sugeridos)
+        
+        resultados_mostrar = [r for r in st.session_state.resultados_limpieza if r["tipo_sugerido"] in filtro_tipo_limpieza]
+        
+        # Selección para aplicar
+        if "seleccion_limpieza" not in st.session_state:
+            st.session_state.seleccion_limpieza = set()
+        
+        col1, col2 = st.columns([1, 1])
+        with col1:
+            if st.button("✅ Seleccionar todos", key="sel_all_clean"):
+                st.session_state.seleccion_limpieza = set(r["_idx"] for r in resultados_mostrar)
+                st.rerun()
+        with col2:
+            if st.button("❌ Deseleccionar", key="desel_clean"):
+                st.session_state.seleccion_limpieza = set()
+                st.rerun()
+        
+        st.divider()
+        
+        for r in resultados_mostrar[:50]:
+            col_check, col_orig, col_nuevo, col_tipo = st.columns([0.5, 2, 2, 1.5])
+            
+            with col_check:
+                checked = st.checkbox(
+                    "s",
+                    value=r["_idx"] in st.session_state.seleccion_limpieza,
+                    key=f"clean_{r['_idx']}",
+                    label_visibility="collapsed"
+                )
+                if checked:
+                    st.session_state.seleccion_limpieza.add(r["_idx"])
+                else:
+                    st.session_state.seleccion_limpieza.discard(r["_idx"])
+            
+            with col_orig:
+                st.write(f"**Original:** {r['original']}")
+                if r['descripcion']:
+                    st.caption(f"Desc: {r['descripcion']}")
+            
+            with col_nuevo:
+                st.write(f"**Limpio:** {r['limpio']}")
+            
+            with col_tipo:
+                cambio_tipo = "→" if r['tipo_actual'] != r['tipo_sugerido'] else "="
+                st.write(f"{r['tipo_actual']} {cambio_tipo} **{r['tipo_sugerido']}**")
+        
+        st.divider()
+        
+        # Aplicar cambios
+        if st.session_state.seleccion_limpieza:
+            st.write(f"**{len(st.session_state.seleccion_limpieza)}** seleccionados para limpiar")
+            
+            if st.button("💾 Aplicar limpieza", type="primary"):
+                cambios_por_ciudad = {}
+                
+                for r in st.session_state.resultados_limpieza:
+                    if r["_idx"] not in st.session_state.seleccion_limpieza:
+                        continue
+                    
+                    ciudad = r["ciudad"]
+                    if ciudad not in cambios_por_ciudad:
+                        cambios_por_ciudad[ciudad] = cargar_datos_ciudad(ciudad)
+                    
+                    # Buscar y actualizar
+                    registro_orig = r["_registro"]
+                    nombre_limpio, descripcion, tipo_detectado = limpiar_nombre(registro_orig.get("nombre", ""))
+                    
+                    for i, reg in enumerate(cambios_por_ciudad[ciudad]["registros"]):
+                        if reg.get("nombre") == registro_orig.get("nombre") and reg.get("web") == registro_orig.get("web"):
+                            cambios_por_ciudad[ciudad]["registros"][i]["nombre"] = nombre_limpio
+                            if descripcion:
+                                cambios_por_ciudad[ciudad]["registros"][i]["descripcion"] = descripcion
+                            cambios_por_ciudad[ciudad]["registros"][i]["tipo"] = tipo_detectado
+                            cambios_por_ciudad[ciudad]["registros"][i]["fecha_actualizacion"] = datetime.now().isoformat()
+                            break
+                
+                # Guardar
+                for ciudad, data in cambios_por_ciudad.items():
+                    guardar_datos_ciudad(ciudad, data)
+                
+                st.success(f"✓ {len(st.session_state.seleccion_limpieza)} registros limpiados")
+                st.session_state.seleccion_limpieza = set()
+                st.session_state.resultados_limpieza = []
+                st.rerun()
+    
+    elif "resultados_limpieza" in st.session_state:
+        st.success("✓ Todos los nombres están correctos")
+
+
+# === FOOTER ===
+st.divider()
+st.caption(f"Última actualización: {datetime.now().strftime('%Y-%m-%d %H:%M')} | {len(registros)} registros totales")
