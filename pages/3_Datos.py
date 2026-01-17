@@ -153,6 +153,40 @@ def normalizar_telefono(tel: str) -> str:
     return limpio
 
 
+def fusionar_registros(r1: dict, r2: dict) -> dict:
+    """Fusiona dos registros, combinando sus datos."""
+    fusionado = r1.copy()
+    
+    # Combinar teléfonos
+    tels1 = r1.get("telefono", [])
+    tels2 = r2.get("telefono", [])
+    if isinstance(tels1, str):
+        tels1 = [tels1]
+    if isinstance(tels2, str):
+        tels2 = [tels2]
+    
+    tels_norm = {}
+    for t in tels1 + tels2:
+        tn = normalizar_telefono(t)
+        if tn and tn not in tels_norm:
+            tels_norm[tn] = t
+    fusionado["telefono"] = list(tels_norm.values())
+    
+    # Combinar especialidades
+    esp1 = r1.get("especialidades", [])
+    esp2 = r2.get("especialidades", [])
+    fusionado["especialidades"] = list(set(esp1 + esp2))
+    
+    # Completar campos vacíos
+    for campo in ["email", "web", "direccion", "ciudad", "distrito", "horario"]:
+        if not r1.get(campo) and r2.get(campo):
+            fusionado[campo] = r2[campo]
+    
+    fusionado["fecha_actualizacion"] = datetime.now().isoformat()
+    
+    return fusionado
+
+
 def detectar_grupos(registros: list) -> dict:
     """Detecta grupos de registros por dominio web o teléfono."""
     grupos_web = {}
@@ -474,6 +508,7 @@ with tab2:
 # === TAB 3: AGRUPAR DUPLICADOS ===
 with tab3:
     st.subheader("Detectar Posibles Duplicados")
+    st.caption("Fusiona registros que comparten dominio web o teléfono")
     
     grupos = detectar_grupos(registros)
     
@@ -483,15 +518,110 @@ with tab3:
     if grupos["por_web"]:
         for dominio, indices in list(grupos["por_web"].items())[:20]:
             with st.expander(f"**{dominio}** ({len(indices)} registros)"):
+                registros_grupo = [registros[idx] for idx in indices]
+                
+                # Seleccionar registro principal (el primero con más datos)
+                registro_principal = None
+                idx_principal = None
+                max_datos = -1
+                
+                for idx in indices:
+                    r = registros[idx]
+                    datos_count = sum([bool(r.get("telefono")), bool(r.get("email")), 
+                                     bool(r.get("web")), bool(r.get("direccion"))])
+                    if datos_count > max_datos:
+                        max_datos = datos_count
+                        registro_principal = r
+                        idx_principal = idx
+                
+                # Mostrar todos los registros del grupo
                 for idx in indices:
                     r = registros[idx]
                     col1, col2 = st.columns([4, 1])
                     with col1:
-                        st.write(f"• {r.get('nombre', 'Sin nombre')[:50]}")
+                        es_principal = "⭐ " if idx == idx_principal else "  • "
+                        st.write(f"{es_principal}{r.get('nombre', 'Sin nombre')[:50]}")
                         st.caption(f"Tipo: {r.get('tipo')} | Ciudad: {r.get('_ciudad')}")
+                        if r.get("telefono"):
+                            tels = r.get("telefono", [])
+                            tel_str = ", ".join(tels[:2]) if isinstance(tels, list) else str(tels)
+                            st.caption(f"Tel: {tel_str[:30]}")
                     with col2:
-                        if st.button("🔗 Fusionar", key=f"merge_web_{dominio}_{idx}"):
-                            st.info("Funcionalidad de fusión en desarrollo")
+                        if idx != idx_principal and ciudad_sel != "Todas":
+                            if st.button("🔗 Fusionar", key=f"merge_web_{dominio}_{idx}"):
+                                # Fusionar con el principal
+                                fusionado = fusionar_registros(registro_principal, r)
+                                
+                                # Cargar datos de la ciudad
+                                data = cargar_datos_ciudad(ciudad_sel)
+                                
+                                # Encontrar índices reales en el archivo
+                                idx1_real = None
+                                idx2_real = None
+                                
+                                for i, reg in enumerate(data["registros"]):
+                                    if reg.get("nombre") == registro_principal.get("nombre") and \
+                                       reg.get("web") == registro_principal.get("web"):
+                                        idx1_real = i
+                                    if reg.get("nombre") == r.get("nombre") and \
+                                       reg.get("web") == r.get("web"):
+                                        idx2_real = i
+                                
+                                if idx1_real is not None and idx2_real is not None:
+                                    # Actualizar el principal con datos fusionados
+                                    data["registros"][idx1_real] = fusionado
+                                    # Eliminar el duplicado
+                                    data["registros"].pop(idx2_real)
+                                    # Guardar
+                                    guardar_datos_ciudad(ciudad_sel, data)
+                                    st.success(f"✓ Registros fusionados. {r.get('nombre', 'Sin nombre')[:30]} eliminado.")
+                                    st.rerun()
+                                else:
+                                    st.error("No se encontraron los registros en la base de datos")
+                        elif ciudad_sel == "Todas":
+                            st.caption("Fusionar solo por ciudad")
+                
+                # Botón para fusionar todo el grupo
+                if len(indices) > 2 and ciudad_sel != "Todas":
+                    if st.button(f"🔗 Fusionar todos ({len(indices)} registros)", key=f"merge_all_{dominio}"):
+                        data = cargar_datos_ciudad(ciudad_sel)
+                        registro_final = registro_principal.copy()
+                        
+                        # Fusionar todos con el principal
+                        indices_a_eliminar = []
+                        for idx_secundario in indices:
+                            if idx_secundario != idx_principal:
+                                r_sec = registros[idx_secundario]
+                                registro_final = fusionar_registros(registro_final, r_sec)
+                                indices_a_eliminar.append(idx_secundario)
+                        
+                        # Encontrar y actualizar en archivo
+                        idx_principal_real = None
+                        for i, reg in enumerate(data["registros"]):
+                            if reg.get("nombre") == registro_principal.get("nombre") and \
+                               reg.get("web") == registro_principal.get("web"):
+                                idx_principal_real = i
+                                break
+                        
+                        if idx_principal_real is not None:
+                            data["registros"][idx_principal_real] = registro_final
+                            
+                            # Eliminar duplicados
+                            registros_a_eliminar = []
+                            for idx_elim in indices_a_eliminar:
+                                r_elim = registros[idx_elim]
+                                for i, reg in enumerate(data["registros"]):
+                                    if reg.get("nombre") == r_elim.get("nombre") and \
+                                       reg.get("web") == r_elim.get("web"):
+                                        registros_a_eliminar.append(i)
+                            
+                            # Eliminar en orden inverso para mantener índices
+                            for i in sorted(registros_a_eliminar, reverse=True):
+                                data["registros"].pop(i)
+                            
+                            guardar_datos_ciudad(ciudad_sel, data)
+                            st.success(f"✓ {len(indices)} registros fusionados en uno")
+                            st.rerun()
     else:
         st.success("✓ No hay registros con el mismo dominio")
     
@@ -506,6 +636,8 @@ with tab3:
                 for idx in indices:
                     r = registros[idx]
                     st.write(f"• {r.get('nombre', 'Sin nombre')[:50]} | {r.get('_ciudad')}")
+                    if ciudad_sel != "Todas":
+                        st.caption("💡 Nota: Usa la fusión por dominio web para mejores resultados")
     else:
         st.success("✓ No hay registros con el mismo teléfono")
 

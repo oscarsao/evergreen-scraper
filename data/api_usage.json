@@ -3,9 +3,9 @@
   "dia_actual": {
     "2026-01-17": {
       "tavily": {
-        "requests": 237,
-        "creditos": 237,
-        "costo": 0.23700000000000018
+        "requests": 260,
+        "creditos": 260,
+        "costo": 0.2600000000000002
       },
       "firecrawl": {
         "requests": 52,
@@ -27,9 +27,9 @@
   "mes_actual": {
     "2026-01": {
       "tavily": {
-        "requests": 237,
-        "creditos": 237,
-        "costo": 0.23700000000000018
+        "requests": 260,
+        "creditos": 260,
+        "costo": 0.2600000000000002
       },
       "firecrawl": {
         "requests": 52,
@@ -50,9 +50,9 @@
   },
   "totales": {
     "tavily": {
-      "requests": 237,
-      "creditos": 237,
-      "costo": 0.23700000000000018
+      "requests": 260,
+      "creditos": 260,
+      "costo": 0.2600000000000002
     },
     "firecrawl": {
       "requests": 52,

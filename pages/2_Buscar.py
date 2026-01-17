@@ -136,6 +136,47 @@ with tab1:
                         with st.expander("⚠️ Errores"):
                             for error in resultado.errores:
                                 st.warning(error)
+                    
+                    # Guardar en historial
+                    historial_path = Path("data/historial_busquedas.json")
+                    historial_path.parent.mkdir(exist_ok=True)
+                    
+                    # Cargar historial existente
+                    if historial_path.exists():
+                        try:
+                            with open(historial_path, "r", encoding="utf-8") as f:
+                                historial = json.load(f)
+                        except:
+                            historial = []
+                    else:
+                        historial = []
+                    
+                    # Agregar nueva búsqueda
+                    entrada_historial = {
+                        "fecha": resultado.fecha,
+                        "ciudad": ciudad,
+                        "zonas": zonas,
+                        "apis_usadas": apis_seleccionadas,
+                        "total_encontrados": resultado.total_encontrados,
+                        "nuevos": resultado.consolidacion.total_nuevos if resultado.consolidacion else 0,
+                        "actualizados": len(resultado.consolidacion.actualizados) if resultado.consolidacion else 0,
+                        "duplicados": len(resultado.consolidacion.duplicados_ignorados) if resultado.consolidacion else 0,
+                        "filtrados": len(resultado.consolidacion.filtrados) if resultado.consolidacion else 0,
+                        "duracion_segundos": round(resultado.duracion_segundos, 2),
+                        "resultados_por_api": resultado.resultados_por_api,
+                        "max_resultados_por_api": max_resultados,
+                        "usar_places": usar_places,
+                        "scraping_profundo": scraping_profundo
+                    }
+                    
+                    historial.append(entrada_historial)
+                    
+                    # Mantener solo las últimas 100 búsquedas
+                    historial = historial[-100:]
+                    
+                    # Guardar
+                    with open(historial_path, "w", encoding="utf-8") as f:
+                        json.dump(historial, f, ensure_ascii=False, indent=2)
                                 
                 except ImportError as e:
                     st.error(f"Error importando módulos: {e}")
@@ -202,15 +243,53 @@ with tab2:
 
 with tab3:
     st.subheader("Historial de Búsquedas")
-    st.info("El historial de búsquedas se mostrará aquí en futuras versiones.")
+    st.caption("Registro de todas las búsquedas ejecutadas")
     
-    # Placeholder para historial
     historial_path = Path("data/historial_busquedas.json")
     if historial_path.exists():
-        with open(historial_path, "r") as f:
-            historial = json.load(f)
-        
-        for h in historial[-10:]:
-            st.write(f"- {h['fecha']}: {h['ciudad']} ({h['total']} resultados)")
+        try:
+            with open(historial_path, "r", encoding="utf-8") as f:
+                historial = json.load(f)
+            
+            if historial:
+                # Mostrar últimas 20 búsquedas
+                historial_reciente = historial[-20:]
+                historial_reciente.reverse()  # Más recientes primero
+                
+                st.write(f"**Total de búsquedas:** {len(historial)} (mostrando últimas {len(historial_reciente)})")
+                st.divider()
+                
+                for h in historial_reciente:
+                    fecha_str = h.get("fecha", "")[:19] if h.get("fecha") else "Sin fecha"
+                    
+                    with st.expander(f"🔍 {h.get('ciudad', 'Sin ciudad')} - {fecha_str} ({h.get('duracion_segundos', 0)}s)"):
+                        col1, col2 = st.columns(2)
+                        
+                        with col1:
+                            st.markdown("**Resultados:**")
+                            st.write(f"- Total encontrados: **{h.get('total_encontrados', 0)}**")
+                            st.write(f"- Nuevos: **{h.get('nuevos', 0)}**")
+                            st.write(f"- Actualizados: **{h.get('actualizados', 0)}**")
+                            st.write(f"- Duplicados: **{h.get('duplicados', 0)}**")
+                            st.write(f"- Filtrados: **{h.get('filtrados', 0)}**")
+                        
+                        with col2:
+                            st.markdown("**Configuración:**")
+                            st.write(f"- APIs: {', '.join(h.get('apis_usadas', []))}")
+                            if h.get('zonas'):
+                                st.write(f"- Zonas: {', '.join(h.get('zonas', []))}")
+                            st.write(f"- Max resultados/API: {h.get('max_resultados_por_api', 0)}")
+                            st.write(f"- Places: {'✓' if h.get('usar_places') else '✗'}")
+                            st.write(f"- Scraping: {'✓' if h.get('scraping_profundo') else '✗'}")
+                        
+                        # Resultados por API
+                        if h.get('resultados_por_api'):
+                            st.markdown("**Por API:**")
+                            for api, count in h.get('resultados_por_api', {}).items():
+                                st.caption(f"- {api}: {count} resultados")
+            else:
+                st.info("No hay búsquedas registradas aún. Ejecuta una búsqueda para comenzar.")
+        except Exception as e:
+            st.error(f"Error cargando historial: {e}")
     else:
-        st.write("No hay búsquedas registradas aún.")
+        st.info("No hay búsquedas registradas aún. Ejecuta una búsqueda para comenzar.")
