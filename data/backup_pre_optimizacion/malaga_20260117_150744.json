@@ -1,0 +1,293 @@
+{
+  "metadata": {
+    "fecha_actualizacion": "2026-01-17T05:29:04.803133",
+    "total_registros": 15,
+    "fuente": "consolidador_multiagente"
+  },
+  "registros": [
+    {
+      "nombre": "Contacto y Localización",
+      "tipo": "despacho",
+      "telefono": [
+        "+34644337914"
+      ],
+      "email": "perezaragon@legalmalaga.com",
+      "web": "https://www.abogadoextranjeriamalaga.org/p/contacto-y-localizacion.html",
+      "direccion": null,
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://www.abogadoextranjeriamalaga.org/p/contacto-y-localizacion.html",
+      "fecha_extraccion": "2026-01-17T05:28:38.298469",
+      "fecha_actualizacion": "2026-01-17T05:29:04.801416",
+      "idiomas": []
+    },
+    {
+      "nombre": "Abogado Extranjería Málaga",
+      "tipo": "despacho",
+      "telefono": [
+        "+34644337914"
+      ],
+      "email": "perezaragon@legaldivorcio.com",
+      "web": "https://www.abogadoextranjeriamalaga.org/",
+      "direccion": null,
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [
+        "arraigo",
+        "nacionalidad",
+        "reagrupación"
+      ],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://www.abogadoextranjeriamalaga.org/",
+      "fecha_extraccion": "2026-01-17T05:28:38.299148",
+      "fecha_actualizacion": "2026-01-17T05:29:04.801946",
+      "idiomas": []
+    },
+    {
+      "nombre": "CONTACTO",
+      "tipo": "despacho",
+      "telefono": [
+        "+34951256762"
+      ],
+      "email": "consulta@novaextranjeria.com",
+      "web": "https://novaextranjeria.com/contacto/",
+      "direccion": "C/ Mauricio Moro Pareto, 15",
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://novaextranjeria.com/contacto/",
+      "fecha_extraccion": "2026-01-17T05:28:38.299236",
+      "fecha_actualizacion": "2026-01-17T05:29:04.798232",
+      "idiomas": []
+    },
+    {
+      "nombre": "Abogado Extranjería Especialistas Conseguir Nacionalidad",
+      "tipo": "despacho",
+      "telefono": [
+        "+34930508888"
+      ],
+      "email": null,
+      "web": "https://venturaextranjeria.com/",
+      "direccion": null,
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [
+        "asilo",
+        "nacionalidad",
+        "visados"
+      ],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://venturaextranjeria.com/",
+      "fecha_extraccion": "2026-01-17T05:28:38.299311",
+      "fecha_actualizacion": "2026-01-17T05:29:04.802201",
+      "idiomas": []
+    },
+    {
+      "nombre": "Abogados de Extranjería en Málaga",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": null,
+      "web": "https://bocanegra-abogados.com/abogados-extranjeria-malaga/",
+      "direccion": null,
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://bocanegra-abogados.com/abogados-extranjeria-malaga/",
+      "fecha_extraccion": "2026-01-17T05:28:38.299960",
+      "fecha_actualizacion": "2026-01-17T05:29:04.800012",
+      "idiomas": []
+    },
+    {
+      "nombre": "Abogado Extranjería Málaga 【WEB EN VENTA",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": null,
+      "web": "https://www.abogadoextranjeriamalaga.com/",
+      "direccion": null,
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://www.abogadoextranjeriamalaga.com/",
+      "fecha_extraccion": "2026-01-17T05:28:38.300056",
+      "fecha_actualizacion": "2026-01-17T05:29:04.798707",
+      "idiomas": []
+    },
+    {
+      "nombre": "Abogados de Extranjería",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": null,
+      "web": "https://novaextranjeria.com/",
+      "direccion": null,
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [
+        "permisos"
+      ],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://novaextranjeria.com/",
+      "fecha_extraccion": "2026-01-17T05:28:38.300141",
+      "fecha_actualizacion": "2026-01-17T05:29:04.802111",
+      "idiomas": []
+    },
+    {
+      "nombre": "Abogado Experto en Extranjería e Inmigración",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": "info@expertoextranjeria.es",
+      "web": "https://www.expertoextranjeria.es/",
+      "direccion": null,
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://www.expertoextranjeria.es/",
+      "fecha_extraccion": "2026-01-17T05:28:38.300231",
+      "fecha_actualizacion": "2026-01-17T05:29:04.801498",
+      "idiomas": []
+    },
+    {
+      "nombre": "Extranjería",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": null,
+      "web": "https://gvabogadosmalaga.com/servicios/extranjeria/",
+      "direccion": null,
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://gvabogadosmalaga.com/servicios/extranjeria/",
+      "fecha_extraccion": "2026-01-17T05:28:38.300326",
+      "fecha_actualizacion": "2026-01-17T05:29:04.802272",
+      "idiomas": []
+    },
+    {
+      "nombre": "Abogados Especialistas Inmigración y Extranjería en Málaga",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": null,
+      "web": "https://abogadosinmigrantes.com/",
+      "direccion": null,
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://abogadosinmigrantes.com/",
+      "fecha_extraccion": "2026-01-17T05:28:42.794647",
+      "fecha_actualizacion": "2026-01-17T05:29:04.802039",
+      "idiomas": []
+    },
+    {
+      "nombre": "Sobre Nosotros",
+      "tipo": "despacho",
+      "telefono": [
+        "+34685860263"
+      ],
+      "email": null,
+      "web": "https://www.agabogadosygestores.com/sobre-nosotros/",
+      "direccion": "Calle Marie Curie Científica, 4",
+      "ciudad": "Valencia",
+      "distrito": null,
+      "especialidades": [],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://www.agabogadosygestores.com/sobre-nosotros/",
+      "fecha_extraccion": "2026-01-17T05:28:42.794731",
+      "fecha_actualizacion": "2026-01-17T05:29:04.800081",
+      "idiomas": []
+    },
+    {
+      "nombre": "Díaz & Asociados",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": null,
+      "web": "https://diazyasociados.es/",
+      "direccion": null,
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://diazyasociados.es/",
+      "fecha_extraccion": "2026-01-17T05:28:42.795238",
+      "fecha_actualizacion": "2026-01-17T05:29:04.801146",
+      "idiomas": []
+    },
+    {
+      "nombre": "Kaleb Soares",
+      "tipo": "despacho",
+      "telefono": [
+        "+34632153888"
+      ],
+      "email": null,
+      "web": "https://expertosextranjeria.com/",
+      "direccion": "Plaza Villa de Castelldefels, 1",
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [
+        "nacionalidad"
+      ],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://expertosextranjeria.com/",
+      "fecha_extraccion": "2026-01-17T05:28:47.641478",
+      "fecha_actualizacion": "2026-01-17T05:29:04.801569",
+      "idiomas": []
+    },
+    {
+      "nombre": "Abogados Extranjería Málaga",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": null,
+      "web": "https://nostrumlegal.com/",
+      "direccion": null,
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [
+        "visados",
+        "reagrupación"
+      ],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://nostrumlegal.com/",
+      "fecha_extraccion": "2026-01-17T05:28:47.641847",
+      "fecha_actualizacion": "2026-01-17T05:29:04.801638",
+      "idiomas": []
+    },
+    {
+      "nombre": "Extranjeria Malaga. Abogados a tu servicio",
+      "tipo": "despacho",
+      "telefono": [
+        "+34717717587"
+      ],
+      "email": "contacto@sanchezbermejo.com",
+      "web": "https://www.sanchezbermejo.com/extranjeria-malaga/",
+      "direccion": null,
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://www.sanchezbermejo.com/extranjeria-malaga/",
+      "fecha_extraccion": "2026-01-17T05:28:47.642284",
+      "fecha_actualizacion": "2026-01-17T05:29:04.801732",
+      "idiomas": []
+    }
+  ]
+}

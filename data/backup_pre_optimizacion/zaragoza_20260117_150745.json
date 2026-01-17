@@ -1,0 +1,316 @@
+{
+  "metadata": {
+    "fecha_actualizacion": "2026-01-17T05:29:46.638921",
+    "total_registros": 15,
+    "fuente": "consolidador_multiagente"
+  },
+  "registros": [
+    {
+      "nombre": "Abogado Extranjería en Zaragoza",
+      "tipo": "despacho",
+      "telefono": [
+        "+34678560137"
+      ],
+      "email": null,
+      "web": "https://www.amartinabogados.com/abogado-extranjeria-zaragoza/",
+      "direccion": null,
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [
+        "expulsiones",
+        "nacionalidad",
+        "recursos"
+      ],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://www.amartinabogados.com/abogado-extranjeria-zaragoza/",
+      "fecha_extraccion": "2026-01-17T05:29:28.349630",
+      "fecha_actualizacion": "2026-01-17T05:29:46.630759",
+      "idiomas": []
+    },
+    {
+      "nombre": "Bufete Abogados Internacional Zaragoza",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": "info@quabbala.com",
+      "web": "https://quabbala.com/en/abogados-internacional-zaragoza/",
+      "direccion": null,
+      "ciudad": "Madrid",
+      "distrito": null,
+      "especialidades": [],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://quabbala.com/en/abogados-internacional-zaragoza/",
+      "fecha_extraccion": "2026-01-17T05:29:28.350613",
+      "fecha_actualizacion": "2026-01-17T05:29:46.624994"
+    },
+    {
+      "nombre": "Abogada de extranjería en Zaragoza Alina Manuela Sasu",
+      "tipo": "despacho",
+      "telefono": [
+        "+34606012096"
+      ],
+      "email": "alinasasu@reicaz.com",
+      "web": "https://infoextranjeriazaragoza.es/",
+      "direccion": "C/ José Luis Albareda 7 4º 1ªA",
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [
+        "nacionalidad",
+        "recursos",
+        "reagrupación",
+        "arraigo"
+      ],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://infoextranjeriazaragoza.es/",
+      "fecha_extraccion": "2026-01-17T05:29:28.351032",
+      "fecha_actualizacion": "2026-01-17T05:29:46.636103",
+      "idiomas": []
+    },
+    {
+      "nombre": "Abogado extranjería Zaragoza",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": "webvisasport@gmail.com",
+      "web": "https://visasportweb.com/",
+      "direccion": "Calle Gran Vía",
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [
+        "nacionalidad",
+        "visados"
+      ],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://visasportweb.com/",
+      "fecha_extraccion": "2026-01-17T05:29:28.351593",
+      "fecha_actualizacion": "2026-01-17T05:29:46.625792"
+    },
+    {
+      "nombre": "Servicios Legales Especializados en Extranjería",
+      "tipo": "despacho",
+      "telefono": [
+        "+34951627310"
+      ],
+      "email": null,
+      "web": "https://www.rcvabogados.es/producto/extranjeria",
+      "direccion": null,
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [
+        "nacionalidad",
+        "visados",
+        "recursos"
+      ],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://www.rcvabogados.es/producto/extranjeria",
+      "fecha_extraccion": "2026-01-17T05:29:28.352357",
+      "fecha_actualizacion": "2026-01-17T05:29:46.626263"
+    },
+    {
+      "nombre": "César David Ciriano Vela",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": null,
+      "web": "http://www.abogadoextranjeriazaragoza.es/",
+      "direccion": "Paseo Independencia 24-26",
+      "ciudad": "Madrid",
+      "distrito": null,
+      "especialidades": [
+        "recursos",
+        "reagrupación",
+        "visados",
+        "permisos",
+        "arraigo",
+        "expulsiones",
+        "asilo",
+        "nacionalidad"
+      ],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "http://www.abogadoextranjeriazaragoza.es/",
+      "fecha_extraccion": "2026-01-17T05:29:28.353089",
+      "fecha_actualizacion": "2026-01-17T05:29:46.634397",
+      "idiomas": []
+    },
+    {
+      "nombre": "Abogado Extranjeria Inmigración",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": null,
+      "web": "https://www.extranjeria24h.com/",
+      "direccion": null,
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [
+        "reagrupación",
+        "nacionalidad",
+        "visados"
+      ],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://www.extranjeria24h.com/",
+      "fecha_extraccion": "2026-01-17T05:29:28.353546",
+      "fecha_actualizacion": "2026-01-17T05:29:46.638575",
+      "idiomas": []
+    },
+    {
+      "nombre": "Abogado Extranjería Especialistas Conseguir Nacionalidad",
+      "tipo": "despacho",
+      "telefono": [
+        "+34930508888"
+      ],
+      "email": null,
+      "web": "https://venturaextranjeria.com/",
+      "direccion": null,
+      "ciudad": "Barcelona",
+      "distrito": null,
+      "especialidades": [
+        "asilo",
+        "nacionalidad",
+        "visados"
+      ],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://venturaextranjeria.com/",
+      "fecha_extraccion": "2026-01-17T05:29:28.354360",
+      "fecha_actualizacion": "2026-01-17T05:29:46.631043",
+      "idiomas": []
+    },
+    {
+      "nombre": "Abogados extranjería Zaragoza",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": null,
+      "web": "https://aguadoabogados.com/abogados-en-zaragoza/extranjeria/",
+      "direccion": null,
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [
+        "permisos"
+      ],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://aguadoabogados.com/abogados-en-zaragoza/extranjeria/",
+      "fecha_extraccion": "2026-01-17T05:29:33.855662",
+      "fecha_actualizacion": "2026-01-17T05:29:46.628863"
+    },
+    {
+      "nombre": "ABOGADOS DE EXTRANJERÍA EN ZARAGOZA",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": null,
+      "web": "https://www.notivoliabogados.com/abogados-extranjeria-zaragoza/",
+      "direccion": null,
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [
+        "recursos",
+        "reagrupación",
+        "visados",
+        "arraigo",
+        "expulsiones",
+        "nacionalidad"
+      ],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://www.notivoliabogados.com/abogados-extranjeria-zaragoza/",
+      "fecha_extraccion": "2026-01-17T05:29:33.855828",
+      "fecha_actualizacion": "2026-01-17T05:29:46.630883",
+      "idiomas": []
+    },
+    {
+      "nombre": "Noelia Domínguez Urchaga",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": null,
+      "web": "https://noeliadominguez-abogada.es/",
+      "direccion": null,
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [
+        "reagrupación"
+      ],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://noeliadominguez-abogada.es/",
+      "fecha_extraccion": "2026-01-17T05:29:33.857530",
+      "fecha_actualizacion": "2026-01-17T05:29:46.637454",
+      "idiomas": []
+    },
+    {
+      "nombre": "abogado extranjeria zaragoza",
+      "tipo": "despacho",
+      "telefono": [
+        "807502019",
+        "+34691411131"
+      ],
+      "email": null,
+      "web": "http://www.extranjerossinpapeles.com/directorio/paginas/zaragoza.htm",
+      "direccion": "C/ Méndez Núñez 18, 1",
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "http://www.extranjerossinpapeles.com/directorio/paginas/zaragoza.htm",
+      "fecha_extraccion": "2026-01-17T05:29:38.858857",
+      "fecha_actualizacion": "2026-01-17T05:29:46.634217"
+    },
+    {
+      "nombre": "NJV Abogados de extranjería en Zaragoza 【976 22 99 63】",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": null,
+      "web": "https://www.abogadoextranjeriazaragoza.com/",
+      "direccion": null,
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://www.abogadoextranjeriazaragoza.com/",
+      "fecha_extraccion": "2026-01-17T05:29:38.859878",
+      "fecha_actualizacion": "2026-01-17T05:29:46.635998"
+    },
+    {
+      "nombre": "Los 10 abogados de Extranjería en Zaragoza más",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": null,
+      "web": "https://lexgoapp.com/abogados-extranjeria-zaragoza",
+      "direccion": null,
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [
+        "arraigo",
+        "nacionalidad",
+        "reagrupación",
+        "visados"
+      ],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://lexgoapp.com/abogados-extranjeria-zaragoza",
+      "fecha_extraccion": "2026-01-17T05:29:38.860381",
+      "fecha_actualizacion": "2026-01-17T05:29:46.637377"
+    },
+    {
+      "nombre": "Conócenos",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": null,
+      "web": "https://extranjeriaaldia.es/conocenos/",
+      "direccion": null,
+      "ciudad": "Madrid",
+      "distrito": null,
+      "especialidades": [],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://extranjeriaaldia.es/conocenos/",
+      "fecha_extraccion": "2026-01-17T05:29:38.860810",
+      "fecha_actualizacion": "2026-01-17T05:29:46.638497"
+    }
+  ]
+}

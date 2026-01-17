@@ -1,0 +1,358 @@
+{
+  "metadata": {
+    "fecha_actualizacion": "2026-01-17T05:30:52.290754",
+    "total_registros": 17,
+    "fuente": "consolidador_multiagente"
+  },
+  "registros": [
+    {
+      "nombre": "Abogado de Extranjería Palma de Mallorca",
+      "tipo": "despacho",
+      "telefono": [
+        "+34663572748"
+      ],
+      "email": "info@rasoyasociados.com",
+      "web": "https://www.rasoyasociados.com/abogado-extranjeria-palma/",
+      "direccion": "C/ Joan LLuis Estelrich 12, 1",
+      "ciudad": "Madrid",
+      "distrito": null,
+      "especialidades": [
+        "reagrupación",
+        "nacionalidad",
+        "visados"
+      ],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://www.rasoyasociados.com/abogado-extranjeria-palma/",
+      "fecha_extraccion": "2026-01-17T05:30:35.465863",
+      "fecha_actualizacion": "2026-01-17T05:30:52.287643",
+      "idiomas": []
+    },
+    {
+      "nombre": "Abogados Derecho de Extranjería en Palma",
+      "tipo": "despacho",
+      "telefono": [
+        "871804614",
+        "+34663938264"
+      ],
+      "email": "info@abogados50.com",
+      "web": "https://www.abogados50.com/derecho-de-extranjeria/",
+      "direccion": "C/ Parellades nº 12 A, 2",
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [
+        "nacionalidad"
+      ],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://www.abogados50.com/derecho-de-extranjeria/",
+      "fecha_extraccion": "2026-01-17T05:30:35.466964",
+      "fecha_actualizacion": "2026-01-17T05:30:52.286284",
+      "idiomas": []
+    },
+    {
+      "nombre": "Abogados de Extranjería y Nacionalidad en Palma",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": null,
+      "web": "https://www.elabogado.com/extranjeria-y-nacionalidad:palma-de-mallorca/",
+      "direccion": "Calle Can Puigdorfila 2, 2",
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [
+        "nacionalidad",
+        "recursos"
+      ],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://www.elabogado.com/extranjeria-y-nacionalidad:palma-de-mallorca/",
+      "fecha_extraccion": "2026-01-17T05:30:35.467323",
+      "fecha_actualizacion": "2026-01-17T05:30:52.284278",
+      "idiomas": []
+    },
+    {
+      "nombre": "Abogadas Olmos: Bufete de abogadas en Mallorca",
+      "tipo": "despacho",
+      "telefono": [
+        "+34971725238"
+      ],
+      "email": "secretaria@despachoolmos.com",
+      "web": "https://abogadasolmos.com/",
+      "direccion": "Calle Bisbe Perelló nº 1 -5 º",
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [
+        "nacionalidad"
+      ],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://abogadasolmos.com/",
+      "fecha_extraccion": "2026-01-17T05:30:35.467697",
+      "fecha_actualizacion": "2026-01-17T05:30:52.270692"
+    },
+    {
+      "nombre": "Derecho de extranjería",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": null,
+      "web": "https://lafuenteabogados.com/servicios-juridicos/derecho-de-extranjeria/",
+      "direccion": null,
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [
+        "reagrupación",
+        "visados"
+      ],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://lafuenteabogados.com/servicios-juridicos/derecho-de-extranjeria/",
+      "fecha_extraccion": "2026-01-17T05:30:35.468072",
+      "fecha_actualizacion": "2026-01-17T05:30:52.290073",
+      "idiomas": []
+    },
+    {
+      "nombre": "Contacto",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": "info@asesoresinternacional.com",
+      "web": "https://asesoresinternacional.com/contacto/",
+      "direccion": null,
+      "ciudad": "Madrid",
+      "distrito": null,
+      "especialidades": [
+        "nacionalidad"
+      ],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://asesoresinternacional.com/contacto/",
+      "fecha_extraccion": "2026-01-17T05:30:35.468188",
+      "fecha_actualizacion": "2026-01-17T05:30:52.287956",
+      "idiomas": []
+    },
+    {
+      "nombre": "Abogado Extranjería Especialistas Conseguir Nacionalidad",
+      "tipo": "despacho",
+      "telefono": [
+        "+34930508888"
+      ],
+      "email": null,
+      "web": "https://venturaextranjeria.com/",
+      "direccion": "Av. Ronda de Mar, 24",
+      "ciudad": "Barcelona",
+      "distrito": null,
+      "especialidades": [
+        "visados"
+      ],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://venturaextranjeria.com/",
+      "fecha_extraccion": "2026-01-17T05:30:35.468305",
+      "fecha_actualizacion": "2026-01-17T05:30:52.272544"
+    },
+    {
+      "nombre": "▷ Abogados Extranjería Palma de Mallorca",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": null,
+      "web": "https://www.abogadoextranjeriamallorca.com/",
+      "direccion": null,
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [
+        "nacionalidad",
+        "permisos"
+      ],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://www.abogadoextranjeriamallorca.com/",
+      "fecha_extraccion": "2026-01-17T05:30:35.468572",
+      "fecha_actualizacion": "2026-01-17T05:30:52.290183",
+      "idiomas": []
+    },
+    {
+      "nombre": "Abogados expertos en extranjería en Palma de Mallorca",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": null,
+      "web": "https://www.castellabogados.com/derecho-extranjeria/",
+      "direccion": null,
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [
+        "reagrupación",
+        "arraigo",
+        "nacionalidad",
+        "visados"
+      ],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://www.castellabogados.com/derecho-extranjeria/",
+      "fecha_extraccion": "2026-01-17T05:30:35.468618",
+      "fecha_actualizacion": "2026-01-17T05:30:52.282754",
+      "idiomas": []
+    },
+    {
+      "nombre": "Abogados de Extranjería en Palma de Mallorca",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": null,
+      "web": "https://quintanaasociados.es/",
+      "direccion": null,
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [
+        "nacionalidad",
+        "visados"
+      ],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://quintanaasociados.es/",
+      "fecha_extraccion": "2026-01-17T05:30:35.468663",
+      "fecha_actualizacion": "2026-01-17T05:30:52.282649",
+      "idiomas": []
+    },
+    {
+      "nombre": "Natalia Ríos – Extranjería y Nacionalidad Española, Servicios",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": null,
+      "web": "https://nataliarios.es/",
+      "direccion": "C/ Josep Anselm Clavé Nº8 Piso 6 Puerta 4   \n07002",
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [
+        "nacionalidad"
+      ],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://nataliarios.es/",
+      "fecha_extraccion": "2026-01-17T05:30:40.182616",
+      "fecha_actualizacion": "2026-01-17T05:30:52.278367"
+    },
+    {
+      "nombre": "Abogados",
+      "tipo": "despacho",
+      "telefono": [
+        "+34871955077"
+      ],
+      "email": "palma@demicco.es",
+      "web": "https://www.es.lawyers-auditors.com/abogados_inmigracion_espana.html",
+      "direccion": null,
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [
+        "visados"
+      ],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://www.es.lawyers-auditors.com/abogados_inmigracion_espana.html",
+      "fecha_extraccion": "2026-01-17T05:30:40.182747",
+      "fecha_actualizacion": "2026-01-17T05:30:52.282475"
+    },
+    {
+      "nombre": "Castell Abogados: Despacho de Abogados en Palma de",
+      "tipo": "despacho",
+      "telefono": [
+        "+34684450450",
+        "+34680464800"
+      ],
+      "email": "mar@castellabogados.com",
+      "web": "https://www.castellabogados.com/",
+      "direccion": null,
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [
+        "arraigo",
+        "recursos",
+        "visados"
+      ],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://www.castellabogados.com/",
+      "fecha_extraccion": "2026-01-17T05:30:40.184555",
+      "fecha_actualizacion": "2026-01-17T05:30:52.287880",
+      "idiomas": []
+    },
+    {
+      "nombre": "Izeta Abogados",
+      "tipo": "despacho",
+      "telefono": [
+        "+34655316904"
+      ],
+      "email": "info@izetaabogados.com",
+      "web": "https://www.izetaabogados.com/",
+      "direccion": "Calle Velázquez, 2",
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [
+        "asilo",
+        "nacionalidad",
+        "visados",
+        "arraigo",
+        "reagrupación"
+      ],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://www.izetaabogados.com/",
+      "fecha_extraccion": "2026-01-17T05:30:40.185424",
+      "fecha_actualizacion": "2026-01-17T05:30:52.290267",
+      "idiomas": []
+    },
+    {
+      "nombre": "SERVICIOS",
+      "tipo": "despacho",
+      "telefono": [
+        "+34611190309"
+      ],
+      "email": "info@abogadoextranjeriapalma.com",
+      "web": "https://www.abogadoextranjeriapalma.com/servicios/",
+      "direccion": "C/ Joan LLuis Estelrich 12, 07003",
+      "ciudad": "Madrid",
+      "distrito": null,
+      "especialidades": [
+        "nacionalidad"
+      ],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://www.abogadoextranjeriapalma.com/servicios/",
+      "fecha_extraccion": "2026-01-17T05:30:44.681688",
+      "fecha_actualizacion": "2026-01-17T05:30:52.286181"
+    },
+    {
+      "nombre": "Abogados de Extranjería en Baleares",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": null,
+      "web": "https://lexgoapp.com/abogados-extranjeria-baleares",
+      "direccion": null,
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [
+        "visados"
+      ],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://lexgoapp.com/abogados-extranjeria-baleares",
+      "fecha_extraccion": "2026-01-17T05:30:44.682888",
+      "fecha_actualizacion": "2026-01-17T05:30:52.287541"
+    },
+    {
+      "nombre": "Orientación jurídica en materia de extranjería y nacionalidad",
+      "tipo": "despacho",
+      "telefono": [
+        "+34934961880"
+      ],
+      "email": null,
+      "web": "https://www.icab.es/es/servicios-y-tramites-colegiales/tramites-colegiales/tramite/Orientacion-juridica-en-materia-de-extranjeria-y-nacionalidad/",
+      "direccion": "c/ Mallorca, 283  \n08037",
+      "ciudad": "Barcelona",
+      "distrito": null,
+      "especialidades": [],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://www.icab.es/es/servicios-y-tramites-colegiales/tramites-colegiales/tramite/Orientacion-juridica-en-materia-de-extranjeria-y-nacionalidad/",
+      "fecha_extraccion": "2026-01-17T05:30:44.684336",
+      "fecha_actualizacion": "2026-01-17T05:30:52.289898"
+    }
+  ]
+}

@@ -1,0 +1,861 @@
+{
+  "metadata": {
+    "fecha_actualizacion": "2026-01-17T05:24:24.961930",
+    "total_registros": 46,
+    "fuente": "consolidador_multiagente"
+  },
+  "registros": [
+    {
+      "nombre": "Barcelona Extranjería",
+      "tipo": "despacho",
+      "telefono": [
+        "93 272 29 28"
+      ],
+      "email": "info@barcelonaextranjeria.com",
+      "web": "https://www.barcelonaextranjeria.com",
+      "direccion": "c/ Valencia, 243",
+      "ciudad": "Barcelona",
+      "distrito": null,
+      "especialidades": [
+        "nacionalidad",
+        "visados",
+        "extranjería",
+        "recursos"
+      ],
+      "valoracion": null,
+      "idiomas": [],
+      "fecha_actualizacion": "2026-01-17T05:24:24.936003"
+    },
+    {
+      "nombre": "Immigration Spain",
+      "tipo": "despacho",
+      "telefono": [
+        "+34 93 631 51 39"
+      ],
+      "email": "info@immigrationspain.es",
+      "web": "https://www.immigrationspain.es",
+      "direccion": "Rambla de Catalunya 124, 1º 2ª, 08008 Barcelona",
+      "ciudad": "Barcelona",
+      "distrito": "Eixample",
+      "especialidades": [
+        "extranjería",
+        "inmigración"
+      ],
+      "valoracion": null
+    },
+    {
+      "nombre": "Marín Fonseca Abogados",
+      "tipo": "despacho",
+      "telefono": [
+        "93 410 87 54",
+        "93 410 62 43"
+      ],
+      "email": "bufete@marinfonseca.com",
+      "web": "https://www.marinfonseca.com",
+      "direccion": "Pl. Francesc Macià 8-9, 3º 5ª, 08029 Barcelona",
+      "ciudad": "Barcelona",
+      "distrito": "Les Corts",
+      "especialidades": [
+        "extranjería",
+        "internacional"
+      ],
+      "valoracion": null
+    },
+    {
+      "nombre": "Abogados Extranjería Barcelona",
+      "tipo": "despacho",
+      "telefono": [
+        "+34 932 01 57 27",
+        "+34 666 44 33 22"
+      ],
+      "email": "info@abogadosextranjeriabarcelona.com",
+      "web": "https://abogadosextranjeriabarcelona.com",
+      "direccion": "Av. Diagonal 449, 2º, 08039 Barcelona",
+      "ciudad": "Barcelona",
+      "distrito": "Eixample",
+      "especialidades": [
+        "extranjería"
+      ],
+      "valoracion": null,
+      "fecha_actualizacion": "2026-01-17T05:16:48.235877"
+    },
+    {
+      "nombre": "Abogados en Extranjería",
+      "tipo": "despacho",
+      "telefono": [
+        "+34 93 141 86 86"
+      ],
+      "email": "info@abogadosenextranjeria.com",
+      "web": "https://www.abogadosenextranjeria.com",
+      "direccion": "Carrer de Muntaner 25, 08917 Barcelona",
+      "ciudad": "Barcelona",
+      "distrito": "Eixample",
+      "especialidades": [
+        "extranjería"
+      ],
+      "valoracion": null
+    },
+    {
+      "nombre": "Bufete Hernández-Lin",
+      "tipo": "despacho",
+      "telefono": [
+        "+34 675 983 752"
+      ],
+      "email": "alex@bufetehernandezlin.es",
+      "web": "https://abogadoextranjeriabarcelona.net",
+      "direccion": "Calle del Comte Borrell 241, 08029 Barcelona",
+      "ciudad": "Barcelona",
+      "distrito": "Eixample",
+      "especialidades": [
+        "extranjería"
+      ],
+      "valoracion": null
+    },
+    {
+      "nombre": "Barclier Abogados",
+      "tipo": "despacho",
+      "telefono": [
+        "+34 651 03 04 31"
+      ],
+      "email": null,
+      "web": "https://barclier.com",
+      "direccion": null,
+      "ciudad": "Barcelona",
+      "distrito": null,
+      "especialidades": [
+        "visados",
+        "extranjería",
+        "arraigo",
+        "nacionalidad"
+      ],
+      "valoracion": null,
+      "idiomas": [],
+      "fecha_actualizacion": "2026-01-17T05:24:24.935149"
+    },
+    {
+      "nombre": "abogados especialistas en derecho administrativo y extranjeria",
+      "tipo": "despacho",
+      "telefono": [
+        "+34679766931"
+      ],
+      "email": null,
+      "web": "https://nnlegalgroup.com/",
+      "direccion": null,
+      "ciudad": "Barcelona",
+      "distrito": null,
+      "especialidades": [
+        "nacionalidad",
+        "permisos"
+      ],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://nnlegalgroup.com/",
+      "fecha_extraccion": "2026-01-17T05:23:06.951516",
+      "fecha_actualizacion": "2026-01-17T05:24:24.936815",
+      "idiomas": []
+    },
+    {
+      "nombre": "Abogado Extranjería Barcelona",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": "info@asabogada.com",
+      "web": "https://abogadoextranjeriabarcelona.pro/",
+      "direccion": null,
+      "ciudad": "Barcelona",
+      "distrito": null,
+      "especialidades": [
+        "nacionalidad",
+        "visados"
+      ],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://abogadoextranjeriabarcelona.pro/",
+      "fecha_extraccion": "2026-01-17T05:23:06.952752",
+      "fecha_actualizacion": "2026-01-17T05:24:24.923713",
+      "idiomas": []
+    },
+    {
+      "nombre": "Abogado Rafael Serrano: Abogados expertos en ámbito",
+      "tipo": "despacho",
+      "telefono": [
+        "+34610755272"
+      ],
+      "email": null,
+      "web": "https://www.abogadorafaelserrano.com/",
+      "direccion": "Calle Llobregat, 62",
+      "ciudad": "Madrid",
+      "distrito": null,
+      "especialidades": [
+        "arraigo",
+        "reagrupación"
+      ],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://www.abogadorafaelserrano.com/",
+      "fecha_extraccion": "2026-01-17T05:23:06.953113",
+      "fecha_actualizacion": "2026-01-17T05:24:24.927388",
+      "idiomas": []
+    },
+    {
+      "nombre": "Abogados Extranjeria",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": null,
+      "web": "https://belmontecrespoabogados.com/abogados-extranjeria/",
+      "direccion": "C/ Córcega nº 301",
+      "ciudad": "Madrid",
+      "distrito": null,
+      "especialidades": [],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://belmontecrespoabogados.com/abogados-extranjeria/",
+      "fecha_extraccion": "2026-01-17T05:23:06.953475",
+      "fecha_actualizacion": "2026-01-17T05:24:24.941234",
+      "idiomas": []
+    },
+    {
+      "nombre": "Abogados de extranjería en Barcelona",
+      "tipo": "despacho",
+      "telefono": [
+        "+34938589968"
+      ],
+      "email": null,
+      "web": "https://www.catala-reinon.es/abogados-extranjeria-barcelona",
+      "direccion": "Av. Diagonal, 449",
+      "ciudad": "Madrid",
+      "distrito": null,
+      "especialidades": [
+        "nacionalidad",
+        "visados",
+        "arraigo",
+        "permisos"
+      ],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://www.catala-reinon.es/abogados-extranjeria-barcelona",
+      "fecha_extraccion": "2026-01-17T05:23:06.953837",
+      "fecha_actualizacion": "2026-01-17T05:24:24.924215",
+      "idiomas": []
+    },
+    {
+      "nombre": "Abogado de Extranjería en Barcelona",
+      "tipo": "despacho",
+      "telefono": [
+        "+34934875372"
+      ],
+      "email": "infodespacho@antoniosegura.es",
+      "web": "https://segura-abogados.com/areas-de-practicas/abogados-extranjeria/",
+      "direccion": "Calle Trafalgar, 6",
+      "ciudad": "Barcelona",
+      "distrito": null,
+      "especialidades": [
+        "recursos",
+        "permisos",
+        "arraigo",
+        "nacionalidad"
+      ],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://segura-abogados.com/areas-de-practicas/abogados-extranjeria/",
+      "fecha_extraccion": "2026-01-17T05:23:06.954170",
+      "fecha_actualizacion": "2026-01-17T05:24:24.935440",
+      "idiomas": []
+    },
+    {
+      "nombre": "Abogado Extranjería Especialistas Conseguir Nacionalidad",
+      "tipo": "despacho",
+      "telefono": [
+        "+34930508888"
+      ],
+      "email": null,
+      "web": "https://venturaextranjeria.com/",
+      "direccion": "Av. Ronda de Mar, 24",
+      "ciudad": "Barcelona",
+      "distrito": null,
+      "especialidades": [
+        "asilo",
+        "nacionalidad",
+        "visados"
+      ],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://venturaextranjeria.com/",
+      "fecha_extraccion": "2026-01-17T05:23:06.954608",
+      "fecha_actualizacion": "2026-01-17T05:24:24.928361",
+      "idiomas": []
+    },
+    {
+      "nombre": "Extranjeristas",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": null,
+      "web": "https://www.extranjeristas.es/",
+      "direccion": null,
+      "ciudad": "Barcelona",
+      "distrito": null,
+      "especialidades": [
+        "asilo",
+        "nacionalidad",
+        "arraigo"
+      ],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://www.extranjeristas.es/",
+      "fecha_extraccion": "2026-01-17T05:23:06.954862",
+      "fecha_actualizacion": "2026-01-17T05:24:24.928547",
+      "idiomas": []
+    },
+    {
+      "nombre": "Legalcity, Abogados para extranjeros",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": null,
+      "web": "https://legalcity.es/",
+      "direccion": null,
+      "ciudad": "Barcelona",
+      "distrito": null,
+      "especialidades": [
+        "nacionalidad"
+      ],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://legalcity.es/",
+      "fecha_extraccion": "2026-01-17T05:23:06.955103",
+      "fecha_actualizacion": "2026-01-17T05:24:24.927227",
+      "idiomas": []
+    },
+    {
+      "nombre": "Sobre nosotros",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": null,
+      "web": "https://abogadosextranjeriabarcelona.com/sobre-nosotros",
+      "direccion": null,
+      "ciudad": "Barcelona",
+      "distrito": null,
+      "especialidades": [
+        "nacionalidad",
+        "visados",
+        "arraigo",
+        "reagrupación"
+      ],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://abogadosextranjeriabarcelona.com/sobre-nosotros",
+      "fecha_extraccion": "2026-01-17T05:23:11.467267",
+      "fecha_actualizacion": "2026-01-17T05:24:24.925367",
+      "idiomas": []
+    },
+    {
+      "nombre": "Sobre nosotros: Abogados de inmigración en España",
+      "tipo": "despacho",
+      "telefono": [
+        "+34930467647"
+      ],
+      "email": "hola@lexborders.com",
+      "web": "https://lexborders.com/sobre-nosotros/",
+      "direccion": null,
+      "ciudad": "Barcelona",
+      "distrito": null,
+      "especialidades": [
+        "nacionalidad",
+        "reagrupación",
+        "recursos"
+      ],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://lexborders.com/sobre-nosotros/",
+      "fecha_extraccion": "2026-01-17T05:23:11.467917",
+      "fecha_actualizacion": "2026-01-17T05:24:24.925636",
+      "idiomas": []
+    },
+    {
+      "nombre": "Global Legal Consultancy",
+      "tipo": "despacho",
+      "telefono": [
+        "+34623211520"
+      ],
+      "email": null,
+      "web": "https://globallegalconsultancy.com/",
+      "direccion": null,
+      "ciudad": "Barcelona",
+      "distrito": null,
+      "especialidades": [
+        "nacionalidad",
+        "visados",
+        "reagrupación",
+        "permisos"
+      ],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://globallegalconsultancy.com/",
+      "fecha_extraccion": "2026-01-17T05:23:11.468578",
+      "fecha_actualizacion": "2026-01-17T05:24:24.940542",
+      "idiomas": []
+    },
+    {
+      "nombre": "Sobre nuestras expertas en inmigración en España",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": null,
+      "web": "https://immigrate-spain.com/es/sobre-nosotros/",
+      "direccion": null,
+      "ciudad": "Barcelona",
+      "distrito": null,
+      "especialidades": [],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://immigrate-spain.com/es/sobre-nosotros/",
+      "fecha_extraccion": "2026-01-17T05:23:11.469210",
+      "fecha_actualizacion": "2026-01-17T05:24:24.926018",
+      "idiomas": []
+    },
+    {
+      "nombre": "Abogados de Inmigración y Extranjería",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": null,
+      "web": "https://www.agmabogados.com/inmigracion/",
+      "direccion": null,
+      "ciudad": "Madrid",
+      "distrito": null,
+      "especialidades": [],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://www.agmabogados.com/inmigracion/",
+      "fecha_extraccion": "2026-01-17T05:23:11.470513",
+      "fecha_actualizacion": "2026-01-17T05:24:24.928156",
+      "idiomas": []
+    },
+    {
+      "nombre": "Segura Abogados: Antonio Segura",
+      "tipo": "despacho",
+      "telefono": [
+        "+34680483471",
+        "+34934875372"
+      ],
+      "email": null,
+      "web": "https://segura-abogados.com/",
+      "direccion": "Calle Trafalgar, 6",
+      "ciudad": "Barcelona",
+      "distrito": null,
+      "especialidades": [
+        "nacionalidad"
+      ],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://segura-abogados.com/",
+      "fecha_extraccion": "2026-01-17T05:23:11.472595",
+      "fecha_actualizacion": "2026-01-17T05:24:24.927545",
+      "idiomas": []
+    },
+    {
+      "nombre": "S&S despacho Abogados",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": null,
+      "web": "https://www.sysdespacho.es/",
+      "direccion": null,
+      "ciudad": "Barcelona",
+      "distrito": null,
+      "especialidades": [
+        "recursos",
+        "nacionalidad",
+        "arraigo",
+        "reagrupación"
+      ],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://www.sysdespacho.es/",
+      "fecha_extraccion": "2026-01-17T05:23:15.561718",
+      "fecha_actualizacion": "2026-01-17T05:24:24.928003",
+      "idiomas": []
+    },
+    {
+      "nombre": "Fraga & Abogados: Despacho especializado en Derecho de",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": "info@fragaabogados.com",
+      "web": "https://www.fragaabogados.com/",
+      "direccion": null,
+      "ciudad": "Barcelona",
+      "distrito": null,
+      "especialidades": [
+        "nacionalidad"
+      ],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://www.fragaabogados.com/",
+      "fecha_extraccion": "2026-01-17T05:23:15.567385",
+      "fecha_actualizacion": "2026-01-17T05:24:24.936632",
+      "idiomas": []
+    },
+    {
+      "nombre": "Barcelona, ​​España Oficina de Derecho de Inmigración",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": null,
+      "web": "https://www.eastbayvisalaw.com/es/oficinas-de-abogados-de-inmigraci%C3%B3n/barcelona-%E2%80%8B%E2%80%8Bespa%C3%B1a-oficina-de-derecho-de-inmigraci%C3%B3n-de-ee-uu",
+      "direccion": null,
+      "ciudad": "Barcelona",
+      "distrito": null,
+      "especialidades": [
+        "visados",
+        "recursos"
+      ],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://www.eastbayvisalaw.com/es/oficinas-de-abogados-de-inmigraci%C3%B3n/barcelona-%E2%80%8B%E2%80%8Bespa%C3%B1a-oficina-de-derecho-de-inmigraci%C3%B3n-de-ee-uu",
+      "fecha_extraccion": "2026-01-17T05:23:15.572250",
+      "fecha_actualizacion": "2026-01-17T05:24:24.935675",
+      "idiomas": []
+    },
+    {
+      "nombre": "Despacho de Abogados especialista en Extranjeria y Familia",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": null,
+      "web": "https://www.fajardoabogados.es/",
+      "direccion": null,
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [],
+      "valoracion": null,
+      "fuente": "firecrawl_search",
+      "url_origen": "https://www.fajardoabogados.es/",
+      "fecha_extraccion": "2026-01-17T05:23:17.143712",
+      "fecha_actualizacion": "2026-01-17T05:24:24.936982",
+      "idiomas": []
+    },
+    {
+      "nombre": "ABOGADO EXTRANJERIA MANRESA Y BARCELONA",
+      "tipo": "despacho",
+      "telefono": [
+        "+34937372845"
+      ],
+      "email": "info@somestrangeria.es",
+      "web": "https://www.somestrangeria.es/",
+      "direccion": null,
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [],
+      "valoracion": null,
+      "fuente": "firecrawl_search",
+      "url_origen": "https://www.somestrangeria.es/",
+      "fecha_extraccion": "2026-01-17T05:23:17.143761",
+      "fecha_actualizacion": "2026-01-17T05:24:24.936464",
+      "idiomas": []
+    },
+    {
+      "nombre": "Nacionalidad española para extranjeros",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": null,
+      "web": "https://pageshernandezabogados.com/nacionalidad-extranjeria/nacionalidad-espanola/",
+      "direccion": null,
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [],
+      "valoracion": null,
+      "fuente": "firecrawl_search",
+      "url_origen": "https://pageshernandezabogados.com/nacionalidad-extranjeria/nacionalidad-espanola/",
+      "fecha_extraccion": "2026-01-17T05:23:17.143784",
+      "fecha_actualizacion": "2026-01-17T05:24:24.937134",
+      "idiomas": []
+    },
+    {
+      "nombre": "Abogados de Extranjería en Barcelona",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": null,
+      "web": "https://lexgoapp.com/abogados-extranjeria-barcelona",
+      "direccion": null,
+      "ciudad": "Barcelona",
+      "distrito": null,
+      "especialidades": [],
+      "valoracion": null,
+      "fuente": "firecrawl_search",
+      "url_origen": "https://lexgoapp.com/abogados-extranjeria-barcelona",
+      "fecha_extraccion": "2026-01-17T05:23:17.143800",
+      "fecha_actualizacion": "2026-01-17T05:24:24.949766",
+      "idiomas": []
+    },
+    {
+      "nombre": "Despacho de abogados en Barcelona",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": null,
+      "web": "https://duranyduranabogados.com/despacho/abogados-barcelona/",
+      "direccion": null,
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [],
+      "valoracion": null,
+      "fuente": "firecrawl_search",
+      "url_origen": "https://duranyduranabogados.com/despacho/abogados-barcelona/",
+      "fecha_extraccion": "2026-01-17T05:23:17.143818",
+      "fecha_actualizacion": "2026-01-17T05:24:24.937437",
+      "idiomas": []
+    },
+    {
+      "nombre": "Tu Aliado Legal de Confianza en Inmigración y Defensa",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": null,
+      "web": "https://josephlackey.com/es/sobre-nosotros/",
+      "direccion": null,
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [],
+      "valoracion": null,
+      "fuente": "firecrawl_search",
+      "url_origen": "https://josephlackey.com/es/sobre-nosotros/",
+      "fecha_extraccion": "2026-01-17T05:23:19.037848",
+      "fecha_actualizacion": "2026-01-17T05:24:24.940875",
+      "idiomas": []
+    },
+    {
+      "nombre": "Bufete de Abogados Internacionales en Barcelona",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": null,
+      "web": "https://intlaw.eu/es/digital-nomad-no-residentes/",
+      "direccion": null,
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [],
+      "valoracion": null,
+      "fuente": "firecrawl_search",
+      "url_origen": "https://intlaw.eu/es/digital-nomad-no-residentes/",
+      "fecha_extraccion": "2026-01-17T05:23:19.037993",
+      "fecha_actualizacion": "2026-01-17T05:24:24.937654",
+      "idiomas": []
+    },
+    {
+      "nombre": "Contacto",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": null,
+      "web": "https://legalservicesincorporated.com/es/contacto/",
+      "direccion": null,
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [],
+      "valoracion": null,
+      "fuente": "firecrawl_search",
+      "url_origen": "https://legalservicesincorporated.com/es/contacto/",
+      "fecha_extraccion": "2026-01-17T05:23:19.038027",
+      "fecha_actualizacion": "2026-01-17T05:23:49.946354"
+    },
+    {
+      "nombre": "Abogados de extranjería especialistas en residencia y",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": null,
+      "web": "https://www.abogadoamigo.com/abogados-extranjeria/",
+      "direccion": null,
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [],
+      "valoracion": null,
+      "fuente": "firecrawl_search",
+      "url_origen": "https://www.abogadoamigo.com/abogados-extranjeria/",
+      "fecha_extraccion": "2026-01-17T05:23:19.038084",
+      "fecha_actualizacion": "2026-01-17T05:24:24.941084",
+      "idiomas": []
+    },
+    {
+      "nombre": "Equipo Jurídico/Administrativo:Abogado Desmond P.",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": null,
+      "web": "https://www.fitzgeraldlawcompany.com/espanol/nuestro-equipo/nuestro-equipo/",
+      "direccion": null,
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [],
+      "valoracion": null,
+      "fuente": "firecrawl_search",
+      "url_origen": "https://www.fitzgeraldlawcompany.com/espanol/nuestro-equipo/nuestro-equipo/",
+      "fecha_extraccion": "2026-01-17T05:23:19.038110",
+      "fecha_actualizacion": "2026-01-17T05:23:49.953214"
+    },
+    {
+      "nombre": "ABOGADOS EXPERTOS EN NACIONALIDAD, INMIGRACIÓN",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": null,
+      "web": "https://cruzabogadosygestores.com/",
+      "direccion": null,
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [],
+      "valoracion": null,
+      "fuente": "firecrawl_search",
+      "url_origen": "https://cruzabogadosygestores.com/",
+      "fecha_extraccion": "2026-01-17T05:23:19.038160",
+      "fecha_actualizacion": "2026-01-17T05:24:24.950068",
+      "idiomas": []
+    },
+    {
+      "nombre": "Abogados de inmigración online: servicios legales de",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": "info@venturaextranjeria.com",
+      "web": "https://venturaextranjeria.com/abogados-de-inmigracion-online-servicios-legales-de-extranjeria/",
+      "direccion": null,
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [],
+      "valoracion": null,
+      "fuente": "firecrawl_search",
+      "url_origen": "https://venturaextranjeria.com/abogados-de-inmigracion-online-servicios-legales-de-extranjeria/",
+      "fecha_extraccion": "2026-01-17T05:23:20.837830",
+      "fecha_actualizacion": "2026-01-17T05:23:49.960186"
+    },
+    {
+      "nombre": "Abogado de Extranjería en España",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": "info@lusalegal.es",
+      "web": "https://lusalegal.es/es/abogado-inmigracion-espana/",
+      "direccion": null,
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [],
+      "valoracion": null,
+      "fuente": "firecrawl_search",
+      "url_origen": "https://lusalegal.es/es/abogado-inmigracion-espana/",
+      "fecha_extraccion": "2026-01-17T05:23:20.837868",
+      "fecha_actualizacion": "2026-01-17T05:23:49.963950"
+    },
+    {
+      "nombre": "Contacto",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": "info@huglegal.com",
+      "web": "https://www.huglegal.com/contacto/",
+      "direccion": null,
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [],
+      "valoracion": null,
+      "fuente": "firecrawl_search",
+      "url_origen": "https://www.huglegal.com/contacto/",
+      "fecha_extraccion": "2026-01-17T05:23:20.837910",
+      "fecha_actualizacion": "2026-01-17T05:23:49.966631"
+    },
+    {
+      "nombre": "Abogada de Extranjería",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": null,
+      "web": "https://abogadaextranjeria.net/",
+      "direccion": null,
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [],
+      "valoracion": null,
+      "fuente": "firecrawl_search",
+      "url_origen": "https://abogadaextranjeria.net/",
+      "fecha_extraccion": "2026-01-17T05:23:20.837945",
+      "fecha_actualizacion": "2026-01-17T05:23:49.969738"
+    },
+    {
+      "nombre": "Abogados de Extranjería",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": null,
+      "web": "https://salasmirallesabogados.com/abogados-de-extranjeria/",
+      "direccion": null,
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [],
+      "valoracion": null,
+      "fuente": "firecrawl_search",
+      "url_origen": "https://salasmirallesabogados.com/abogados-de-extranjeria/",
+      "fecha_extraccion": "2026-01-17T05:23:20.837964",
+      "fecha_actualizacion": "2026-01-17T05:23:49.973099"
+    },
+    {
+      "nombre": "Products",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": null,
+      "web": "https://orlandoochoaabogados.com/products/",
+      "direccion": null,
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [],
+      "valoracion": null,
+      "fuente": "firecrawl_search",
+      "url_origen": "https://orlandoochoaabogados.com/products/",
+      "fecha_extraccion": "2026-01-17T05:23:20.837982",
+      "fecha_actualizacion": "2026-01-17T05:23:49.976749"
+    },
+    {
+      "nombre": "ESPAÑA INMIGRACIÓN ABOGADOS",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": null,
+      "web": "https://espanainmigracion.com/",
+      "direccion": null,
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [],
+      "valoracion": null,
+      "fuente": "firecrawl_search",
+      "url_origen": "https://espanainmigracion.com/",
+      "fecha_extraccion": "2026-01-17T05:23:20.838002",
+      "fecha_actualizacion": "2026-01-17T05:23:49.980418"
+    },
+    {
+      "nombre": "Abogados Internacionales Derecho de extranjería",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": null,
+      "web": "https://www.giambronelaw.es/site/servicios-para-personas-fisicas/derecho-de-inmigracion/",
+      "direccion": null,
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [],
+      "valoracion": null,
+      "fuente": "firecrawl_search",
+      "url_origen": "https://www.giambronelaw.es/site/servicios-para-personas-fisicas/derecho-de-inmigracion/",
+      "fecha_extraccion": "2026-01-17T05:23:20.838036",
+      "fecha_actualizacion": "2026-01-17T05:23:49.984285"
+    },
+    {
+      "nombre": "Seguros y Extranjeria: Pagina de inicio",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": null,
+      "web": "https://segurosyextranjeria.com/",
+      "direccion": null,
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [],
+      "valoracion": null,
+      "fuente": "firecrawl_search",
+      "url_origen": "https://segurosyextranjeria.com/",
+      "fecha_extraccion": "2026-01-17T05:23:55.492508",
+      "fecha_actualizacion": "2026-01-17T05:24:24.949079"
+    },
+    {
+      "nombre": "AGM Abogados: Bufete de abogados en Barcelona y Madrid",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": null,
+      "web": "https://www.agmabogados.com/",
+      "direccion": null,
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [],
+      "valoracion": null,
+      "fuente": "firecrawl_search",
+      "url_origen": "https://www.agmabogados.com/",
+      "fecha_extraccion": "2026-01-17T05:23:55.492558",
+      "fecha_actualizacion": "2026-01-17T05:24:24.961149"
+    }
+  ]
+}

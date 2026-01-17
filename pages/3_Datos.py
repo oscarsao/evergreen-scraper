@@ -223,6 +223,14 @@ def detectar_grupos(registros: list) -> dict:
 with st.sidebar:
     st.header("⚙️ Configuración")
     
+    # Verificar si hay datos optimizados
+    optimizado_path = Path("data/registros_optimizados.json")
+    tiene_optimizados = optimizado_path.exists()
+    
+    if tiene_optimizados:
+        st.success("✨ Datos optimizados disponibles")
+        st.caption("Usando registros agrupados por dominio web")
+    
     ciudades = listar_ciudades()
     if not ciudades:
         st.warning("No hay datos cargados")
@@ -261,24 +269,60 @@ with st.sidebar:
 
 
 # === CARGAR DATOS ===
-if ciudad_sel == "Todas":
-    registros = []
-    for ciudad in ciudades:
-        data = cargar_datos_ciudad(ciudad)
-        for r in data.get("registros", []):
-            r["_ciudad"] = ciudad
-            r["_idx_original"] = len(registros)
-            registros.append(r)
-else:
-    data = cargar_datos_ciudad(ciudad_sel)
-    registros = data.get("registros", [])
-    for i, r in enumerate(registros):
-        r["_ciudad"] = ciudad_sel
-        r["_idx_original"] = i
+# Prioridad: usar datos optimizados si existen
+optimizado_path = Path("data/registros_optimizados.json")
+usando_optimizados = optimizado_path.exists()
+
+if usando_optimizados and ciudad_sel == "Todas":
+    # Cargar datos optimizados
+    try:
+        with open(optimizado_path, "r", encoding="utf-8") as f:
+            data_opt = json.load(f)
+        registros = data_opt.get("registros", [])
+        
+        # Procesar ciudades para cada registro
+        for i, r in enumerate(registros):
+            ciudades_lista = r.get("ciudades", [])
+            if not ciudades_lista and r.get("ciudad"):
+                ciudades_lista = [r["ciudad"]]
+            r["_ciudades_lista"] = ciudades_lista
+            r["_ciudad"] = ciudades_lista[0] if ciudades_lista else "Sin ciudad"
+            r["_idx_original"] = i
+            r["_es_optimizado"] = True
+    except:
+        usando_optimizados = False
+
+if not usando_optimizados or ciudad_sel != "Todas":
+    # Cargar datos tradicionales por ciudad
+    if ciudad_sel == "Todas":
+        registros = []
+        for ciudad in ciudades:
+            data = cargar_datos_ciudad(ciudad)
+            for r in data.get("registros", []):
+                r["_ciudad"] = ciudad
+                r["_ciudades_lista"] = [ciudad]
+                r["_idx_original"] = len(registros)
+                registros.append(r)
+    else:
+        data = cargar_datos_ciudad(ciudad_sel)
+        registros = data.get("registros", [])
+        for i, r in enumerate(registros):
+            r["_ciudad"] = ciudad_sel
+            if "ciudades" not in r:
+                r["_ciudades_lista"] = [ciudad_sel]
+            else:
+                r["_ciudades_lista"] = r.get("ciudades", [])
+            r["_idx_original"] = i
 
 # Aplicar filtros
 registros_filtrados = []
 for r in registros:
+    # Filtro por ciudad (si no es "Todas")
+    if ciudad_sel != "Todas":
+        ciudades_r = r.get("_ciudades_lista", [r.get("_ciudad", "")] if r.get("_ciudad") else [])
+        if ciudad_sel not in ciudades_r:
+            continue
+    
     # Filtro tipo
     tipo = r.get("tipo", "despacho")
     if filtro_tipo and tipo not in filtro_tipo:
@@ -357,26 +401,47 @@ with tab1:
             
             fecha = r.get("fecha_actualizacion", "")[:16] if r.get("fecha_actualizacion") else ""
             
+            # Mostrar ciudades (múltiples si existen)
+            ciudades_display = r.get("_ciudades_lista", [r.get("_ciudad", "")] if r.get("_ciudad") else [])
+            if len(ciudades_display) > 1:
+                ciudad_str = f"{ciudades_display[0]} +{len(ciudades_display)-1}"
+            else:
+                ciudad_str = ciudades_display[0] if ciudades_display else ""
+            
             tabla_data.append({
                 "Nombre": r.get("nombre", "")[:50],
                 "Tipo": r.get("tipo", "despacho"),
-                "Ciudad": r.get("_ciudad", ""),
+                "Ciudad": ciudad_str,
                 "Teléfono": tel_str[:30],
                 "Email": (r.get("email") or "")[:30],
                 "Web": extraer_dominio(r.get("web", ""))[:25],
                 "Actualizado": fecha,
-                "_idx": r.get("_idx_original", 0)
+                "_idx": r.get("_idx_original", 0),
+                "_ciudades_lista": ciudades_display  # Guardar para tooltip
             })
         
         df = pd.DataFrame(tabla_data)
         
-        # Mostrar tabla
+        # Mostrar tabla con tooltip para ciudades múltiples
+        df_display = df[["Nombre", "Tipo", "Ciudad", "Teléfono", "Email", "Web", "Actualizado"]].copy()
+        
+        # Agregar tooltip con todas las ciudades si hay múltiples
+        if "_ciudades_lista" in df.columns:
+            df_display["Ciudad_Tooltip"] = df["_ciudades_lista"].apply(
+                lambda x: ", ".join(x) if isinstance(x, list) and len(x) > 1 else ""
+            )
+        
         st.dataframe(
-            df[["Nombre", "Tipo", "Ciudad", "Teléfono", "Email", "Web", "Actualizado"]],
+            df_display[["Nombre", "Tipo", "Ciudad", "Teléfono", "Email", "Web", "Actualizado"]],
             use_container_width=True,
             hide_index=True,
             height=500
         )
+        
+        # Mostrar nota sobre ciudades múltiples
+        registros_multi_ciudad = sum(1 for r in registros_filtrados if len(r.get("_ciudades_lista", [])) > 1)
+        if registros_multi_ciudad > 0:
+            st.caption(f"💡 {registros_multi_ciudad} registros tienen múltiples ciudades. Muestra como 'Ciudad1 +N'")
         
         # Exportar
         col1, col2 = st.columns([3, 1])
@@ -433,7 +498,13 @@ with tab2:
             with col_info:
                 nombre = r.get("nombre", "Sin nombre")[:45]
                 tipo = r.get("tipo", "despacho")
-                ciudad = r.get("_ciudad", "")
+                
+                # Mostrar ciudades (múltiples si existen)
+                ciudades_display = r.get("_ciudades_lista", [r.get("_ciudad", "")] if r.get("_ciudad") else [])
+                if len(ciudades_display) > 1:
+                    ciudad_str = f"{ciudades_display[0]} +{len(ciudades_display)-1}"
+                else:
+                    ciudad_str = ciudades_display[0] if ciudades_display else ""
                 
                 # Indicadores
                 indicadores = []
@@ -443,8 +514,10 @@ with tab2:
                     indicadores.append("📧")
                 if r.get("web"):
                     indicadores.append("🌐")
+                if len(ciudades_display) > 1:
+                    indicadores.append("🏙️")  # Múltiples ciudades
                 
-                st.write(f"**{nombre}** | {tipo} | {ciudad} {' '.join(indicadores)}")
+                st.write(f"**{nombre}** | {tipo} | {ciudad_str} {' '.join(indicadores)}")
             
             with col_actions:
                 if st.button("✏️", key=f"edit_{idx}", help="Editar"):
@@ -541,7 +614,15 @@ with tab3:
                     with col1:
                         es_principal = "⭐ " if idx == idx_principal else "  • "
                         st.write(f"{es_principal}{r.get('nombre', 'Sin nombre')[:50]}")
-                        st.caption(f"Tipo: {r.get('tipo')} | Ciudad: {r.get('_ciudad')}")
+                        
+                        # Mostrar ciudades (múltiples si existen)
+                        ciudades_display = r.get("_ciudades_lista", [r.get("_ciudad", "")] if r.get("_ciudad") else [])
+                        if len(ciudades_display) > 1:
+                            ciudad_str = f"{', '.join(ciudades_display)}"
+                        else:
+                            ciudad_str = ciudades_display[0] if ciudades_display else ""
+                        
+                        st.caption(f"Tipo: {r.get('tipo')} | 🏙️ {ciudad_str}")
                         if r.get("telefono"):
                             tels = r.get("telefono", [])
                             tel_str = ", ".join(tels[:2]) if isinstance(tels, list) else str(tels)

@@ -53,16 +53,75 @@ st.markdown("""
 
 
 def cargar_todos_los_datos():
-    """Carga todos los datos de todas las ciudades."""
+    """
+    Carga datos optimizados si existen, sino carga datos por ciudad.
+    Soporta múltiples ciudades por registro.
+    """
     data_dir = Path("data")
     todos_registros = []
-    ciudades_stats = []
+    ciudades_stats = {}
     
     if not data_dir.exists():
         return [], []
     
+    # Prioridad 1: Datos optimizados
+    optimizado_path = data_dir / "registros_optimizados.json"
+    if optimizado_path.exists():
+        try:
+            with open(optimizado_path, "r", encoding="utf-8") as f:
+                data_opt = json.load(f)
+            
+            registros = data_opt.get("registros", [])
+            
+            # Procesar registros optimizados (pueden tener múltiples ciudades)
+            for r in registros:
+                # Obtener ciudades: array o campo único
+                ciudades = r.get("ciudades", [])
+                if not ciudades and r.get("ciudad"):
+                    ciudades = [r["ciudad"]]
+                if not ciudades:
+                    ciudades = ["Sin ciudad"]
+                
+                # Para compatibilidad, usar primera ciudad
+                r["_ciudad"] = ciudades[0] if ciudades else "Sin ciudad"
+                r["_ciudades_lista"] = ciudades  # Lista completa
+                
+                # Contar para estadísticas
+                for ciudad in ciudades:
+                    if ciudad not in ciudades_stats:
+                        ciudades_stats[ciudad] = {
+                            "ciudad": ciudad,
+                            "total": 0,
+                            "con_tel": 0,
+                            "con_email": 0,
+                            "con_web": 0,
+                            "con_dir": 0
+                        }
+                    ciudades_stats[ciudad]["total"] += 1
+                    if r.get("telefono"):
+                        ciudades_stats[ciudad]["con_tel"] += 1
+                    if r.get("email"):
+                        ciudades_stats[ciudad]["con_email"] += 1
+                    if r.get("web"):
+                        ciudades_stats[ciudad]["con_web"] += 1
+                    if r.get("direccion"):
+                        ciudades_stats[ciudad]["con_dir"] += 1
+                
+                todos_registros.append(r)
+            
+            # Convertir a lista para compatibilidad
+            ciudades_stats = list(ciudades_stats.values())
+            
+            print(f"[Dashboard] Cargados {len(todos_registros)} registros optimizados")
+            return todos_registros, ciudades_stats
+            
+        except Exception as e:
+            print(f"[Dashboard] Error cargando datos optimizados: {e}")
+            # Continuar con carga tradicional
+    
+    # Fallback: Cargar por ciudad (método tradicional)
     for archivo in sorted(data_dir.glob("*.json")):
-        if "config" in archivo.name or "api_usage" in archivo.name:
+        if "config" in archivo.name or "api_usage" in archivo.name or "optimizados" in archivo.name:
             continue
         
         try:
@@ -75,6 +134,8 @@ def cargar_todos_los_datos():
             # Añadir ciudad a cada registro
             for r in registros:
                 r["_ciudad"] = ciudad
+                if "ciudades" not in r:
+                    r["_ciudades_lista"] = [ciudad]
                 todos_registros.append(r)
             
             # Stats por ciudad
@@ -176,6 +237,13 @@ col_ciudades, col_calidad, col_apis = st.columns([2, 2, 1.5])
 # --- Columna Ciudades ---
 with col_ciudades:
     st.markdown("### 🏙️ Por Ciudad")
+    
+    # Verificar si estamos usando datos optimizados
+    optimizado_path = Path("data/registros_optimizados.json")
+    usando_optimizados = optimizado_path.exists()
+    
+    if usando_optimizados:
+        st.caption("✨ Datos optimizados - Un registro puede aparecer en múltiples ciudades")
     
     if ciudades_stats:
         df_ciudades = pd.DataFrame(ciudades_stats)
@@ -363,7 +431,13 @@ with col_incompletos:
                         falta.append("Email")
                     if not r.get("direccion"):
                         falta.append("Dir")
-                    st.caption(f"Falta: {', '.join(falta)} | {r.get('_ciudad', '')}")
+                    
+                    # Mostrar ciudades (múltiples si existen)
+                    ciudades_display = r.get("_ciudades_lista", [r.get("_ciudad", "")] if r.get("_ciudad") else [])
+                    ciudades_str = ", ".join(ciudades_display[:2])
+                    if len(ciudades_display) > 2:
+                        ciudades_str += f" +{len(ciudades_display)-2}"
+                    st.caption(f"Falta: {', '.join(falta)} | 🏙️ {ciudades_str}")
                 with col_btn:
                     st.button("📥", key=f"enrich_{r.get('nombre', '')[:20]}", help="Enriquecer")
         
@@ -389,7 +463,12 @@ with col_ultimos:
                 col_info, col_fecha = st.columns([3, 1])
                 with col_info:
                     st.write(f"**{r.get('nombre', 'Sin nombre')[:35]}**")
-                    st.caption(r.get("_ciudad", ""))
+                    # Mostrar ciudades (múltiples si existen)
+                    ciudades_display = r.get("_ciudades_lista", [r.get("_ciudad", "")] if r.get("_ciudad") else [])
+                    ciudades_str = ", ".join(ciudades_display[:2])
+                    if len(ciudades_display) > 2:
+                        ciudades_str += f" +{len(ciudades_display)-2}"
+                    st.caption(f"🏙️ {ciudades_str}")
                 with col_fecha:
                     fecha = r.get("fecha_actualizacion", "")[:10]
                     st.caption(fecha)
