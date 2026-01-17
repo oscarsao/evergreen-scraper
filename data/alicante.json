@@ -1,0 +1,338 @@
+{
+  "metadata": {
+    "fecha_actualizacion": "2026-01-17T05:31:25.233600",
+    "total_registros": 16,
+    "fuente": "consolidador_multiagente"
+  },
+  "registros": [
+    {
+      "nombre": "despacho de abogados extranjería e inmigración en alicante",
+      "tipo": "despacho",
+      "telefono": [
+        "+34965123664",
+        "+34965124054"
+      ],
+      "email": "bufete@abogados-senent-blanco.com",
+      "web": "https://www.abogados-senent-blanco.com/extranjeria/",
+      "direccion": "Av. Maisonnave",
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [
+        "nacionalidad",
+        "reagrupación",
+        "visados"
+      ],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://www.abogados-senent-blanco.com/extranjeria/",
+      "fecha_extraccion": "2026-01-17T05:31:08.116310",
+      "fecha_actualizacion": "2026-01-17T05:31:25.224995",
+      "idiomas": []
+    },
+    {
+      "nombre": "Abogado Extranjeria Alicante 【669 140 526】【965 228 489",
+      "tipo": "despacho",
+      "telefono": [
+        "+34669140526"
+      ],
+      "email": null,
+      "web": "https://www.abogadoextranjeriaalicante.com/",
+      "direccion": null,
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [
+        "permisos",
+        "visados"
+      ],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://www.abogadoextranjeriaalicante.com/",
+      "fecha_extraccion": "2026-01-17T05:31:08.117809",
+      "fecha_actualizacion": "2026-01-17T05:31:25.229133",
+      "idiomas": []
+    },
+    {
+      "nombre": "Abogada Extranjería e Inmigración en Alicante — LUCIA",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": null,
+      "web": "https://luciacremades.com/",
+      "direccion": null,
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [
+        "visados"
+      ],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://luciacremades.com/",
+      "fecha_extraccion": "2026-01-17T05:31:08.118446",
+      "fecha_actualizacion": "2026-01-17T05:31:25.225093",
+      "idiomas": []
+    },
+    {
+      "nombre": "David Pérez Abogado Extranjería e Internacional en Alicante",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": null,
+      "web": "https://www.unaes.es/david-perez-sanchez/",
+      "direccion": null,
+      "ciudad": "Madrid",
+      "distrito": null,
+      "especialidades": [],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://www.unaes.es/david-perez-sanchez/",
+      "fecha_extraccion": "2026-01-17T05:31:08.119137",
+      "fecha_actualizacion": "2026-01-17T05:31:25.220440"
+    },
+    {
+      "nombre": "Abogado Extranjería Especialistas Conseguir Nacionalidad",
+      "tipo": "despacho",
+      "telefono": [
+        "+34930508888"
+      ],
+      "email": null,
+      "web": "https://venturaextranjeria.com/",
+      "direccion": null,
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [
+        "nacionalidad",
+        "visados",
+        "asilo"
+      ],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://venturaextranjeria.com/",
+      "fecha_extraccion": "2026-01-17T05:31:08.119511",
+      "fecha_actualizacion": "2026-01-17T05:31:25.231835",
+      "idiomas": []
+    },
+    {
+      "nombre": "Abogados Extranjería",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": null,
+      "web": "https://lemornebrabant.com/abogados-especialistas-extranjeria/",
+      "direccion": "C/ Raimundo Fernández Villaverde, 23, 28003",
+      "ciudad": "Madrid",
+      "distrito": null,
+      "especialidades": [
+        "nacionalidad",
+        "visados",
+        "arraigo"
+      ],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://lemornebrabant.com/abogados-especialistas-extranjeria/",
+      "fecha_extraccion": "2026-01-17T05:31:08.119921",
+      "fecha_actualizacion": "2026-01-17T05:31:25.230559",
+      "idiomas": []
+    },
+    {
+      "nombre": "Los 10 abogados de Extranjería en Alicante más",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": null,
+      "web": "https://lexgoapp.com/abogados-extranjeria-alicante",
+      "direccion": null,
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [
+        "nacionalidad",
+        "reagrupación",
+        "visados",
+        "arraigo"
+      ],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://lexgoapp.com/abogados-extranjeria-alicante",
+      "fecha_extraccion": "2026-01-17T05:31:08.120483",
+      "fecha_actualizacion": "2026-01-17T05:31:25.229221",
+      "idiomas": []
+    },
+    {
+      "nombre": "Díaz & Asociados",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": null,
+      "web": "https://diazyasociados.es/",
+      "direccion": "Av. del Marqués de Sotelo, 5",
+      "ciudad": "Madrid",
+      "distrito": null,
+      "especialidades": [
+        "nacionalidad",
+        "reagrupación",
+        "visados",
+        "arraigo"
+      ],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://diazyasociados.es/",
+      "fecha_extraccion": "2026-01-17T05:31:08.120951",
+      "fecha_actualizacion": "2026-01-17T05:31:25.233300",
+      "idiomas": []
+    },
+    {
+      "nombre": "Abogados de Extranjería",
+      "tipo": "despacho",
+      "telefono": [
+        "+34638453450",
+        "+34931290276"
+      ],
+      "email": "info@salasmirallesabogados.com",
+      "web": "https://salasmirallesabogados.com/abogados-de-extranjeria/",
+      "direccion": null,
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [
+        "nacionalidad",
+        "reagrupación",
+        "visados",
+        "permisos"
+      ],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://salasmirallesabogados.com/abogados-de-extranjeria/",
+      "fecha_extraccion": "2026-01-17T05:31:08.121608",
+      "fecha_actualizacion": "2026-01-17T05:31:25.224073"
+    },
+    {
+      "nombre": "Abogados Extranjería Alicante",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": null,
+      "web": "https://abogadosextranjeriaalicante.es/",
+      "direccion": null,
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [
+        "arraigo",
+        "nacionalidad"
+      ],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://abogadosextranjeriaalicante.es/",
+      "fecha_extraccion": "2026-01-17T05:31:08.122006",
+      "fecha_actualizacion": "2026-01-17T05:31:25.224886"
+    },
+    {
+      "nombre": "Despacho de abogados en Alicante ※ Bufete Pellicer &",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": null,
+      "web": "https://www.pellicerheredia.com/",
+      "direccion": null,
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [
+        "nacionalidad",
+        "visados"
+      ],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://www.pellicerheredia.com/",
+      "fecha_extraccion": "2026-01-17T05:31:12.516156",
+      "fecha_actualizacion": "2026-01-17T05:31:25.226077"
+    },
+    {
+      "nombre": "Abogados de Extranjería en Alicante",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": null,
+      "web": "https://legaliuris.eu/es/abogado-extranjeria/",
+      "direccion": "Calle Reyes Católicos",
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [
+        "nacionalidad",
+        "reagrupación",
+        "visados"
+      ],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://legaliuris.eu/es/abogado-extranjeria/",
+      "fecha_extraccion": "2026-01-17T05:31:12.518749",
+      "fecha_actualizacion": "2026-01-17T05:31:25.228841",
+      "idiomas": []
+    },
+    {
+      "nombre": "► Abogados Especialistas en Extranjería",
+      "tipo": "despacho",
+      "telefono": [
+        "+34966276171",
+        "+34659381764"
+      ],
+      "email": null,
+      "web": "https://chapaprianavarroyasociados.com/abogados-de-extranjeria/",
+      "direccion": null,
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [
+        "expulsiones",
+        "recursos"
+      ],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://chapaprianavarroyasociados.com/abogados-de-extranjeria/",
+      "fecha_extraccion": "2026-01-17T05:31:12.519180",
+      "fecha_actualizacion": "2026-01-17T05:31:25.228661"
+    },
+    {
+      "nombre": "Mi Abogado Extranjería: Abogados de Extranjería en España",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": "miabogadoextranjeriaesp@gmail.com",
+      "web": "https://miabogadoextranjeria.com/",
+      "direccion": null,
+      "ciudad": "Valencia",
+      "distrito": null,
+      "especialidades": [
+        "arraigo",
+        "nacionalidad",
+        "reagrupación"
+      ],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://miabogadoextranjeria.com/",
+      "fecha_extraccion": "2026-01-17T05:31:17.276469",
+      "fecha_actualizacion": "2026-01-17T05:31:25.230488"
+    },
+    {
+      "nombre": "Abogado de extranjería en Alicante",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": null,
+      "web": "https://www.abogado-especialista-alicante.es/",
+      "direccion": null,
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://www.abogado-especialista-alicante.es/",
+      "fecha_extraccion": "2026-01-17T05:31:17.277267",
+      "fecha_actualizacion": "2026-01-17T05:31:25.231745"
+    },
+    {
+      "nombre": "Despacho de Abogados Expertos en Extranjería Online",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": null,
+      "web": "https://iusmigra.com/",
+      "direccion": null,
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [
+        "nacionalidad",
+        "visados"
+      ],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://iusmigra.com/",
+      "fecha_extraccion": "2026-01-17T05:31:17.278121",
+      "fecha_actualizacion": "2026-01-17T05:31:25.233231"
+    }
+  ]
+}

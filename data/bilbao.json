@@ -1,0 +1,413 @@
+{
+  "metadata": {
+    "fecha_actualizacion": "2026-01-17T05:31:56.942307",
+    "total_registros": 20,
+    "fuente": "consolidador_multiagente"
+  },
+  "registros": [
+    {
+      "nombre": "Contacte con nuestros abogados",
+      "tipo": "despacho",
+      "telefono": [
+        "+34627472576",
+        "+34627470392"
+      ],
+      "email": "alonso.bilex@gmail.com",
+      "web": "https://www.abogadoextranjeriabilbao.org/contactar",
+      "direccion": null,
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [
+        "arraigo",
+        "nacionalidad",
+        "reagrupación",
+        "visados",
+        "expulsiones"
+      ],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://www.abogadoextranjeriabilbao.org/contactar",
+      "fecha_extraccion": "2026-01-17T05:31:41.117651",
+      "fecha_actualizacion": "2026-01-17T05:31:56.917284"
+    },
+    {
+      "nombre": "Trámites de Extranjería Bilbao",
+      "tipo": "despacho",
+      "telefono": [
+        "+34944235017",
+        "+34670373403"
+      ],
+      "email": null,
+      "web": "https://www.abogadosigloxxi.com/areas-de-practica/extranjeria",
+      "direccion": "plaza Jado).",
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [
+        "nacionalidad"
+      ],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://www.abogadosigloxxi.com/areas-de-practica/extranjeria",
+      "fecha_extraccion": "2026-01-17T05:31:41.118666",
+      "fecha_actualizacion": "2026-01-17T05:31:56.919210"
+    },
+    {
+      "nombre": "Abogados de Extranjería en Bilbao",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": null,
+      "web": "https://mintegisilvaabogadas.com/abogados-bilbao/extranjeria/",
+      "direccion": null,
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [
+        "recursos",
+        "nacionalidad",
+        "visados",
+        "reagrupación"
+      ],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://mintegisilvaabogadas.com/abogados-bilbao/extranjeria/",
+      "fecha_extraccion": "2026-01-17T05:31:41.119155",
+      "fecha_actualizacion": "2026-01-17T05:31:56.932557",
+      "idiomas": []
+    },
+    {
+      "nombre": "Abogado Extranjería Bilbao",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": null,
+      "web": "https://www.abogadoextranjeriabilbao.org/",
+      "direccion": null,
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [
+        "nacionalidad",
+        "expulsiones",
+        "visados",
+        "arraigo",
+        "reagrupación"
+      ],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://www.abogadoextranjeriabilbao.org/",
+      "fecha_extraccion": "2026-01-17T05:31:41.119453",
+      "fecha_actualizacion": "2026-01-17T05:31:56.935176",
+      "idiomas": []
+    },
+    {
+      "nombre": "Abogado Extranjería Bilbao 【EXPERTOS EN EXTRANJERÍA】",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": null,
+      "web": "https://www.abogadoextranjeriabilbao.com/",
+      "direccion": null,
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [
+        "asilo",
+        "nacionalidad",
+        "visados",
+        "arraigo",
+        "reagrupación"
+      ],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://www.abogadoextranjeriabilbao.com/",
+      "fecha_extraccion": "2026-01-17T05:31:41.119891",
+      "fecha_actualizacion": "2026-01-17T05:31:56.930657",
+      "idiomas": []
+    },
+    {
+      "nombre": "Abogados de Extranjería y Nacionalidad en Bilbao",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": null,
+      "web": "https://www.elabogado.com/extranjeria-y-nacionalidad:bilbao/",
+      "direccion": "C/ Bailen 1, 4",
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [
+        "asilo",
+        "nacionalidad"
+      ],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://www.elabogado.com/extranjeria-y-nacionalidad:bilbao/",
+      "fecha_extraccion": "2026-01-17T05:31:41.120323",
+      "fecha_actualizacion": "2026-01-17T05:31:56.922314"
+    },
+    {
+      "nombre": "Abogado de Extranjería",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": null,
+      "web": "https://extranjeriabilbao.es/",
+      "direccion": null,
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [
+        "nacionalidad",
+        "arraigo",
+        "reagrupación"
+      ],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://extranjeriabilbao.es/",
+      "fecha_extraccion": "2026-01-17T05:31:41.120787",
+      "fecha_actualizacion": "2026-01-17T05:31:56.940304",
+      "idiomas": []
+    },
+    {
+      "nombre": "Abogado Extranjería Especialistas Conseguir Nacionalidad",
+      "tipo": "despacho",
+      "telefono": [
+        "+34930508888"
+      ],
+      "email": null,
+      "web": "https://venturaextranjeria.com/",
+      "direccion": "Av. Ronda de Mar, 24",
+      "ciudad": "Barcelona",
+      "distrito": null,
+      "especialidades": [
+        "asilo",
+        "nacionalidad",
+        "visados"
+      ],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://venturaextranjeria.com/",
+      "fecha_extraccion": "2026-01-17T05:31:41.121161",
+      "fecha_actualizacion": "2026-01-17T05:31:56.923980"
+    },
+    {
+      "nombre": "Gestoria M&Y asociados",
+      "tipo": "despacho",
+      "telefono": [
+        "+34688824112",
+        "+34946031677"
+      ],
+      "email": "info@mygestoria.com",
+      "web": "https://www.mygestoria.com/",
+      "direccion": "Calle Barroeta Aldamar 4",
+      "ciudad": "Madrid",
+      "distrito": null,
+      "especialidades": [],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://www.mygestoria.com/",
+      "fecha_extraccion": "2026-01-17T05:31:41.121482",
+      "fecha_actualizacion": "2026-01-17T05:31:56.924732"
+    },
+    {
+      "nombre": "Quines somos",
+      "tipo": "despacho",
+      "telefono": [
+        "747439481",
+        "+34616234263"
+      ],
+      "email": "pedrocabezas@icasv-bilbao.com",
+      "web": "https://kontorabogados.com/quienes-somos/",
+      "direccion": null,
+      "ciudad": "Madrid",
+      "distrito": null,
+      "especialidades": [
+        "nacionalidad"
+      ],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://kontorabogados.com/quienes-somos/",
+      "fecha_extraccion": "2026-01-17T05:31:46.361639",
+      "fecha_actualizacion": "2026-01-17T05:31:56.925531"
+    },
+    {
+      "nombre": "Sobre Nosotros",
+      "tipo": "despacho",
+      "telefono": [
+        "+34904877489"
+      ],
+      "email": null,
+      "web": "https://www.bilbaolaw.com/es/about",
+      "direccion": null,
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://www.bilbaolaw.com/es/about",
+      "fecha_extraccion": "2026-01-17T05:31:46.361931",
+      "fecha_actualizacion": "2026-01-17T05:31:56.926328"
+    },
+    {
+      "nombre": "Abogado Extranjería en Bilbao",
+      "tipo": "despacho",
+      "telefono": [
+        "+34678560137"
+      ],
+      "email": null,
+      "web": "https://www.amartinabogados.com/abogado-extranjeria-bilbao/",
+      "direccion": null,
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [
+        "nacionalidad",
+        "expulsiones",
+        "recursos"
+      ],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://www.amartinabogados.com/abogado-extranjeria-bilbao/",
+      "fecha_extraccion": "2026-01-17T05:31:46.362307",
+      "fecha_actualizacion": "2026-01-17T05:31:56.927428"
+    },
+    {
+      "nombre": "Abogado Extranjería Bilbao",
+      "tipo": "despacho",
+      "telefono": [
+        "+34622358668"
+      ],
+      "email": null,
+      "web": "https://www.srjabogados.com/",
+      "direccion": "C/ Gordóniz 6 exterior",
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [
+        "expulsiones",
+        "nacionalidad",
+        "visados",
+        "recursos"
+      ],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://www.srjabogados.com/",
+      "fecha_extraccion": "2026-01-17T05:31:46.362738",
+      "fecha_actualizacion": "2026-01-17T05:31:56.932726",
+      "idiomas": []
+    },
+    {
+      "nombre": "Bilbao Extranjería",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": null,
+      "web": "https://extranjeriabilbao.es/",
+      "direccion": null,
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [
+        "arraigo",
+        "nacionalidad",
+        "reagrupación"
+      ],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://extranjeriabilbao.es/",
+      "fecha_extraccion": "2026-01-17T05:31:46.363593",
+      "fecha_actualizacion": "2026-01-17T05:31:56.929534"
+    },
+    {
+      "nombre": "Quiénes somos",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": null,
+      "web": "https://www.abogadoextranjeriabilbao.com/nosotros",
+      "direccion": null,
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [
+        "nacionalidad",
+        "reagrupación"
+      ],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://www.abogadoextranjeriabilbao.com/nosotros",
+      "fecha_extraccion": "2026-01-17T05:31:46.363962",
+      "fecha_actualizacion": "2026-01-17T05:31:56.930500"
+    },
+    {
+      "nombre": "Abogados especialistas en extranjería",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": "info@legalpro.biz",
+      "web": "https://legalpro.biz/",
+      "direccion": "Calle Kristo 1, 3",
+      "ciudad": "Madrid",
+      "distrito": null,
+      "especialidades": [],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://legalpro.biz/",
+      "fecha_extraccion": "2026-01-17T05:31:50.878129",
+      "fecha_actualizacion": "2026-01-17T05:31:56.932467"
+    },
+    {
+      "nombre": "Abogados extranjería Bilbao",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": null,
+      "web": "https://abogadosmontes.com/abogados-extranjeria-bilbao/",
+      "direccion": null,
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://abogadosmontes.com/abogados-extranjeria-bilbao/",
+      "fecha_extraccion": "2026-01-17T05:31:50.879024",
+      "fecha_actualizacion": "2026-01-17T05:31:56.935021"
+    },
+    {
+      "nombre": "Extranjería",
+      "tipo": "despacho",
+      "telefono": [
+        "+34626202528"
+      ],
+      "email": null,
+      "web": "https://infantepenalista.com/areas-practica/extranjeria/",
+      "direccion": null,
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://infantepenalista.com/areas-practica/extranjeria/",
+      "fecha_extraccion": "2026-01-17T05:31:50.879120",
+      "fecha_actualizacion": "2026-01-17T05:31:56.938035"
+    },
+    {
+      "nombre": "Aholku",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": null,
+      "web": "https://www.euskadi.eus/informacion/servicio-gratuito-de-atencion-juridica-al-inmigrante/web01-a2famil/es/",
+      "direccion": null,
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://www.euskadi.eus/informacion/servicio-gratuito-de-atencion-juridica-al-inmigrante/web01-a2famil/es/",
+      "fecha_extraccion": "2026-01-17T05:31:50.879564",
+      "fecha_actualizacion": "2026-01-17T05:31:56.940181"
+    },
+    {
+      "nombre": "Aholku sarea",
+      "tipo": "despacho",
+      "telefono": [
+        "+34900840890",
+        "+34944001809"
+      ],
+      "email": "juridika@biltzen.org",
+      "web": "https://biltzen.org/aholku-sarea/",
+      "direccion": null,
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://biltzen.org/aholku-sarea/",
+      "fecha_extraccion": "2026-01-17T05:31:50.879939",
+      "fecha_actualizacion": "2026-01-17T05:31:56.941955"
+    }
+  ]
+}

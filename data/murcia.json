@@ -1,0 +1,424 @@
+{
+  "metadata": {
+    "fecha_actualizacion": "2026-01-17T05:30:20.254706",
+    "total_registros": 20,
+    "fuente": "consolidador_multiagente"
+  },
+  "registros": [
+    {
+      "nombre": "ABOGAEX",
+      "tipo": "despacho",
+      "telefono": [
+        "+34664379878"
+      ],
+      "email": null,
+      "web": "https://abogados1.es/abogaex-murcia/",
+      "direccion": "Calle Ceballos",
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [
+        "nacionalidad"
+      ],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://abogados1.es/abogaex-murcia/",
+      "fecha_extraccion": "2026-01-17T05:30:03.378493",
+      "fecha_actualizacion": "2026-01-17T05:30:20.247358",
+      "idiomas": []
+    },
+    {
+      "nombre": "Abogado Extranjería en Murcia",
+      "tipo": "despacho",
+      "telefono": [
+        "+34678560137"
+      ],
+      "email": null,
+      "web": "https://www.amartinabogados.com/abogado-extranjeria-murcia/",
+      "direccion": null,
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [
+        "nacionalidad",
+        "expulsiones",
+        "recursos"
+      ],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://www.amartinabogados.com/abogado-extranjeria-murcia/",
+      "fecha_extraccion": "2026-01-17T05:30:03.379364",
+      "fecha_actualizacion": "2026-01-17T05:30:20.228923"
+    },
+    {
+      "nombre": "EXTRANJERÍA",
+      "tipo": "despacho",
+      "telefono": [
+        "+34968023177"
+      ],
+      "email": "aym.millennialsabogados@gmail.com",
+      "web": "https://www.arceymartinezmillennialsabogados.com/copia-de-administrativo",
+      "direccion": "Av. de la Justicia",
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [
+        "expulsiones",
+        "visados",
+        "nacionalidad",
+        "asilo",
+        "arraigo"
+      ],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://www.arceymartinezmillennialsabogados.com/copia-de-administrativo",
+      "fecha_extraccion": "2026-01-17T05:30:03.379717",
+      "fecha_actualizacion": "2026-01-17T05:30:20.245764",
+      "idiomas": []
+    },
+    {
+      "nombre": "PMS Abogados",
+      "tipo": "despacho",
+      "telefono": [
+        "+34686281056"
+      ],
+      "email": null,
+      "web": "https://pmsabogados.com/",
+      "direccion": null,
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [
+        "reagrupación",
+        "nacionalidad"
+      ],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://pmsabogados.com/",
+      "fecha_extraccion": "2026-01-17T05:30:03.380227",
+      "fecha_actualizacion": "2026-01-17T05:30:20.236421",
+      "idiomas": []
+    },
+    {
+      "nombre": "ABOGADO EXTRANJERÍA MURCIA 【ABOGADOS",
+      "tipo": "despacho",
+      "telefono": [
+        "+34669140526"
+      ],
+      "email": null,
+      "web": "https://www.abogadoextranjeriamurcia.com/",
+      "direccion": null,
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [
+        "reagrupación",
+        "visados"
+      ],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://www.abogadoextranjeriamurcia.com/",
+      "fecha_extraccion": "2026-01-17T05:30:03.380627",
+      "fecha_actualizacion": "2026-01-17T05:30:20.252101",
+      "idiomas": []
+    },
+    {
+      "nombre": "Flavia Sanches Abogados",
+      "tipo": "despacho",
+      "telefono": [
+        "+34608060603",
+        "+34683125470",
+        "+34622055195"
+      ],
+      "email": "flaviasanchesabogada@gmail.com",
+      "web": "https://www.flaviasanchesabogados.com/",
+      "direccion": "Avenida Juana Jugán, 26",
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [
+        "recursos",
+        "expulsiones",
+        "permisos",
+        "nacionalidad"
+      ],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://www.flaviasanchesabogados.com/",
+      "fecha_extraccion": "2026-01-17T05:30:03.380976",
+      "fecha_actualizacion": "2026-01-17T05:30:20.254176",
+      "idiomas": []
+    },
+    {
+      "nombre": "Tu Abogado de Extranjeria en Murcia – Carmona Escudero",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": null,
+      "web": "https://www.tuabogadodeextranjeriaenmurcia.com/",
+      "direccion": null,
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [
+        "recursos",
+        "visados",
+        "nacionalidad",
+        "arraigo"
+      ],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://www.tuabogadodeextranjeriaenmurcia.com/",
+      "fecha_extraccion": "2026-01-17T05:30:03.382513",
+      "fecha_actualizacion": "2026-01-17T05:30:20.251636",
+      "idiomas": []
+    },
+    {
+      "nombre": "Asistencia Legal",
+      "tipo": "despacho",
+      "telefono": [
+        "+34669535109",
+        "+34950512266",
+        "+34900814815"
+      ],
+      "email": null,
+      "web": "https://help.unhcr.org/spain/donde-encontrar-ayuda-espana/asistencia-legal/",
+      "direccion": "Calle Pío Baroja, 34, 04006",
+      "ciudad": "Madrid",
+      "distrito": null,
+      "especialidades": [
+        "asilo"
+      ],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://help.unhcr.org/spain/donde-encontrar-ayuda-espana/asistencia-legal/",
+      "fecha_extraccion": "2026-01-17T05:30:03.382992",
+      "fecha_actualizacion": "2026-01-17T05:30:20.231728"
+    },
+    {
+      "nombre": "Los 10 abogados de Extranjería en Murcia más",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": null,
+      "web": "https://lexgoapp.com/abogados-extranjeria-murcia",
+      "direccion": null,
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://lexgoapp.com/abogados-extranjeria-murcia",
+      "fecha_extraccion": "2026-01-17T05:30:03.384096",
+      "fecha_actualizacion": "2026-01-17T05:30:20.233058"
+    },
+    {
+      "nombre": "Contacto",
+      "tipo": "despacho",
+      "telefono": [
+        "+34686281056"
+      ],
+      "email": "info@pmsabogados.com",
+      "web": "https://pmsabogados.com/contacto/",
+      "direccion": null,
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://pmsabogados.com/contacto/",
+      "fecha_extraccion": "2026-01-17T05:30:03.384599",
+      "fecha_actualizacion": "2026-01-17T05:30:20.234255"
+    },
+    {
+      "nombre": "Abogado de extranjería: beneficios de contar con un",
+      "tipo": "despacho",
+      "telefono": [
+        "+34615383358"
+      ],
+      "email": "info@clesabogados.es",
+      "web": "https://clesabogados.es/abogado-extranjeria-benficios/",
+      "direccion": null,
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [
+        "visados"
+      ],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://clesabogados.es/abogado-extranjeria-benficios/",
+      "fecha_extraccion": "2026-01-17T05:30:07.977470",
+      "fecha_actualizacion": "2026-01-17T05:30:20.235864"
+    },
+    {
+      "nombre": "► Abogados de Extranjería en Murcia",
+      "tipo": "despacho",
+      "telefono": [
+        "+34966276171",
+        "+34659381764"
+      ],
+      "email": "info@chapaprianavarroyasociados.com",
+      "web": "https://chapaprianavarroyasociados.com/abogados-de-extranjeria/murcia/",
+      "direccion": null,
+      "ciudad": "Valencia",
+      "distrito": null,
+      "especialidades": [
+        "recursos",
+        "reagrupación",
+        "visados",
+        "nacionalidad"
+      ],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://chapaprianavarroyasociados.com/abogados-de-extranjeria/murcia/",
+      "fecha_extraccion": "2026-01-17T05:30:07.978685",
+      "fecha_actualizacion": "2026-01-17T05:30:20.254388",
+      "idiomas": []
+    },
+    {
+      "nombre": "Abogado de Extranjería en Murcia",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": null,
+      "web": "https://pmsabogados.com/servicios/extranjeria/",
+      "direccion": null,
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [
+        "nacionalidad",
+        "reagrupación",
+        "visados"
+      ],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://pmsabogados.com/servicios/extranjeria/",
+      "fecha_extraccion": "2026-01-17T05:30:07.979138",
+      "fecha_actualizacion": "2026-01-17T05:30:20.239851"
+    },
+    {
+      "nombre": "Sobre nosotros",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": null,
+      "web": "https://quesadaabogadosextranjeria.com/sobrenosotros/",
+      "direccion": null,
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [
+        "nacionalidad"
+      ],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://quesadaabogadosextranjeria.com/sobrenosotros/",
+      "fecha_extraccion": "2026-01-17T05:30:07.979510",
+      "fecha_actualizacion": "2026-01-17T05:30:20.241601"
+    },
+    {
+      "nombre": "Abogados de Extranjería",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": null,
+      "web": "https://jurand.es/abogados/familia/extranjeria/",
+      "direccion": null,
+      "ciudad": "Madrid",
+      "distrito": null,
+      "especialidades": [],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://jurand.es/abogados/familia/extranjeria/",
+      "fecha_extraccion": "2026-01-17T05:30:07.980324",
+      "fecha_actualizacion": "2026-01-17T05:30:20.244446"
+    },
+    {
+      "nombre": "Extranjería – josefinamurciabogados",
+      "tipo": "despacho",
+      "telefono": [
+        "+34680692202"
+      ],
+      "email": null,
+      "web": "https://josefinamurciabogados.com/extranjeria/",
+      "direccion": null,
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [
+        "visados"
+      ],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://josefinamurciabogados.com/extranjeria/",
+      "fecha_extraccion": "2026-01-17T05:30:07.981380",
+      "fecha_actualizacion": "2026-01-17T05:30:20.247180"
+    },
+    {
+      "nombre": "Abogados Extranjería Murcia",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": null,
+      "web": "https://www.abogadoextranjeriamurcia.es/",
+      "direccion": null,
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [
+        "nacionalidad",
+        "reagrupación",
+        "recursos"
+      ],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://www.abogadoextranjeriamurcia.es/",
+      "fecha_extraccion": "2026-01-17T05:30:12.578170",
+      "fecha_actualizacion": "2026-01-17T05:30:20.248588"
+    },
+    {
+      "nombre": "Extranjería e inmigración",
+      "tipo": "despacho",
+      "telefono": [
+        "+34968241025"
+      ],
+      "email": "contacto@gvcabogados.com",
+      "web": "https://www.gvcabogados.com/es/derecho-publico/abogados-extranjeria-inmigracion-murcia",
+      "direccion": "Plaza Fuensanta, 3",
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [
+        "nacionalidad",
+        "permisos"
+      ],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://www.gvcabogados.com/es/derecho-publico/abogados-extranjeria-inmigracion-murcia",
+      "fecha_extraccion": "2026-01-17T05:30:12.578879",
+      "fecha_actualizacion": "2026-01-17T05:30:20.249864"
+    },
+    {
+      "nombre": "Abogados de Extranjería y Nacionalidad en Murcia",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": null,
+      "web": "https://www.elabogado.com/extranjeria-y-nacionalidad:murcia/",
+      "direccion": "Calle Baeza 7, 2",
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [
+        "nacionalidad"
+      ],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://www.elabogado.com/extranjeria-y-nacionalidad:murcia/",
+      "fecha_extraccion": "2026-01-17T05:30:12.579945",
+      "fecha_actualizacion": "2026-01-17T05:30:20.251517"
+    },
+    {
+      "nombre": "Luis Salomón Elá Abogado Extranjería en Murcia",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": null,
+      "web": "https://www.unaes.es/luis-salomon-ayacaba/",
+      "direccion": null,
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [
+        "asilo",
+        "nacionalidad",
+        "reagrupación",
+        "visados"
+      ],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://www.unaes.es/luis-salomon-ayacaba/",
+      "fecha_extraccion": "2026-01-17T05:30:12.581404",
+      "fecha_actualizacion": "2026-01-17T05:30:20.253792"
+    }
+  ]
+}
