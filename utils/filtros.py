@@ -71,8 +71,10 @@ NOMBRES_EXCLUIR = [
 
 # Patrones en URL que indican blog o artículo (no página principal)
 URL_BLOG_PATTERNS = [
-    r'/blog/', r'/articulo/', r'/noticia/', r'/news/',
-    r'/post/', r'/article/', r'/categoria/', r'/category/',
+    r'/blog',  # Coincide con /blog/, /blog-juridico/, /blogs/, etc.
+    r'/articulo', r'/noticia', r'/news',
+    r'/post/', r'/article/',
+    r'/categoria/', r'/category/',
     r'/noticias/', r'/actualidad/', r'/magazine/',
     r'/\d{4}/\d{2}/',  # URLs con fecha tipo /2024/01/
 ]

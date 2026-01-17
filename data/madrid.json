@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "fecha_actualizacion": "2026-01-17T05:04:22.260849",
-    "total_registros": 626,
+    "fecha_actualizacion": "2026-01-17T05:07:25.705070",
+    "total_registros": 627,
     "fuente": "consolidador_multiagente"
   },
   "registros": [
@@ -20,20 +20,20 @@
       "ciudad": "Madrid",
       "distrito": "Salamanca",
       "especialidades": [
-        "permisos",
-        "extranjería",
         "expulsiones",
-        "asilo",
-        "arraigo",
-        "reagrupación",
+        "nacionalidad",
+        "permisos",
         "visados",
-        "recursos",
         "inmigración",
-        "nacionalidad"
+        "recursos",
+        "extranjería",
+        "reagrupación",
+        "arraigo",
+        "asilo"
       ],
       "valoracion": null,
       "idiomas": [],
-      "fecha_actualizacion": "2026-01-17T05:04:21.204483"
+      "fecha_actualizacion": "2026-01-17T05:07:25.537097"
     },
     {
       "nombre": "PFBernal - Abogacía Extranjería",
@@ -86,18 +86,18 @@
       "ciudad": "Madrid",
       "distrito": "Centro",
       "especialidades": [
-        "extranjería",
         "expulsiones",
-        "arraigo",
-        "urgencias",
-        "reagrupación",
+        "nacionalidad",
         "visados",
         "recursos",
-        "nacionalidad"
+        "urgencias",
+        "extranjería",
+        "reagrupación",
+        "arraigo"
       ],
       "valoracion": null,
       "idiomas": [],
-      "fecha_actualizacion": "2026-01-17T05:04:20.985636"
+      "fecha_actualizacion": "2026-01-17T05:07:25.537333"
     },
     {
       "nombre": "Larea & Co. International Legal Group",
@@ -745,16 +745,16 @@
       "ciudad": "Madrid",
       "distrito": "Arganzuela",
       "especialidades": [
-        "extranjería",
-        "asilo",
-        "arraigo",
-        "reagrupación",
+        "nacionalidad",
         "recursos",
-        "nacionalidad"
+        "asilo",
+        "extranjería",
+        "reagrupación",
+        "arraigo"
       ],
       "valoracion": null,
       "idiomas": [],
-      "fecha_actualizacion": "2026-01-17T05:04:21.204308"
+      "fecha_actualizacion": "2026-01-17T05:07:25.550327"
     },
     {
       "nombre": "Extranjería Justa",
@@ -1128,19 +1128,19 @@
       "ciudad": "Madrid",
       "distrito": null,
       "especialidades": [
-        "permisos",
         "expulsiones",
-        "arraigo",
-        "reagrupación",
+        "nacionalidad",
+        "permisos",
         "visados",
         "recursos",
-        "nacionalidad"
+        "reagrupación",
+        "arraigo"
       ],
       "valoracion": null,
       "fuente": "tavily",
       "url_origen": "https://www.abogadoextranjeriamadrid.org/",
       "fecha_extraccion": "2026-01-17T04:34:26.850795",
-      "fecha_actualizacion": "2026-01-17T05:04:21.387355",
+      "fecha_actualizacion": "2026-01-17T05:07:25.349100",
       "idiomas": []
     },
     {
@@ -1175,18 +1175,18 @@
       "ciudad": "Madrid",
       "distrito": null,
       "especialidades": [
-        "permisos",
+        "nacionalidad",
         "expulsiones",
-        "asilo",
-        "arraigo",
+        "permisos",
         "visados",
-        "nacionalidad"
+        "asilo",
+        "arraigo"
       ],
       "valoracion": null,
       "fuente": "tavily",
       "url_origen": "https://winkelsabogados.com/abogados-extranjeria-madrid/",
       "fecha_extraccion": "2026-01-17T04:34:26.851610",
-      "fecha_actualizacion": "2026-01-17T05:04:21.052745",
+      "fecha_actualizacion": "2026-01-17T05:07:25.613780",
       "idiomas": []
     },
     {
@@ -1325,16 +1325,16 @@
       "ciudad": "Madrid",
       "distrito": null,
       "especialidades": [
+        "nacionalidad",
         "reagrupación",
-        "visados",
         "arraigo",
-        "nacionalidad"
+        "visados"
       ],
       "valoracion": null,
       "fuente": "tavily",
       "url_origen": "https://diazyasociados.es/",
       "fecha_extraccion": "2026-01-17T04:34:32.355338",
-      "fecha_actualizacion": "2026-01-17T05:04:21.366651",
+      "fecha_actualizacion": "2026-01-17T05:07:25.704493",
       "idiomas": []
     },
     {
@@ -1526,19 +1526,19 @@
       "ciudad": "Madrid",
       "distrito": null,
       "especialidades": [
-        "permisos",
         "expulsiones",
-        "asilo",
-        "arraigo",
+        "nacionalidad",
+        "permisos",
         "visados",
         "recursos",
-        "nacionalidad"
+        "arraigo",
+        "asilo"
       ],
       "valoracion": null,
       "fuente": "tavily",
       "url_origen": "https://espanaabogados.com/",
       "fecha_extraccion": "2026-01-17T04:35:51.738675",
-      "fecha_actualizacion": "2026-01-17T05:04:21.000350",
+      "fecha_actualizacion": "2026-01-17T05:07:25.549898",
       "idiomas": []
     },
     {
@@ -1651,7 +1651,7 @@
       "fuente": "tavily",
       "url_origen": "https://www.abogadorafaelserrano.com/",
       "fecha_extraccion": "2026-01-17T04:35:56.738741",
-      "fecha_actualizacion": "2026-01-17T05:04:21.035923",
+      "fecha_actualizacion": "2026-01-17T05:07:25.591636",
       "idiomas": []
     },
     {
@@ -2232,20 +2232,20 @@
       "ciudad": "Madrid",
       "distrito": null,
       "especialidades": [
-        "permisos",
+        "nacionalidad",
         "expulsiones",
-        "asilo",
-        "arraigo",
-        "reagrupación",
+        "permisos",
         "visados",
         "recursos",
-        "nacionalidad"
+        "reagrupación",
+        "arraigo",
+        "asilo"
       ],
       "valoracion": null,
       "fuente": "tavily",
       "url_origen": "https://abogaciaextranjeria.es/abogados-extranjeria-mostoles/",
       "fecha_extraccion": "2026-01-17T04:36:25.991832",
-      "fecha_actualizacion": "2026-01-17T05:04:21.742558",
+      "fecha_actualizacion": "2026-01-17T05:07:25.697036",
       "idiomas": []
     },
     {
@@ -2508,17 +2508,17 @@
       "ciudad": "Madrid",
       "distrito": null,
       "especialidades": [
+        "nacionalidad",
         "permisos",
-        "arraigo",
-        "reagrupación",
         "recursos",
-        "nacionalidad"
+        "reagrupación",
+        "arraigo"
       ],
       "valoracion": null,
       "fuente": "tavily",
       "url_origen": "https://www.parainmigrantes.info/abogado-experto-en-extranjeria-por-telefono-235/",
       "fecha_extraccion": "2026-01-17T04:36:41.047147",
-      "fecha_actualizacion": "2026-01-17T05:04:21.047451",
+      "fecha_actualizacion": "2026-01-17T05:07:25.605374",
       "idiomas": []
     },
     {
@@ -2972,7 +2972,7 @@
       "fuente": "tavily",
       "url_origen": "https://www.pellicerheredia.com/abogados-en-madrid-pellicer-heredia/",
       "fecha_extraccion": "2026-01-17T04:37:10.267531",
-      "fecha_actualizacion": "2026-01-17T04:56:56.330807",
+      "fecha_actualizacion": "2026-01-17T05:07:25.466708",
       "idiomas": []
     },
     {
@@ -3026,15 +3026,15 @@
       "ciudad": "Barcelona",
       "distrito": null,
       "especialidades": [
-        "visados",
+        "nacionalidad",
         "asilo",
-        "nacionalidad"
+        "visados"
       ],
       "valoracion": null,
       "fuente": "tavily",
       "url_origen": "https://venturaextranjeria.com/",
       "fecha_extraccion": "2026-01-17T04:37:10.268424",
-      "fecha_actualizacion": "2026-01-17T05:04:21.382519",
+      "fecha_actualizacion": "2026-01-17T05:07:25.537553",
       "idiomas": []
     },
     {
@@ -3157,17 +3157,17 @@
       "ciudad": "Madrid",
       "distrito": null,
       "especialidades": [
-        "arraigo",
-        "reagrupación",
+        "nacionalidad",
         "visados",
         "recursos",
-        "nacionalidad"
+        "reagrupación",
+        "arraigo"
       ],
       "valoracion": null,
       "fuente": "tavily",
       "url_origen": "https://lexmovea.com/",
       "fecha_extraccion": "2026-01-17T04:37:15.044621",
-      "fecha_actualizacion": "2026-01-17T05:04:21.366772",
+      "fecha_actualizacion": "2026-01-17T05:07:25.337506",
       "idiomas": []
     },
     {
@@ -3325,15 +3325,15 @@
       "ciudad": "Madrid",
       "distrito": null,
       "especialidades": [
-        "visados",
+        "nacionalidad",
         "asilo",
-        "nacionalidad"
+        "visados"
       ],
       "valoracion": null,
       "fuente": "tavily",
       "url_origen": "https://agueraabogados.com/",
       "fecha_extraccion": "2026-01-17T04:37:19.694838",
-      "fecha_actualizacion": "2026-01-17T05:04:21.516299",
+      "fecha_actualizacion": "2026-01-17T05:07:25.434992",
       "idiomas": []
     },
     {
@@ -3477,18 +3477,18 @@
       "ciudad": "Madrid",
       "distrito": null,
       "especialidades": [
+        "nacionalidad",
         "permisos",
-        "arraigo",
-        "reagrupación",
         "visados",
         "recursos",
-        "nacionalidad"
+        "reagrupación",
+        "arraigo"
       ],
       "valoracion": null,
       "fuente": "tavily",
       "url_origen": "https://vegaabogado.com/",
       "fecha_extraccion": "2026-01-17T04:37:24.788621",
-      "fecha_actualizacion": "2026-01-17T05:04:21.516582",
+      "fecha_actualizacion": "2026-01-17T05:07:25.435103",
       "idiomas": []
     },
     {
@@ -4075,7 +4075,7 @@
       "fuente": "tavily",
       "url_origen": "https://www.agmabogados.com/inmigracion/",
       "fecha_extraccion": "2026-01-17T04:42:00.138978",
-      "fecha_actualizacion": "2026-01-17T05:04:21.956634",
+      "fecha_actualizacion": "2026-01-17T05:07:25.605699",
       "idiomas": []
     },
     {
@@ -4725,15 +4725,15 @@
       "ciudad": "Madrid",
       "distrito": null,
       "especialidades": [
-        "visados",
+        "nacionalidad",
         "asilo",
-        "nacionalidad"
+        "visados"
       ],
       "valoracion": null,
       "fuente": "tavily",
       "url_origen": "https://www.abogadoextranjeriamadrid.net/sobre-nosotros/",
       "fecha_extraccion": "2026-01-17T04:43:04.359098",
-      "fecha_actualizacion": "2026-01-17T05:04:21.047769",
+      "fecha_actualizacion": "2026-01-17T05:07:25.605572",
       "idiomas": []
     },
     {
@@ -6473,17 +6473,17 @@
       "ciudad": "Madrid",
       "distrito": null,
       "especialidades": [
-        "asilo",
-        "arraigo",
+        "nacionalidad",
         "visados",
         "recursos",
-        "nacionalidad"
+        "asilo",
+        "arraigo"
       ],
       "valoracion": null,
       "fuente": "tavily",
       "url_origen": "https://www.arc-legal.es/",
       "fecha_extraccion": "2026-01-17T04:45:49.168571",
-      "fecha_actualizacion": "2026-01-17T05:04:21.028292",
+      "fecha_actualizacion": "2026-01-17T05:07:25.582893",
       "idiomas": []
     },
     {
@@ -6633,14 +6633,14 @@
       "ciudad": "Madrid",
       "distrito": null,
       "especialidades": [
-        "visados",
-        "permisos"
+        "permisos",
+        "visados"
       ],
       "valoracion": null,
       "fuente": "tavily",
       "url_origen": "https://castellanalaw.net/area-de-inmigracion/",
       "fecha_extraccion": "2026-01-17T04:45:58.959468",
-      "fecha_actualizacion": "2026-01-17T05:04:21.052859",
+      "fecha_actualizacion": "2026-01-17T05:07:25.614238",
       "idiomas": []
     },
     {
@@ -7197,18 +7197,18 @@
       "ciudad": "Madrid",
       "distrito": null,
       "especialidades": [
-        "asilo",
-        "arraigo",
-        "reagrupación",
+        "nacionalidad",
         "visados",
         "recursos",
-        "nacionalidad"
+        "asilo",
+        "reagrupación",
+        "arraigo"
       ],
       "valoracion": null,
       "fuente": "tavily",
       "url_origen": "https://www.jpdabogados.com/extranjeria",
       "fecha_extraccion": "2026-01-17T04:46:17.522955",
-      "fecha_actualizacion": "2026-01-17T05:04:21.516798",
+      "fecha_actualizacion": "2026-01-17T05:07:25.435421",
       "idiomas": []
     },
     {
@@ -10367,7 +10367,7 @@
       "fuente": "tavily",
       "url_origen": "https://www.abogadadeextranjeria.es/consulta-gratis-abogado-extranjeria-inmigracion/",
       "fecha_extraccion": "2026-01-17T04:54:50.111000",
-      "fecha_actualizacion": "2026-01-17T05:04:20.985943",
+      "fecha_actualizacion": "2026-01-17T05:07:25.537671",
       "idiomas": []
     },
     {
@@ -11037,7 +11037,7 @@
       "fuente": "tavily",
       "url_origen": "https://aguadoabogados.com/abogados-derecho-extranjeria/",
       "fecha_extraccion": "2026-01-17T04:56:23.623777",
-      "fecha_actualizacion": "2026-01-17T05:04:21.742840",
+      "fecha_actualizacion": "2026-01-17T05:07:25.375228",
       "idiomas": []
     },
     {
@@ -11346,7 +11346,7 @@
       "fuente": "tavily",
       "url_origen": "https://aemigrarlegal.com/",
       "fecha_extraccion": "2026-01-17T04:56:51.791203",
-      "fecha_actualizacion": "2026-01-17T05:04:21.096226",
+      "fecha_actualizacion": "2026-01-17T05:07:25.681050",
       "idiomas": []
     },
     {
@@ -11776,7 +11776,8 @@
       "fuente": "tavily",
       "url_origen": "https://jurasdenacionalidad.es/",
       "fecha_extraccion": "2026-01-17T05:02:00.127413",
-      "fecha_actualizacion": "2026-01-17T05:02:06.217281"
+      "fecha_actualizacion": "2026-01-17T05:07:25.434775",
+      "idiomas": []
     },
     {
       "nombre": "Solicitar nacionalidad española - Ayuda legal",
@@ -11830,7 +11831,7 @@
       "fuente": "tavily",
       "url_origen": "https://www.abogadoamigo.com/abogados-extranjeria/",
       "fecha_extraccion": "2026-01-17T05:03:19.100826",
-      "fecha_actualizacion": "2026-01-17T05:04:21.905348",
+      "fecha_actualizacion": "2026-01-17T05:07:25.681530",
       "idiomas": []
     },
     {
@@ -11849,7 +11850,7 @@
       "fuente": "tavily",
       "url_origen": "https://www.motionlaw.com/es/sobre-nuestra-firma/",
       "fecha_extraccion": "2026-01-17T05:03:19.101416",
-      "fecha_actualizacion": "2026-01-17T05:04:21.097301",
+      "fecha_actualizacion": "2026-01-17T05:07:25.681884",
       "idiomas": []
     },
     {
@@ -11925,7 +11926,8 @@
       "fuente": "firecrawl_search",
       "url_origen": "https://todoextranjeria.es/",
       "fecha_extraccion": "2026-01-17T05:04:15.317175",
-      "fecha_actualizacion": "2026-01-17T05:04:21.452551"
+      "fecha_actualizacion": "2026-01-17T05:07:25.365185",
+      "idiomas": []
     },
     {
       "nombre": "abogados extranjeria servicios",
@@ -11941,7 +11943,8 @@
       "fuente": "firecrawl_search",
       "url_origen": "https://www.abogadosextranjeriamadrid.com/reserva-tu-cita/",
       "fecha_extraccion": "2026-01-17T05:04:15.317217",
-      "fecha_actualizacion": "2026-01-17T05:04:21.516102"
+      "fecha_actualizacion": "2026-01-17T05:07:25.365452",
+      "idiomas": []
     },
     {
       "nombre": "Abogados Extranjeria",
@@ -11957,7 +11960,8 @@
       "fuente": "firecrawl_search",
       "url_origen": "https://belmontecrespoabogados.com/abogados-extranjeria/",
       "fecha_extraccion": "2026-01-17T05:04:16.831521",
-      "fecha_actualizacion": "2026-01-17T05:04:21.597007"
+      "fecha_actualizacion": "2026-01-17T05:07:25.466968",
+      "idiomas": []
     },
     {
       "nombre": "Bufete de abogados de Extranjería en Madrid",
@@ -12057,6 +12061,22 @@
       "fecha_extraccion": "2026-01-17T05:04:20.982547",
       "fecha_actualizacion": "2026-01-17T05:04:22.259872",
       "idiomas": []
+    },
+    {
+      "nombre": "Castellucci Abogados – Bufete de Abogados en Madrid",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": null,
+      "web": "https://www.castellucciabogados.com/",
+      "direccion": null,
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [],
+      "valoracion": null,
+      "fuente": "firecrawl_search",
+      "url_origen": "https://www.castellucciabogados.com/",
+      "fecha_extraccion": "2026-01-17T05:06:53.883561",
+      "fecha_actualizacion": "2026-01-17T05:07:25.536711"
     }
   ]
 }
