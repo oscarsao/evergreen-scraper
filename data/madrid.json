@@ -1,7 +1,7 @@
 {
   "metadata": {
     "fecha_actualizacion": "2026-01-17T04:56:58.652379",
-    "total_registros": 635,
+    "total_registros": 588,
     "fuente": "consolidador_multiagente"
   },
   "registros": [
@@ -540,118 +540,6 @@
       "numero_colegiado": "68.283"
     },
     {
-      "nombre": "Luz Elena Jara Vera",
-      "tipo": "abogado",
-      "telefono": [
-        "914 464 493"
-      ],
-      "email": "ljabogados1@gmail.com",
-      "web": null,
-      "direccion": "C/ Monteleón 36, Bajo Izq., Madrid",
-      "ciudad": "Madrid",
-      "distrito": "Chamberí",
-      "especialidades": [
-        "extranjería"
-      ],
-      "numero_colegiado": null
-    },
-    {
-      "nombre": "Jose Manuel Sánchez Hernández",
-      "tipo": "abogado",
-      "telefono": [
-        "639 034 215"
-      ],
-      "email": "sanchezhernandezvk@icam.es",
-      "web": null,
-      "direccion": "C/ Arroyo del Olivar 24, Madrid",
-      "ciudad": "Madrid",
-      "distrito": null,
-      "especialidades": [
-        "extranjería"
-      ],
-      "numero_colegiado": null
-    },
-    {
-      "nombre": "Liliya Mykolayiv",
-      "tipo": "abogado",
-      "telefono": [
-        "650 816 396"
-      ],
-      "email": "liliya.mykolayiv@icam.es",
-      "web": null,
-      "direccion": "C/ Bárbara de Braganza 11, 3º D, Madrid",
-      "ciudad": "Madrid",
-      "distrito": "Centro",
-      "especialidades": [
-        "extranjería"
-      ],
-      "numero_colegiado": null
-    },
-    {
-      "nombre": "María Ángeles González San Millán",
-      "tipo": "abogado",
-      "telefono": [
-        "675 801 868"
-      ],
-      "email": "magelesgsm@yahoo.es",
-      "web": null,
-      "direccion": "Paseo General Martínez Campos 15, Madrid",
-      "ciudad": "Madrid",
-      "distrito": "Chamberí",
-      "especialidades": [
-        "extranjería"
-      ],
-      "numero_colegiado": "84.400"
-    },
-    {
-      "nombre": "Elena Garcia Cazorla",
-      "tipo": "abogado",
-      "telefono": [
-        "639 863 933"
-      ],
-      "email": "elena.garcia@abogadosextranjeria.es",
-      "web": null,
-      "direccion": "Calle Gran Vía 69, 7º 712, Madrid",
-      "ciudad": "Madrid",
-      "distrito": "Centro",
-      "especialidades": [
-        "extranjería"
-      ],
-      "numero_colegiado": "56.732"
-    },
-    {
-      "nombre": "Horacio López Molina",
-      "tipo": "abogado",
-      "telefono": [
-        "638 519 203"
-      ],
-      "email": "horacio@icam.es",
-      "web": null,
-      "direccion": "Calle Juan de Urbieta 6, 5ºA, Madrid",
-      "ciudad": "Madrid",
-      "distrito": "Retiro",
-      "especialidades": [
-        "extranjería"
-      ],
-      "numero_colegiado": "94.707"
-    },
-    {
-      "nombre": "Leonardo Ponce Medina",
-      "tipo": "abogado",
-      "telefono": [
-        "646 184 834"
-      ],
-      "email": "leoponmed@gmail.com",
-      "web": null,
-      "direccion": "Calle Teruel 11, Madrid",
-      "ciudad": "Madrid",
-      "distrito": null,
-      "especialidades": [
-        "extranjería"
-      ],
-      "numero_colegiado": "118.263"
-    },
-    {
       "nombre": "Marta Ferreiro",
       "tipo": "abogado",
       "telefono": [
@@ -783,23 +671,6 @@
       "distrito": "Moratalaz",
       "especialidades": [
         "extranjería"
-      ],
-      "valoracion": null
-    },
-    {
-      "nombre": "Marisol Ferrero Abogada",
-      "tipo": "abogado",
-      "telefono": [
-        "+34 662 519 855"
-      ],
-      "email": null,
-      "web": null,
-      "direccion": "Calle Poeta Joan Maragall 60, 2º, 28020 Madrid",
-      "ciudad": "Madrid",
-      "distrito": "Tetuán",
-      "especialidades": [
-        "extranjería",
-        "nacionalidad"
       ],
       "valoracion": null
     },
@@ -1200,78 +1071,6 @@
       "idiomas": []
     },
     {
-      "nombre": "English translation of 'mejor' - Collins Online Dictionary",
-      "tipo": "despacho",
-      "telefono": [],
-      "email": null,
-      "web": "https://www.collinsdictionary.com/dictionary/spanish-english/mejor",
-      "direccion": null,
-      "ciudad": null,
-      "distrito": null,
-      "especialidades": [],
-      "valoracion": null,
-      "fuente": "tavily",
-      "url_origen": "https://www.collinsdictionary.com/dictionary/spanish-english/mejor",
-      "fecha_extraccion": "2026-01-17T03:44:49.901904",
-      "fecha_actualizacion": "2026-01-17T03:45:25.405518"
-    },
-    {
-      "nombre": "MEJOR",
-      "tipo": "despacho",
-      "telefono": [],
-      "email": null,
-      "web": "https://dictionary.cambridge.org/us/dictionary/spanish-english/mejor",
-      "direccion": null,
-      "ciudad": null,
-      "distrito": null,
-      "especialidades": [
-        "visados"
-      ],
-      "valoracion": null,
-      "fuente": "tavily",
-      "url_origen": "https://dictionary.cambridge.org/us/dictionary/spanish-english/mejor",
-      "fecha_extraccion": "2026-01-17T03:44:49.902795",
-      "fecha_actualizacion": "2026-01-17T03:45:25.414789"
-    },
-    {
-      "nombre": "Tramites_extranjeria",
-      "tipo": "despacho",
-      "telefono": [],
-      "email": null,
-      "web": "https://tramites.extranjeria.gob.cl/tramites/ver_ficha/244",
-      "direccion": null,
-      "ciudad": null,
-      "distrito": null,
-      "especialidades": [
-        "visados",
-        "permisos",
-        "recursos",
-        "expulsiones"
-      ],
-      "valoracion": null,
-      "fuente": "tavily",
-      "url_origen": "https://tramites.extranjeria.gob.cl/tramites/ver_ficha/244",
-      "fecha_extraccion": "2026-01-17T03:44:59.776098",
-      "fecha_actualizacion": "2026-01-17T03:45:25.433642",
-      "idiomas": []
-    },
-    {
-      "nombre": "Abogado extranjeria: cómo solicitar la nacionalidad española ...",
-      "tipo": "despacho",
-      "telefono": [],
-      "email": null,
-      "web": "https://www.catala-reinon.es/blog/abogado-extranjeria-solicitar-nacionalidad-espanola",
-      "direccion": null,
-      "ciudad": null,
-      "distrito": null,
-      "especialidades": [],
-      "valoracion": null,
-      "fuente": "google_search",
-      "url_origen": "https://www.catala-reinon.es/blog/abogado-extranjeria-solicitar-nacionalidad-espanola",
-      "fecha_extraccion": "2026-01-17T03:45:02.695010",
-      "fecha_actualizacion": "2026-01-17T03:45:25.483245"
-    },
-    {
       "nombre": "Abogados en Madrid",
       "tipo": "despacho",
       "telefono": [
@@ -1292,181 +1091,6 @@
       "fecha_extraccion": "2026-01-17T03:45:02.697416",
       "fecha_actualizacion": "2026-01-17T04:37:39.242660",
       "idiomas": []
-    },
-    {
-      "nombre": "Consideración de la vida familiar en Madrid | Català Reinón",
-      "tipo": "despacho",
-      "telefono": [],
-      "email": null,
-      "web": "https://www.catala-reinon.es/blog/consideracion-vida-familiar-madrid",
-      "direccion": null,
-      "ciudad": null,
-      "distrito": null,
-      "especialidades": [],
-      "valoracion": null,
-      "fuente": "google_search",
-      "url_origen": "https://www.catala-reinon.es/blog/consideracion-vida-familiar-madrid",
-      "fecha_extraccion": "2026-01-17T03:45:02.697463",
-      "fecha_actualizacion": "2026-01-17T03:45:25.497629"
-    },
-    {
-      "nombre": "Consumo propio drogas en Madrid: diferencias con el delito de tráfico",
-      "tipo": "despacho",
-      "telefono": [],
-      "email": null,
-      "web": "https://www.catala-reinon.es/blog/consumo-propio-drogas-madrid-diferencias-delito-trafico",
-      "direccion": null,
-      "ciudad": null,
-      "distrito": null,
-      "especialidades": [],
-      "valoracion": null,
-      "fuente": "google_search",
-      "url_origen": "https://www.catala-reinon.es/blog/consumo-propio-drogas-madrid-diferencias-delito-trafico",
-      "fecha_extraccion": "2026-01-17T03:45:02.697525",
-      "fecha_actualizacion": "2026-01-17T03:45:25.507294"
-    },
-    {
-      "nombre": "Abogados de extranjería, trabajo y penal en Los Ángeles ...",
-      "tipo": "despacho",
-      "telefono": [],
-      "email": null,
-      "web": "https://abogado.la/",
-      "direccion": null,
-      "ciudad": null,
-      "distrito": null,
-      "especialidades": [],
-      "valoracion": null,
-      "fuente": "tavily",
-      "url_origen": "https://abogado.la/",
-      "fecha_extraccion": "2026-01-17T04:34:09.882417",
-      "fecha_actualizacion": "2026-01-17T04:53:54.407886",
-      "idiomas": []
-    },
-    {
-      "nombre": "The United Firm",
-      "tipo": "despacho",
-      "telefono": [
-        "844800551"
-      ],
-      "email": null,
-      "web": "https://laligadefensora.com/",
-      "direccion": null,
-      "ciudad": null,
-      "distrito": null,
-      "especialidades": [
-        "visados"
-      ],
-      "valoracion": null,
-      "fuente": "tavily",
-      "url_origen": "https://laligadefensora.com/",
-      "fecha_extraccion": "2026-01-17T04:34:09.883264",
-      "fecha_actualizacion": "2026-01-17T04:53:54.407860",
-      "idiomas": []
-    },
-    {
-      "nombre": "Los Angeles Abogados de Inmigración Consulta Gratis - California",
-      "tipo": "despacho",
-      "telefono": [],
-      "email": null,
-      "web": "https://abogadosinmigracionlosangeles.la/",
-      "direccion": null,
-      "ciudad": null,
-      "distrito": null,
-      "especialidades": [
-        "visados"
-      ],
-      "valoracion": null,
-      "fuente": "tavily",
-      "url_origen": "https://abogadosinmigracionlosangeles.la/",
-      "fecha_extraccion": "2026-01-17T04:34:09.883741",
-      "fecha_actualizacion": "2026-01-17T04:53:54.407900",
-      "idiomas": []
-    },
-    {
-      "nombre": "ᐉ Abogados que hablen español en Los Ángeles , CA 》Consulta ...",
-      "tipo": "despacho",
-      "telefono": [],
-      "email": null,
-      "web": "https://abogadosfinder.us/california/los-angeles/",
-      "direccion": null,
-      "ciudad": null,
-      "distrito": null,
-      "especialidades": [
-        "visados"
-      ],
-      "valoracion": null,
-      "fuente": "tavily",
-      "url_origen": "https://abogadosfinder.us/california/los-angeles/",
-      "fecha_extraccion": "2026-01-17T04:34:09.884002",
-      "fecha_actualizacion": "2026-01-17T04:35:23.613929"
-    },
-    {
-      "nombre": "Abogados y firmas en Los Angeles , CA cerca de ti que hablan ...",
-      "tipo": "despacho",
-      "telefono": [],
-      "email": null,
-      "web": "https://www.abogado.com/california/los-angeles/",
-      "direccion": null,
-      "ciudad": null,
-      "distrito": null,
-      "especialidades": [
-        "asilo"
-      ],
-      "valoracion": null,
-      "fuente": "tavily",
-      "url_origen": "https://www.abogado.com/california/los-angeles/",
-      "fecha_extraccion": "2026-01-17T04:34:09.885775",
-      "fecha_actualizacion": "2026-01-17T04:35:23.621660"
-    },
-    {
-      "nombre": "Coffee Tables - Modern & Stylish - IKEA",
-      "tipo": "despacho",
-      "telefono": [],
-      "email": null,
-      "web": "https://www.ikea.com/us/en/cat/coffee-tables-10716/",
-      "direccion": null,
-      "ciudad": null,
-      "distrito": null,
-      "especialidades": [
-        "visados"
-      ],
-      "valoracion": null,
-      "fuente": "tavily",
-      "url_origen": "https://www.ikea.com/us/en/cat/coffee-tables-10716/",
-      "fecha_extraccion": "2026-01-17T04:34:09.886347",
-      "fecha_actualizacion": "2026-01-17T04:35:23.637986"
-    },
-    {
-      "nombre": "Coffee Tables - Living Room Furniture : Target",
-      "tipo": "despacho",
-      "telefono": [],
-      "email": null,
-      "web": "https://www.target.com/c/coffee-tables-living-room-furniture/-/N-5xtm7",
-      "direccion": null,
-      "ciudad": null,
-      "distrito": null,
-      "especialidades": [],
-      "valoracion": null,
-      "fuente": "tavily",
-      "url_origen": "https://www.target.com/c/coffee-tables-living-room-furniture/-/N-5xtm7",
-      "fecha_extraccion": "2026-01-17T04:34:09.886641",
-      "fecha_actualizacion": "2026-01-17T04:35:23.646096"
-    },
-    {
-      "nombre": "Coffee Tables",
-      "tipo": "despacho",
-      "telefono": [],
-      "email": null,
-      "web": "https://www.amazon.com/Coffee-Tables/b?node=3733631",
-      "direccion": null,
-      "ciudad": null,
-      "distrito": null,
-      "especialidades": [],
-      "valoracion": null,
-      "fuente": "tavily",
-      "url_origen": "https://www.amazon.com/Coffee-Tables/b?node=3733631",
-      "fecha_extraccion": "2026-01-17T04:34:09.887082",
-      "fecha_actualizacion": "2026-01-17T04:35:23.660200"
     },
     {
       "nombre": "Abogados de extranjería y movilidad internacional",
@@ -1786,40 +1410,6 @@
       "idiomas": []
     },
     {
-      "nombre": "Diario Oficial de la Federación",
-      "tipo": "despacho",
-      "telefono": [],
-      "email": null,
-      "web": "https://dof.gob.mx/nota_to_pdf.php?fecha=12/09/1946&edicion=MAT",
-      "direccion": null,
-      "ciudad": null,
-      "distrito": null,
-      "especialidades": [],
-      "valoracion": null,
-      "fuente": "firecrawl_search",
-      "url_origen": "https://dof.gob.mx/nota_to_pdf.php?fecha=12/09/1946&edicion=MAT",
-      "fecha_extraccion": "2026-01-17T04:34:54.750665",
-      "fecha_actualizacion": "2026-01-17T04:35:23.866419"
-    },
-    {
-      "nombre": "Expatriaciones forzosas masivas en Cuba",
-      "tipo": "despacho",
-      "telefono": [
-        "+34647564741"
-      ],
-      "email": "jlarron@gmail.com",
-      "web": "https://trendytranslations.squarespace.com/s/EXPATRIACIONES-COMUNICACION-PROCEDIMIENTO-ESPECIAL-NACIONES-UNIDAS.pdf",
-      "direccion": null,
-      "ciudad": null,
-      "distrito": null,
-      "especialidades": [],
-      "valoracion": null,
-      "fuente": "firecrawl_search",
-      "url_origen": "https://trendytranslations.squarespace.com/s/EXPATRIACIONES-COMUNICACION-PROCEDIMIENTO-ESPECIAL-NACIONES-UNIDAS.pdf",
-      "fecha_extraccion": "2026-01-17T04:34:54.750689",
-      "fecha_actualizacion": "2026-01-17T04:35:23.875451"
-    },
-    {
       "nombre": "Sección Cortes Generales Serie A",
       "tipo": "despacho",
       "telefono": [],
@@ -1834,22 +1424,6 @@
       "url_origen": "https://www.congreso.es/public_oficiales/L10/CORT/BOCG/A/BOCG-10-CG-A-222.PDF",
       "fecha_extraccion": "2026-01-17T04:34:54.750719",
       "fecha_actualizacion": "2026-01-17T04:35:23.885246"
-    },
-    {
-      "nombre": "Tesis final por revision Ari & Isra",
-      "tipo": "despacho",
-      "telefono": [],
-      "email": null,
-      "web": "https://tesis.ipn.mx/bitstream/handle/123456789/13790/1984%202014%281%29.pdf?sequence=1&isAllowed=y",
-      "direccion": null,
-      "ciudad": null,
-      "distrito": null,
-      "especialidades": [],
-      "valoracion": null,
-      "fuente": "firecrawl_search",
-      "url_origen": "https://tesis.ipn.mx/bitstream/handle/123456789/13790/1984%202014%281%29.pdf?sequence=1&isAllowed=y",
-      "fecha_extraccion": "2026-01-17T04:34:54.750737",
-      "fecha_actualizacion": "2026-01-17T04:35:23.894920"
     },
     {
       "nombre": "Volumen 10, Año 9 (Junio, 2017) – ISSN: 2077-9070",
@@ -2242,22 +1816,6 @@
       "fecha_extraccion": "2026-01-17T04:36:08.628764",
       "fecha_actualizacion": "2026-01-17T04:45:28.947786",
       "idiomas": []
-    },
-    {
-      "nombre": "Teléfono",
-      "tipo": "despacho",
-      "telefono": [],
-      "email": null,
-      "web": "https://www.spanishdict.com/translate/teléfono",
-      "direccion": null,
-      "ciudad": null,
-      "distrito": null,
-      "especialidades": [],
-      "valoracion": null,
-      "fuente": "tavily",
-      "url_origen": "https://www.spanishdict.com/translate/teléfono",
-      "fecha_extraccion": "2026-01-17T04:36:08.633973",
-      "fecha_actualizacion": "2026-01-17T04:37:39.167975"
     },
     {
       "nombre": "Telephone",
@@ -2998,22 +2556,6 @@
       "fecha_actualizacion": "2026-01-17T04:37:39.825172"
     },
     {
-      "nombre": "Extranjería en España: procesos y recomendaciones",
-      "tipo": "despacho",
-      "telefono": [],
-      "email": "abogados@legansbc.es",
-      "web": "https://legansbusinesscenter.es/D/post/extranjeria-en-espana-procesos-y-recomendaciones/",
-      "direccion": null,
-      "ciudad": null,
-      "distrito": null,
-      "especialidades": [],
-      "valoracion": null,
-      "fuente": "tavily",
-      "url_origen": "https://legansbusinesscenter.es/D/post/extranjeria-en-espana-procesos-y-recomendaciones/",
-      "fecha_extraccion": "2026-01-17T04:36:46.505867",
-      "fecha_actualizacion": "2026-01-17T04:37:39.852968"
-    },
-    {
       "nombre": "Derecho Extranjería",
       "tipo": "despacho",
       "telefono": [],
@@ -3154,22 +2696,6 @@
       "fecha_extraccion": "2026-01-17T04:36:56.659876",
       "fecha_actualizacion": "2026-01-17T04:43:49.612995",
       "idiomas": []
-    },
-    {
-      "nombre": "Abogados en Getafe - Pide tu Cita o Videocita",
-      "tipo": "despacho",
-      "telefono": [],
-      "email": "despacho@vilchesabogados.com",
-      "web": "https://blog.hernandez-vilches.com/abogados-getafe/",
-      "direccion": null,
-      "ciudad": "Madrid",
-      "distrito": null,
-      "especialidades": [],
-      "valoracion": null,
-      "fuente": "tavily",
-      "url_origen": "https://blog.hernandez-vilches.com/abogados-getafe/",
-      "fecha_extraccion": "2026-01-17T04:36:56.661330",
-      "fecha_actualizacion": "2026-01-17T04:37:40.047611"
     },
     {
       "nombre": "Abogados Madrid • ALLENDE",
@@ -4041,22 +3567,6 @@
       "idiomas": []
     },
     {
-      "nombre": "Residencia y permiso de trabajo en España",
-      "tipo": "despacho",
-      "telefono": [],
-      "email": null,
-      "web": "https://www.westernunion.com/blog/es/residencia-y-permiso-de-trabajo-en-espana/",
-      "direccion": null,
-      "ciudad": null,
-      "distrito": null,
-      "especialidades": [],
-      "valoracion": null,
-      "fuente": "tavily",
-      "url_origen": "https://www.westernunion.com/blog/es/residencia-y-permiso-de-trabajo-en-espana/",
-      "fecha_extraccion": "2026-01-17T04:37:29.383649",
-      "fecha_actualizacion": "2026-01-17T04:37:41.000227"
-    },
-    {
       "nombre": "Immigration lawyers in Madrid - Express service",
       "tipo": "despacho",
       "telefono": [],
@@ -4272,27 +3782,6 @@
       "url_origen": "https://web.icam.es/bucket/GU%C3%8DA%20JUR%C3%8DDICA_.pdf",
       "fecha_extraccion": "2026-01-17T04:41:32.988830",
       "fecha_actualizacion": "2026-01-17T04:42:15.247211"
-    },
-    {
-      "nombre": "Abogado urgencias penal extranjería madrid 24 horas",
-      "tipo": "despacho",
-      "telefono": [],
-      "email": null,
-      "web": "https://vegaabogado.com/blog-juridico/abogado-urgencias-penal-extranjeria-madrid-24-horas.html",
-      "direccion": null,
-      "ciudad": "Madrid",
-      "distrito": null,
-      "especialidades": [
-        "arraigo",
-        "nacionalidad",
-        "visados",
-        "recursos"
-      ],
-      "valoracion": null,
-      "fuente": "tavily",
-      "url_origen": "https://vegaabogado.com/blog-juridico/abogado-urgencias-penal-extranjeria-madrid-24-horas.html",
-      "fecha_extraccion": "2026-01-17T04:41:37.499530",
-      "fecha_actualizacion": "2026-01-17T04:42:15.315769"
     },
     {
       "nombre": "Borrás & Asociados",
@@ -5087,48 +4576,6 @@
       "url_origen": "https://www.acnur.org/es-es/acnur-en-espana/el-asilo-en-espana",
       "fecha_extraccion": "2026-01-17T04:42:50.561675",
       "fecha_actualizacion": "2026-01-17T04:43:48.853217"
-    },
-    {
-      "nombre": "Anulación de sanción de expulsión",
-      "tipo": "despacho",
-      "telefono": [],
-      "email": null,
-      "web": "https://abogaciaextranjeria.es/blog/sancion-de-expulsion/",
-      "direccion": null,
-      "ciudad": "Madrid",
-      "distrito": null,
-      "especialidades": [
-        "expulsiones",
-        "recursos"
-      ],
-      "valoracion": null,
-      "fuente": "tavily",
-      "url_origen": "https://abogaciaextranjeria.es/blog/sancion-de-expulsion/",
-      "fecha_extraccion": "2026-01-17T04:42:54.627185",
-      "fecha_actualizacion": "2026-01-17T04:43:48.884740"
-    },
-    {
-      "nombre": "Paralizar una expulsión",
-      "tipo": "despacho",
-      "telefono": [],
-      "email": null,
-      "web": "https://www.abogadoextranjeriamadrid.org/blog/paralizar-una-expulsion",
-      "direccion": null,
-      "ciudad": "Madrid",
-      "distrito": null,
-      "especialidades": [
-        "arraigo",
-        "nacionalidad",
-        "reagrupación",
-        "visados",
-        "expulsiones",
-        "recursos"
-      ],
-      "valoracion": null,
-      "fuente": "tavily",
-      "url_origen": "https://www.abogadoextranjeriamadrid.org/blog/paralizar-una-expulsion",
-      "fecha_extraccion": "2026-01-17T04:42:54.627986",
-      "fecha_actualizacion": "2026-01-17T04:43:48.909221"
     },
     {
       "nombre": "recursos contencioso- extranjeria -contra expulsion",
@@ -6994,25 +6441,6 @@
       "fecha_actualizacion": "2026-01-17T04:47:00.873761"
     },
     {
-      "nombre": "Francisco Antonio Campos Notario - Lexmovea",
-      "tipo": "despacho",
-      "telefono": [],
-      "email": null,
-      "web": "https://lexmovea.mx/mejores-abogados-extranjeria-madrid/francisco/",
-      "direccion": null,
-      "ciudad": "Madrid",
-      "distrito": null,
-      "especialidades": [
-        "arraigo",
-        "visados"
-      ],
-      "valoracion": null,
-      "fuente": "tavily",
-      "url_origen": "https://lexmovea.mx/mejores-abogados-extranjeria-madrid/francisco/",
-      "fecha_extraccion": "2026-01-17T04:45:49.167180",
-      "fecha_actualizacion": "2026-01-17T04:47:00.915043"
-    },
-    {
       "nombre": "ARC Legal",
       "tipo": "despacho",
       "telefono": [
@@ -7625,26 +7053,6 @@
       "idiomas": []
     },
     {
-      "nombre": "Guía para la prórroga de estancia en España",
-      "tipo": "despacho",
-      "telefono": [],
-      "email": null,
-      "web": "https://abogaciaextranjeria.es/blog/prorroga-de-estancia-espana/",
-      "direccion": null,
-      "ciudad": "Madrid",
-      "distrito": null,
-      "especialidades": [
-        "nacionalidad",
-        "visados",
-        "recursos"
-      ],
-      "valoracion": null,
-      "fuente": "tavily",
-      "url_origen": "https://abogaciaextranjeria.es/blog/prorroga-de-estancia-espana/",
-      "fecha_extraccion": "2026-01-17T04:46:12.666380",
-      "fecha_actualizacion": "2026-01-17T04:47:02.325249"
-    },
-    {
       "nombre": "Prórroga de estancia por estudios",
       "tipo": "despacho",
       "telefono": [
@@ -7908,22 +7316,6 @@
       "url_origen": "https://balcellsgroup.com/es/homologacion-titulos-extranjeros/",
       "fecha_extraccion": "2026-01-17T04:46:22.186543",
       "fecha_actualizacion": "2026-01-17T04:47:03.069222"
-    },
-    {
-      "nombre": "¿Cómo agilizar la homologación de títulos universitarios ...",
-      "tipo": "despacho",
-      "telefono": [],
-      "email": null,
-      "web": "https://echeverriaabogados.com/es/blog/tramites/como-agilizar-homologacion-titulos-universitarios",
-      "direccion": null,
-      "ciudad": "Valencia",
-      "distrito": null,
-      "especialidades": [],
-      "valoracion": null,
-      "fuente": "tavily",
-      "url_origen": "https://echeverriaabogados.com/es/blog/tramites/como-agilizar-homologacion-titulos-universitarios",
-      "fecha_extraccion": "2026-01-17T04:46:22.187239",
-      "fecha_actualizacion": "2026-01-17T04:47:03.123944"
     },
     {
       "nombre": "Subsede electrónica",
@@ -8527,22 +7919,6 @@
       "url_origen": "https://www.exteriores.gob.es/Consulados/guadalajara/es/ServiciosConsulares/Paginas/index.aspx?scca=Familia&scco=M%C3%A9xico&scd=147&scs=Divorcios",
       "fecha_extraccion": "2026-01-17T04:46:42.832406",
       "fecha_actualizacion": "2026-01-17T04:47:04.703516"
-    },
-    {
-      "nombre": "Herencias Internacionales • La mejor Asesoría para ...",
-      "tipo": "despacho",
-      "telefono": [],
-      "email": null,
-      "web": "https://abogadosherencias.madrid/herencias-internacionales/",
-      "direccion": null,
-      "ciudad": "Madrid",
-      "distrito": null,
-      "especialidades": [],
-      "valoracion": null,
-      "fuente": "tavily",
-      "url_origen": "https://abogadosherencias.madrid/herencias-internacionales/",
-      "fecha_extraccion": "2026-01-17T04:46:46.978325",
-      "fecha_actualizacion": "2026-01-17T04:47:04.750945"
     },
     {
       "nombre": "Herencias de extranjeros residentes en España",
@@ -9349,22 +8725,6 @@
       "fecha_actualizacion": "2026-01-17T04:48:34.690461"
     },
     {
-      "nombre": "Fiebre de despachos Latam por Madrid: \"España es ...",
-      "tipo": "despacho",
-      "telefono": [],
-      "email": null,
-      "web": "https://www.elconfidencial.com/juridico/2024-08-13/despachos-abogados-latinoamericanos-madrid_3935472/",
-      "direccion": null,
-      "ciudad": "Madrid",
-      "distrito": null,
-      "especialidades": [],
-      "valoracion": null,
-      "fuente": "tavily",
-      "url_origen": "https://www.elconfidencial.com/juridico/2024-08-13/despachos-abogados-latinoamericanos-madrid_3935472/",
-      "fecha_extraccion": "2026-01-17T04:48:04.272745",
-      "fecha_actualizacion": "2026-01-17T04:48:34.860532"
-    },
-    {
       "nombre": "Internacional",
       "tipo": "despacho",
       "telefono": [],
@@ -9796,30 +9156,6 @@
       "idiomas": []
     },
     {
-      "nombre": "Abogado Migración Madrid - Lexmovea",
-      "tipo": "despacho",
-      "telefono": [],
-      "email": null,
-      "web": "https://lexmovea.mx/",
-      "direccion": null,
-      "ciudad": "Madrid",
-      "distrito": null,
-      "especialidades": [
-        "arraigo",
-        "recursos",
-        "reagrupación",
-        "expulsiones",
-        "nacionalidad",
-        "visados"
-      ],
-      "valoracion": null,
-      "fuente": "tavily",
-      "url_origen": "https://lexmovea.mx/",
-      "fecha_extraccion": "2026-01-17T04:51:14.155131",
-      "fecha_actualizacion": "2026-01-17T04:52:19.684247",
-      "idiomas": []
-    },
-    {
       "nombre": "Inicio",
       "tipo": "despacho",
       "telefono": [],
@@ -10076,27 +9412,6 @@
       "fecha_actualizacion": "2026-01-17T04:52:20.306973"
     },
     {
-      "nombre": "EXTRANJERÍA - L&S Abogados, Villa de Vallecas",
-      "tipo": "despacho",
-      "telefono": [],
-      "email": null,
-      "web": "https://www.lomejordelbarrio.com/villadevallecas/escaparate/13384-extranjeria-abogados-en-vallecas",
-      "direccion": null,
-      "ciudad": null,
-      "distrito": null,
-      "especialidades": [
-        "arraigo",
-        "nacionalidad",
-        "reagrupación",
-        "permisos"
-      ],
-      "valoracion": null,
-      "fuente": "tavily",
-      "url_origen": "https://www.lomejordelbarrio.com/villadevallecas/escaparate/13384-extranjeria-abogados-en-vallecas",
-      "fecha_extraccion": "2026-01-17T04:51:56.927817",
-      "fecha_actualizacion": "2026-01-17T04:52:20.372163"
-    },
-    {
       "nombre": "Despacho De Abogados De Extranjería En Madrid",
       "tipo": "despacho",
       "telefono": [
@@ -10341,26 +9656,6 @@
       "idiomas": []
     },
     {
-      "nombre": "Cita previa de trámites de la Oficina de Extranjería en Madrid",
-      "tipo": "despacho",
-      "telefono": [],
-      "email": null,
-      "web": "https://blogextranjeriaprogestion.org/2022/12/15/cita-previa-tramites-extranjeria-en-madrid-diciembre-2022/",
-      "direccion": null,
-      "ciudad": null,
-      "distrito": null,
-      "especialidades": [
-        "arraigo",
-        "asilo",
-        "reagrupación"
-      ],
-      "valoracion": null,
-      "fuente": "tavily",
-      "url_origen": "https://blogextranjeriaprogestion.org/2022/12/15/cita-previa-tramites-extranjeria-en-madrid-diciembre-2022/",
-      "fecha_extraccion": "2026-01-17T04:53:03.108157",
-      "fecha_actualizacion": "2026-01-17T04:53:54.592197"
-    },
-    {
       "nombre": "ALCOR ASOCIADOS, S.L.",
       "tipo": "despacho",
       "telefono": [
@@ -10458,24 +9753,6 @@
       "url_origen": "https://jtoledoabogados.com/",
       "fecha_extraccion": "2026-01-17T04:53:21.408091",
       "fecha_actualizacion": "2026-01-17T04:53:54.945368"
-    },
-    {
-      "nombre": "Abogados en Retiro: Los más recomendados.",
-      "tipo": "despacho",
-      "telefono": [],
-      "email": null,
-      "web": "https://www.lomejordelbarrio.com/retiro/abogados-en",
-      "direccion": null,
-      "ciudad": "Madrid",
-      "distrito": null,
-      "especialidades": [
-        "nacionalidad"
-      ],
-      "valoracion": null,
-      "fuente": "tavily",
-      "url_origen": "https://www.lomejordelbarrio.com/retiro/abogados-en",
-      "fecha_extraccion": "2026-01-17T04:53:21.408655",
-      "fecha_actualizacion": "2026-01-17T04:53:54.998815"
     },
     {
       "nombre": "Consulta de licencias y expedientes urbanísticos (CONEX)",
@@ -10928,24 +10205,6 @@
       "fecha_actualizacion": "2026-01-17T04:55:24.678094"
     },
     {
-      "nombre": "Solicitar visa de estudiante estando en España",
-      "tipo": "despacho",
-      "telefono": [],
-      "email": null,
-      "web": "https://abogaciaextranjeria.es/blog/solicitar-visa-de-estudiante-estando-en-espana/",
-      "direccion": null,
-      "ciudad": "Madrid",
-      "distrito": null,
-      "especialidades": [
-        "visados"
-      ],
-      "valoracion": null,
-      "fuente": "tavily",
-      "url_origen": "https://abogaciaextranjeria.es/blog/solicitar-visa-de-estudiante-estando-en-espana/",
-      "fecha_extraccion": "2026-01-17T04:54:35.582203",
-      "fecha_actualizacion": "2026-01-17T04:55:24.862761"
-    },
-    {
       "nombre": "Abogados Matrimonios Mixtos",
       "tipo": "despacho",
       "telefono": [],
@@ -11136,24 +10395,6 @@
       "fecha_actualizacion": "2026-01-17T04:55:25.581644"
     },
     {
-      "nombre": "Mi nombre es Enrique Vásquez y soy abogado de extranjería ...",
-      "tipo": "despacho",
-      "telefono": [],
-      "email": null,
-      "web": "https://www.instagram.com/reel/DF8H13gsqy7/",
-      "direccion": null,
-      "ciudad": "Madrid",
-      "distrito": null,
-      "especialidades": [
-        "nacionalidad"
-      ],
-      "valoracion": null,
-      "fuente": "tavily",
-      "url_origen": "https://www.instagram.com/reel/DF8H13gsqy7/",
-      "fecha_extraccion": "2026-01-17T04:55:09.461312",
-      "fecha_actualizacion": "2026-01-17T04:55:25.639448"
-    },
-    {
       "nombre": "Tu Gestion España",
       "tipo": "despacho",
       "telefono": [],
@@ -11192,26 +10433,6 @@
       "fecha_extraccion": "2026-01-17T04:55:09.462904",
       "fecha_actualizacion": "2026-01-17T04:55:26.291847",
       "idiomas": []
-    },
-    {
-      "nombre": "Triunvirato Abogados",
-      "tipo": "despacho",
-      "telefono": [
-        "+34659556091",
-        "+34617230418",
-        "+34627003244"
-      ],
-      "email": "info@triunviratoabogados.com",
-      "web": "https://www.instagram.com/triunvirato.abogados/",
-      "direccion": null,
-      "ciudad": null,
-      "distrito": null,
-      "especialidades": [],
-      "valoracion": null,
-      "fuente": "tavily",
-      "url_origen": "https://www.instagram.com/triunvirato.abogados/",
-      "fecha_extraccion": "2026-01-17T04:55:09.463758",
-      "fecha_actualizacion": "2026-01-17T04:55:25.775704"
     },
     {
       "nombre": "Gilberto Atencio: Abogados de inmigración en España - Home",
@@ -11301,22 +10522,6 @@
       "url_origen": "https://nodisea.com/",
       "fecha_extraccion": "2026-01-17T04:55:19.540702",
       "fecha_actualizacion": "2026-01-17T04:55:26.059855"
-    },
-    {
-      "nombre": "Immigration Lawyer in Madrid - Lexmovea",
-      "tipo": "despacho",
-      "telefono": [],
-      "email": null,
-      "web": "https://lexmovea.us/",
-      "direccion": null,
-      "ciudad": null,
-      "distrito": null,
-      "especialidades": [],
-      "valoracion": null,
-      "fuente": "tavily",
-      "url_origen": "https://lexmovea.us/",
-      "fecha_extraccion": "2026-01-17T04:55:19.541180",
-      "fecha_actualizacion": "2026-01-17T04:55:26.125985"
     },
     {
       "nombre": "Immigration Lawyers in Madrid",
@@ -11450,22 +10655,6 @@
       "url_origen": "https://tolentinoabogados.com/es/servicios/",
       "fecha_extraccion": "2026-01-17T04:55:59.000622",
       "fecha_actualizacion": "2026-01-17T04:56:56.378423"
-    },
-    {
-      "nombre": "Abogados de Extranjería RgB Legal Gestión ...",
-      "tipo": "despacho",
-      "telefono": [],
-      "email": null,
-      "web": "https://www.instagram.com/rgblegalgestion/",
-      "direccion": "Plaza de Callao, 1",
-      "ciudad": "Madrid",
-      "distrito": null,
-      "especialidades": [],
-      "valoracion": null,
-      "fuente": "tavily",
-      "url_origen": "https://www.instagram.com/rgblegalgestion/",
-      "fecha_extraccion": "2026-01-17T04:56:03.632160",
-      "fecha_actualizacion": "2026-01-17T04:56:56.462828"
     },
     {
       "nombre": "Quiénes somos",
@@ -11957,24 +11146,6 @@
       "url_origen": "https://www.rtasociados.es/",
       "fecha_extraccion": "2026-01-17T04:56:37.492341",
       "fecha_actualizacion": "2026-01-17T04:56:57.971767"
-    },
-    {
-      "nombre": "Requisitos para el Arraigo Familiar en España 2026",
-      "tipo": "despacho",
-      "telefono": [],
-      "email": null,
-      "web": "https://igabogadosextranjeria.com/requisitos-para-el-arraigo-familiar-en-espana-2026/",
-      "direccion": null,
-      "ciudad": "Madrid",
-      "distrito": null,
-      "especialidades": [
-        "arraigo"
-      ],
-      "valoracion": null,
-      "fuente": "tavily",
-      "url_origen": "https://igabogadosextranjeria.com/requisitos-para-el-arraigo-familiar-en-espana-2026/",
-      "fecha_extraccion": "2026-01-17T04:56:37.494703",
-      "fecha_actualizacion": "2026-01-17T04:56:58.049716"
     },
     {
       "nombre": "Residencia por Arraigo en España: tipos y requisitos clave",
