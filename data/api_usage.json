@@ -3,26 +3,71 @@
   "dia_actual": {
     "2026-01-17": {
       "tavily": {
+        "requests": 178,
+        "creditos": 178,
+        "costo": 0.17800000000000013
+      },
+      "firecrawl": {
+        "requests": 13,
+        "creditos": 13,
+        "costo": 0.12999999999999998
+      },
+      "google_search": {
+        "requests": 5,
+        "creditos": 5,
+        "costo": 0.025
+      },
+      "google_places": {
         "requests": 1,
         "creditos": 1,
-        "costo": 0.001
+        "costo": 0.017
       }
     }
   },
   "mes_actual": {
     "2026-01": {
       "tavily": {
+        "requests": 178,
+        "creditos": 178,
+        "costo": 0.17800000000000013
+      },
+      "firecrawl": {
+        "requests": 13,
+        "creditos": 13,
+        "costo": 0.12999999999999998
+      },
+      "google_search": {
+        "requests": 5,
+        "creditos": 5,
+        "costo": 0.025
+      },
+      "google_places": {
         "requests": 1,
         "creditos": 1,
-        "costo": 0.001
+        "costo": 0.017
       }
     }
   },
   "totales": {
     "tavily": {
+      "requests": 178,
+      "creditos": 178,
+      "costo": 0.17800000000000013
+    },
+    "firecrawl": {
+      "requests": 13,
+      "creditos": 13,
+      "costo": 0.12999999999999998
+    },
+    "google_search": {
+      "requests": 5,
+      "creditos": 5,
+      "costo": 0.025
+    },
+    "google_places": {
       "requests": 1,
       "creditos": 1,
-      "costo": 0.001
+      "costo": 0.017
     }
   }
 }
