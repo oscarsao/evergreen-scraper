@@ -121,9 +121,9 @@ def main():
         apis = verificar_apis()
         for api, estado in apis.items():
             if estado:
-                st.success(f"✓ {api}")
+                st.success(f"OK {api}")
             else:
-                st.warning(f"✗ {api}")
+                st.warning(f"X {api}")
         
         st.divider()
         

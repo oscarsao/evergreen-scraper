@@ -133,35 +133,35 @@ class Orquestador:
             adapter = FirecrawlAdapter()
             if adapter.esta_disponible():
                 self.adapters["firecrawl"] = adapter
-                print("[Orquestador] ✓ Firecrawl disponible")
+                print("[Orquestador] OK Firecrawl disponible")
         
         # Google Search
         if self.config["apis"].get("google_search", {}).get("habilitado", True):
             adapter = GoogleSearchAdapter()
             if adapter.esta_disponible():
                 self.adapters["google_search"] = adapter
-                print("[Orquestador] ✓ Google Search disponible")
+                print("[Orquestador] OK Google Search disponible")
         
         # Google Places
         if self.config["apis"].get("google_places", {}).get("habilitado", True):
             adapter = GooglePlacesAdapter()
             if adapter.esta_disponible():
                 self.adapters["google_places"] = adapter
-                print("[Orquestador] ✓ Google Places disponible")
+                print("[Orquestador] OK Google Places disponible")
         
         # Tavily
         if self.config["apis"].get("tavily", {}).get("habilitado", True):
             adapter = TavilyAdapter()
             if adapter.esta_disponible():
                 self.adapters["tavily"] = adapter
-                print("[Orquestador] ✓ Tavily disponible")
+                print("[Orquestador] OK Tavily disponible")
         
         # OpenAI
         if self.config["apis"].get("openai", {}).get("habilitado", True):
             adapter = OpenAIAdapter()
             if adapter.esta_disponible():
                 self.adapters["openai"] = adapter
-                print("[Orquestador] ✓ OpenAI disponible")
+                print("[Orquestador] OK OpenAI disponible")
         
         if not self.adapters:
             print("[Orquestador] ⚠ No hay APIs configuradas")
