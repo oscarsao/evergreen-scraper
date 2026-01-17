@@ -1,83 +1,761 @@
 {
   "metadata": {
-    "ciudad": "Valencia",
-    "comunidad": "Comunidad Valenciana",
-    "fecha_actualizacion": "2026-01-17",
-    "fuente": "Investigación IA (Cursor WebSearch)",
-    "total_registros": 6
+    "fecha_actualizacion": "2026-01-17T05:26:34.148808",
+    "total_registros": 40,
+    "fuente": "consolidador_multiagente"
   },
   "registros": [
     {
       "nombre": "Ferrandis Abogados",
       "tipo": "despacho",
-      "telefono": ["963 944 327"],
+      "telefono": [
+        "963 944 327"
+      ],
       "email": "info@ferrandisabogados.com",
       "web": "https://ferrandisabogados.com",
       "direccion": "Calle la Paz 26, 1º-2, 46003 Valencia",
       "ciudad": "Valencia",
       "distrito": "Ciutat Vella",
-      "especialidades": ["extranjería"],
+      "especialidades": [
+        "extranjería"
+      ],
       "valoracion": null
     },
     {
       "nombre": "Selva & Lorente Abogados",
       "tipo": "despacho",
-      "telefono": ["669 140 526"],
+      "telefono": [
+        "669 140 526"
+      ],
       "email": "juanselva@selvalorente.com",
       "web": "https://www.abogadoextranjeriavalencia.es",
       "direccion": "C/ Almirante Cadarso 5, 1º puerta 2ª, 46005 Valencia",
       "ciudad": "Valencia",
       "distrito": "Eixample",
-      "especialidades": ["extranjería"],
-      "valoracion": null
+      "especialidades": [
+        "extranjería",
+        "recursos",
+        "reagrupación",
+        "visados",
+        "nacionalidad",
+        "arraigo",
+        "expulsiones",
+        "permisos"
+      ],
+      "valoracion": null,
+      "idiomas": [],
+      "fecha_actualizacion": "2026-01-17T05:26:34.140099"
     },
     {
       "nombre": "José María Tena Abogados",
       "tipo": "despacho",
-      "telefono": ["963 731 061", "651 452 815"],
+      "telefono": [
+        "963 731 061",
+        "651 452 815"
+      ],
       "email": "josemariatenafranco@gmail.com",
       "web": "https://www.josemariatenaabogados.com",
       "direccion": "Calle Joaquín Costa 36, piso 1, 46005 Valencia",
       "ciudad": "Valencia",
       "distrito": "Eixample",
-      "especialidades": ["extranjería"],
+      "especialidades": [
+        "extranjería"
+      ],
       "valoracion": null
     },
     {
       "nombre": "Mi Abogado Extranjería",
       "tipo": "despacho",
-      "telefono": ["+34 633 92 28 33"],
+      "telefono": [
+        "+34 633 92 28 33"
+      ],
       "email": "miabogadoextranjeriaesp@gmail.com",
       "web": "https://miabogadoextranjeria.com",
       "direccion": "Carrer del Periodista Azzati 5, Planta 5, Valencia",
       "ciudad": "Valencia",
       "distrito": null,
-      "especialidades": ["extranjería"],
-      "valoracion": null
+      "especialidades": [
+        "arraigo",
+        "nacionalidad",
+        "reagrupación",
+        "extranjería"
+      ],
+      "valoracion": null,
+      "idiomas": [],
+      "fecha_actualizacion": "2026-01-17T05:26:34.140511"
     },
     {
       "nombre": "Abogados Extranjería Valencia",
       "tipo": "despacho",
-      "telefono": ["655 690 207", "627 716 379"],
+      "telefono": [
+        "655 690 207",
+        "627 716 379"
+      ],
       "email": "amparoballester@icav.es",
       "web": "https://abogadosextranjeriavalencia.es",
       "direccion": "Camino de Moncada 330, 46025 Valencia",
       "ciudad": "Valencia",
       "distrito": null,
-      "especialidades": ["extranjería"],
+      "especialidades": [
+        "extranjería"
+      ],
       "valoracion": null
     },
     {
       "nombre": "ValenciaLawyers VL Abogados",
       "tipo": "despacho",
-      "telefono": ["+34 601 023 725", "+34 963 52 96 42"],
+      "telefono": [
+        "+34 601 023 725",
+        "+34 963 52 96 42"
+      ],
       "email": "info@valencialawyers.com",
       "web": "https://www.valencialawyers.com",
       "direccion": "Calle Salvá 10, 3º puerta 6, 46002 Valencia",
       "ciudad": "Valencia",
       "distrito": "Ciutat Vella",
-      "especialidades": ["extranjería"],
+      "especialidades": [
+        "extranjería"
+      ],
       "valoracion": null
+    },
+    {
+      "nombre": "Abogado Extranjeria Valencia 1 ª Consulta Gratis",
+      "tipo": "despacho",
+      "telefono": [
+        "+34960917707"
+      ],
+      "email": "mix@extranjeria.net",
+      "web": "https://extranjeria.net/",
+      "direccion": null,
+      "ciudad": "Valencia",
+      "distrito": null,
+      "especialidades": [
+        "arraigo",
+        "nacionalidad",
+        "reagrupación"
+      ],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://extranjeria.net/",
+      "fecha_extraccion": "2026-01-17T05:25:12.699716",
+      "fecha_actualizacion": "2026-01-17T05:26:34.141860",
+      "idiomas": []
+    },
+    {
+      "nombre": "Abogado Extranjería en Valencia",
+      "tipo": "despacho",
+      "telefono": [
+        "+34678560137"
+      ],
+      "email": null,
+      "web": "https://www.amartinabogados.com/abogado-extranjeria-valencia/",
+      "direccion": null,
+      "ciudad": "Valencia",
+      "distrito": null,
+      "especialidades": [
+        "recursos",
+        "nacionalidad",
+        "expulsiones"
+      ],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://www.amartinabogados.com/abogado-extranjeria-valencia/",
+      "fecha_extraccion": "2026-01-17T05:25:12.700573",
+      "fecha_actualizacion": "2026-01-17T05:26:34.137945",
+      "idiomas": []
+    },
+    {
+      "nombre": "Abogados extranjería en Valencia",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": null,
+      "web": "https://ferrandisabogados.com/",
+      "direccion": "Calle la Paz 26 – 1º – 2 46003 – Valencia",
+      "ciudad": "Valencia",
+      "distrito": null,
+      "especialidades": [
+        "nacionalidad",
+        "permisos"
+      ],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://ferrandisabogados.com/",
+      "fecha_extraccion": "2026-01-17T05:25:12.701143",
+      "fecha_actualizacion": "2026-01-17T05:26:34.139246",
+      "idiomas": []
+    },
+    {
+      "nombre": "Abogados Valencia 【 Consulta GRATIS 】Abogados Expertos",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": null,
+      "web": "https://abogadosvalencia.es/",
+      "direccion": null,
+      "ciudad": "Valencia",
+      "distrito": null,
+      "especialidades": [],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://abogadosvalencia.es/",
+      "fecha_extraccion": "2026-01-17T05:25:12.702388",
+      "fecha_actualizacion": "2026-01-17T05:26:34.143308",
+      "idiomas": []
+    },
+    {
+      "nombre": "Extranjería – Torrijos Abogados",
+      "tipo": "despacho",
+      "telefono": [
+        "+34963942102",
+        "+34625141988"
+      ],
+      "email": "info@torrijosabogados.com",
+      "web": "https://www.torrijosabogados.com/extranjeria/",
+      "direccion": null,
+      "ciudad": "Valencia",
+      "distrito": null,
+      "especialidades": [
+        "nacionalidad",
+        "asilo"
+      ],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://www.torrijosabogados.com/extranjeria/",
+      "fecha_extraccion": "2026-01-17T05:25:12.702890",
+      "fecha_actualizacion": "2026-01-17T05:26:34.140612",
+      "idiomas": []
+    },
+    {
+      "nombre": "Diana Legales",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": null,
+      "web": "https://dianalegales.com/",
+      "direccion": null,
+      "ciudad": "Valencia",
+      "distrito": null,
+      "especialidades": [
+        "recursos",
+        "nacionalidad",
+        "visados"
+      ],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://dianalegales.com/",
+      "fecha_extraccion": "2026-01-17T05:25:12.704993",
+      "fecha_actualizacion": "2026-01-17T05:26:34.140865",
+      "idiomas": []
+    },
+    {
+      "nombre": "Abogado Extranjería Valencia",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": null,
+      "web": "https://www.abogadoextranjeriavalencia.es/",
+      "direccion": null,
+      "ciudad": "Valencia",
+      "distrito": null,
+      "especialidades": [
+        "recursos",
+        "visados",
+        "reagrupación",
+        "nacionalidad",
+        "arraigo",
+        "expulsiones",
+        "permisos"
+      ],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://www.abogadoextranjeriavalencia.es/",
+      "fecha_extraccion": "2026-01-17T05:25:12.705321",
+      "fecha_actualizacion": "2026-01-17T05:26:34.144295",
+      "idiomas": []
+    },
+    {
+      "nombre": "Extranjería y Nacionalidad",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": "abogados@pvlegal.net",
+      "web": "https://pvlegal.net/",
+      "direccion": null,
+      "ciudad": "Valencia",
+      "distrito": null,
+      "especialidades": [
+        "nacionalidad"
+      ],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://pvlegal.net/",
+      "fecha_extraccion": "2026-01-17T05:25:12.705788",
+      "fecha_actualizacion": "2026-01-17T05:26:34.143035",
+      "idiomas": []
+    },
+    {
+      "nombre": "Abogado de inmigración en Valencia",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": null,
+      "web": "https://ferrandisabogados.com/abogado-inmigracion-valencia/",
+      "direccion": null,
+      "ciudad": "Valencia",
+      "distrito": null,
+      "especialidades": [
+        "visados"
+      ],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://ferrandisabogados.com/abogado-inmigracion-valencia/",
+      "fecha_extraccion": "2026-01-17T05:25:18.161598",
+      "fecha_actualizacion": "2026-01-17T05:26:34.138907",
+      "idiomas": []
+    },
+    {
+      "nombre": "Valencia & Diaz",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": null,
+      "web": "https://valenciadiaz.com/",
+      "direccion": null,
+      "ciudad": "Valencia",
+      "distrito": null,
+      "especialidades": [],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://valenciadiaz.com/",
+      "fecha_extraccion": "2026-01-17T05:25:18.162620",
+      "fecha_actualizacion": "2026-01-17T05:26:34.139048",
+      "idiomas": []
+    },
+    {
+      "nombre": "WISELEGAL",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": null,
+      "web": "https://www.wiselegal.es/",
+      "direccion": "C/ Gran Vía Marqués del Túria 69 46005 Valencia",
+      "ciudad": "Valencia",
+      "distrito": null,
+      "especialidades": [
+        "nacionalidad",
+        "visados"
+      ],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://www.wiselegal.es/",
+      "fecha_extraccion": "2026-01-17T05:25:18.163062",
+      "fecha_actualizacion": "2026-01-17T05:26:34.139106",
+      "idiomas": []
+    },
+    {
+      "nombre": "Sagrada Familia Abogados de extranjería",
+      "tipo": "despacho",
+      "telefono": [
+        "+34622049407"
+      ],
+      "email": null,
+      "web": "https://sfabogadosextranjeria.com/",
+      "direccion": null,
+      "ciudad": "Valencia",
+      "distrito": null,
+      "especialidades": [
+        "arraigo",
+        "nacionalidad",
+        "asilo",
+        "reagrupación"
+      ],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://sfabogadosextranjeria.com/",
+      "fecha_extraccion": "2026-01-17T05:25:18.165940",
+      "fecha_actualizacion": "2026-01-17T05:26:34.139342",
+      "idiomas": []
+    },
+    {
+      "nombre": "Díaz & Asociados",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": null,
+      "web": "https://diazyasociados.es/",
+      "direccion": "Av. del Marqués de Sotelo, 5",
+      "ciudad": "Madrid",
+      "distrito": null,
+      "especialidades": [
+        "arraigo",
+        "nacionalidad",
+        "visados",
+        "reagrupación"
+      ],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://diazyasociados.es/",
+      "fecha_extraccion": "2026-01-17T05:25:18.166402",
+      "fecha_actualizacion": "2026-01-17T05:26:34.139418",
+      "idiomas": []
+    },
+    {
+      "nombre": "Abogado Rafael Serrano: Abogados expertos en ámbito",
+      "tipo": "despacho",
+      "telefono": [
+        "+34961483986",
+        "+34674679903"
+      ],
+      "email": null,
+      "web": "https://www.abogadorafaelserrano.com/",
+      "direccion": "Calle Ramon Sainz, 23",
+      "ciudad": "Madrid",
+      "distrito": null,
+      "especialidades": [],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://www.abogadorafaelserrano.com/",
+      "fecha_extraccion": "2026-01-17T05:25:18.167315",
+      "fecha_actualizacion": "2026-01-17T05:26:34.139521",
+      "idiomas": []
+    },
+    {
+      "nombre": "Abogado Extranjería Valencia",
+      "tipo": "despacho",
+      "telefono": [
+        "+34674633330"
+      ],
+      "email": "info@signumasociados.com",
+      "web": "https://abogadosvalenciamf.es/extranjeria/",
+      "direccion": "C/ de Pizarro, 1",
+      "ciudad": "Valencia",
+      "distrito": null,
+      "especialidades": [],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://abogadosvalenciamf.es/extranjeria/",
+      "fecha_extraccion": "2026-01-17T05:25:23.451606",
+      "fecha_actualizacion": "2026-01-17T05:26:34.140193",
+      "idiomas": []
+    },
+    {
+      "nombre": "Despacho de abogados expertos en extranjería",
+      "tipo": "despacho",
+      "telefono": [
+        "+34637656179",
+        "+34653667894",
+        "+34605869186"
+      ],
+      "email": "gestoresinmigracion@gmail.com",
+      "web": "https://www.inmigraemigra.com/",
+      "direccion": "Calle Obispo Jaime Pérez",
+      "ciudad": "Valencia",
+      "distrito": null,
+      "especialidades": [
+        "recursos",
+        "nacionalidad",
+        "expulsiones",
+        "reagrupación"
+      ],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://www.inmigraemigra.com/",
+      "fecha_extraccion": "2026-01-17T05:25:23.452251",
+      "fecha_actualizacion": "2026-01-17T05:26:34.140303",
+      "idiomas": []
+    },
+    {
+      "nombre": "Abogados de extranjería especialistas en residencia y",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": null,
+      "web": "https://www.abogadoamigo.com/abogados-extranjeria/",
+      "direccion": "C/ Jesús 81 de Valencia",
+      "ciudad": "Valencia",
+      "distrito": null,
+      "especialidades": [],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://www.abogadoamigo.com/abogados-extranjeria/",
+      "fecha_extraccion": "2026-01-17T05:25:23.453680",
+      "fecha_actualizacion": "2026-01-17T05:26:34.144012",
+      "idiomas": []
+    },
+    {
+      "nombre": "Extranjería",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": null,
+      "web": "https://ruizlafuenteabogados.com/extranjeria/",
+      "direccion": null,
+      "ciudad": "Valencia",
+      "distrito": null,
+      "especialidades": [
+        "recursos"
+      ],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://ruizlafuenteabogados.com/extranjeria/",
+      "fecha_extraccion": "2026-01-17T05:25:23.454101",
+      "fecha_actualizacion": "2026-01-17T05:26:34.140800",
+      "idiomas": []
+    },
+    {
+      "nombre": "Contacte con nosotros",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": null,
+      "web": "https://www.abogadoextranjeriavalencia.es/contactar",
+      "direccion": null,
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [],
+      "valoracion": null,
+      "fuente": "firecrawl_search",
+      "url_origen": "https://www.abogadoextranjeriavalencia.es/contactar",
+      "fecha_extraccion": "2026-01-17T05:25:25.147681",
+      "fecha_actualizacion": "2026-01-17T05:26:34.141010",
+      "idiomas": []
+    },
+    {
+      "nombre": "Abogados Extranjeria",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": null,
+      "web": "https://belmontecrespoabogados.com/abogados-extranjeria/",
+      "direccion": null,
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [],
+      "valoracion": null,
+      "fuente": "firecrawl_search",
+      "url_origen": "https://belmontecrespoabogados.com/abogados-extranjeria/",
+      "fecha_extraccion": "2026-01-17T05:25:25.147761",
+      "fecha_actualizacion": "2026-01-17T05:26:34.144211",
+      "idiomas": []
+    },
+    {
+      "nombre": "Abogados Íñiguez y Velázquez",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": null,
+      "web": "https://iniguezyvelazquez.com/",
+      "direccion": null,
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [],
+      "valoracion": null,
+      "fuente": "firecrawl_search",
+      "url_origen": "https://iniguezyvelazquez.com/",
+      "fecha_extraccion": "2026-01-17T05:25:25.147816",
+      "fecha_actualizacion": "2026-01-17T05:26:34.143215",
+      "idiomas": []
+    },
+    {
+      "nombre": "Contacte con Abogados expertos en Extranjería y Nacionalidad",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": null,
+      "web": "https://www.abogadoextranjeriaynacionalidad.es/contacto/",
+      "direccion": null,
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [],
+      "valoracion": null,
+      "fuente": "firecrawl_search",
+      "url_origen": "https://www.abogadoextranjeriaynacionalidad.es/contacto/",
+      "fecha_extraccion": "2026-01-17T05:25:25.147834",
+      "fecha_actualizacion": "2026-01-17T05:26:34.143436",
+      "idiomas": []
+    },
+    {
+      "nombre": "The Law Offices of Valencia & Diaz, Ltd",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": null,
+      "web": "https://es.linkedin.com/company/the-law-offices-of-valencia-diaz-ltd?trk=similar-pages_result-card_full-click",
+      "direccion": null,
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [],
+      "valoracion": null,
+      "fuente": "firecrawl_search",
+      "url_origen": "https://es.linkedin.com/company/the-law-offices-of-valencia-diaz-ltd?trk=similar-pages_result-card_full-click",
+      "fecha_extraccion": "2026-01-17T05:25:27.161868",
+      "fecha_actualizacion": "2026-01-17T05:26:34.143656",
+      "idiomas": []
+    },
+    {
+      "nombre": "Valencia Abogado de Inmigración",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": null,
+      "web": "https://buenoimmigration.com/es/valencia-ca-abogado-inmigracion/",
+      "direccion": null,
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [],
+      "valoracion": null,
+      "fuente": "firecrawl_search",
+      "url_origen": "https://buenoimmigration.com/es/valencia-ca-abogado-inmigracion/",
+      "fecha_extraccion": "2026-01-17T05:25:27.161915",
+      "fecha_actualizacion": "2026-01-17T05:26:34.143530",
+      "idiomas": []
+    },
+    {
+      "nombre": "► Abogados Especialistas en Extranjería",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": null,
+      "web": "https://chapaprianavarroyasociados.com/abogados-de-extranjeria/",
+      "direccion": null,
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [],
+      "valoracion": null,
+      "fuente": "firecrawl_search",
+      "url_origen": "https://chapaprianavarroyasociados.com/abogados-de-extranjeria/",
+      "fecha_extraccion": "2026-01-17T05:25:27.162036",
+      "fecha_actualizacion": "2026-01-17T05:26:34.144416",
+      "idiomas": []
+    },
+    {
+      "nombre": "Business, Investor & Family Immigration",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": null,
+      "web": "https://www.verdinlaw.com/es",
+      "direccion": null,
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [],
+      "valoracion": null,
+      "fuente": "firecrawl_search",
+      "url_origen": "https://www.verdinlaw.com/es",
+      "fecha_extraccion": "2026-01-17T05:25:27.162078",
+      "fecha_actualizacion": "2026-01-17T05:26:00.649167"
+    },
+    {
+      "nombre": "Despacho Rojas Reno & Asociados",
+      "tipo": "despacho",
+      "telefono": [
+        "+34617837871"
+      ],
+      "email": "rodrigo@rojasreno.com",
+      "web": "https://rojasreno.es/",
+      "direccion": null,
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [],
+      "valoracion": null,
+      "fuente": "firecrawl_search",
+      "url_origen": "https://rojasreno.es/",
+      "fecha_extraccion": "2026-01-17T05:25:29.864728",
+      "fecha_actualizacion": "2026-01-17T05:26:00.651990"
+    },
+    {
+      "nombre": "Abogados Leopolis: Inicio",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": null,
+      "web": "https://abogadosleopolis.com/",
+      "direccion": null,
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [],
+      "valoracion": null,
+      "fuente": "firecrawl_search",
+      "url_origen": "https://abogadosleopolis.com/",
+      "fecha_extraccion": "2026-01-17T05:25:29.864822",
+      "fecha_actualizacion": "2026-01-17T05:26:00.654591"
+    },
+    {
+      "nombre": "Valencia Extranjería Abogados",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": "gestion@mixconsulting.es",
+      "web": "https://valenciaextranjeria.com/",
+      "direccion": null,
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [],
+      "valoracion": null,
+      "fuente": "firecrawl_search",
+      "url_origen": "https://valenciaextranjeria.com/",
+      "fecha_extraccion": "2026-01-17T05:25:29.864937",
+      "fecha_actualizacion": "2026-01-17T05:26:00.657851"
+    },
+    {
+      "nombre": "Sobre Nosotros",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": null,
+      "web": "https://www.agabogadosygestores.com/sobre-nosotros/",
+      "direccion": null,
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [],
+      "valoracion": null,
+      "fuente": "firecrawl_search",
+      "url_origen": "https://www.agabogadosygestores.com/sobre-nosotros/",
+      "fecha_extraccion": "2026-01-17T05:25:29.865018",
+      "fecha_actualizacion": "2026-01-17T05:26:00.660749"
+    },
+    {
+      "nombre": "Abogados Extranjería",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": null,
+      "web": "https://lemornebrabant.com/abogados-especialistas-extranjeria/",
+      "direccion": null,
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [],
+      "valoracion": null,
+      "fuente": "firecrawl_search",
+      "url_origen": "https://lemornebrabant.com/abogados-especialistas-extranjeria/",
+      "fecha_extraccion": "2026-01-17T05:25:29.865060",
+      "fecha_actualizacion": "2026-01-17T05:26:00.663619"
+    },
+    {
+      "nombre": "► Abogados de Extranjería en Valencia",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": null,
+      "web": "https://chapaprianavarroyasociados.com/abogados-de-extranjeria/valencia/",
+      "direccion": null,
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [],
+      "valoracion": null,
+      "fuente": "firecrawl_search",
+      "url_origen": "https://chapaprianavarroyasociados.com/abogados-de-extranjeria/valencia/",
+      "fecha_extraccion": "2026-01-17T05:25:29.865077",
+      "fecha_actualizacion": "2026-01-17T05:26:00.668234"
+    },
+    {
+      "nombre": "Abogados en Derecho de Extranjería",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": null,
+      "web": "https://martinezsanzabogados.com/servicios-legales/derecho-extranjeria/",
+      "direccion": null,
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [],
+      "valoracion": null,
+      "fuente": "firecrawl_search",
+      "url_origen": "https://martinezsanzabogados.com/servicios-legales/derecho-extranjeria/",
+      "fecha_extraccion": "2026-01-17T05:25:29.865094",
+      "fecha_actualizacion": "2026-01-17T05:26:00.671571"
+    },
+    {
+      "nombre": "Estamos para ustedes",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": null,
+      "web": "https://www.sanchez-abogados.com/estamos-para-ustedes/",
+      "direccion": null,
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [],
+      "valoracion": null,
+      "fuente": "firecrawl_search",
+      "url_origen": "https://www.sanchez-abogados.com/estamos-para-ustedes/",
+      "fecha_extraccion": "2026-01-17T05:26:06.379679",
+      "fecha_actualizacion": "2026-01-17T05:26:34.148330"
     }
   ]
 }
