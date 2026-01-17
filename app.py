@@ -1,67 +1,68 @@
 """
-🔍 Sistema Multi-Agente de Búsqueda de Abogados
-==============================================
-Interfaz Streamlit para gestionar búsquedas, datos y exportaciones.
-
-Ejecutar: streamlit run app.py
+Dashboard Unificado - Sistema de Abogados de Extranjería
+=========================================================
+Vista completa en una sola pantalla con métricas, gráficos y acciones rápidas.
 """
 import streamlit as st
 import json
+import pandas as pd
 from pathlib import Path
+from datetime import datetime, date
 
 # Configuración de página
 st.set_page_config(
-    page_title="Buscador Abogados Extranjería",
+    page_title="Dashboard - Abogados Extranjería",
     page_icon="⚖️",
     layout="wide",
-    initial_sidebar_state="expanded"
+    initial_sidebar_state="collapsed"
 )
 
-# CSS personalizado
+# CSS personalizado para dashboard compacto
 st.markdown("""
 <style>
-    .main-header {
-        font-size: 2.5rem;
-        font-weight: bold;
-        color: #1f77b4;
-        margin-bottom: 0.5rem;
-    }
-    .sub-header {
-        font-size: 1.2rem;
-        color: #666;
-        margin-bottom: 2rem;
+    .block-container {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
     }
     .metric-card {
-        background-color: #f0f2f6;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
         border-radius: 10px;
         padding: 1rem;
+        color: white;
         text-align: center;
     }
-    .stMetric {
-        background-color: #f8f9fa;
-        padding: 1rem;
-        border-radius: 8px;
+    .metric-value {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    .metric-label {
+        font-size: 0.9rem;
+        opacity: 0.9;
+    }
+    .status-ok { color: #00c853; }
+    .status-warn { color: #ffc107; }
+    .status-error { color: #ff5252; }
+    div[data-testid="stMetricValue"] {
+        font-size: 1.8rem;
+    }
+    .stProgress > div > div > div > div {
+        background-color: #667eea;
     }
 </style>
 """, unsafe_allow_html=True)
 
 
-def cargar_estadisticas():
-    """Carga estadísticas de todas las ciudades."""
+def cargar_todos_los_datos():
+    """Carga todos los datos de todas las ciudades."""
     data_dir = Path("data")
-    estadisticas = {
-        "total_registros": 0,
-        "con_telefono": 0,
-        "con_email": 0,
-        "con_web": 0,
-        "ciudades": []
-    }
+    todos_registros = []
+    ciudades_stats = []
     
     if not data_dir.exists():
-        return estadisticas
+        return [], []
     
-    for archivo in data_dir.glob("*.json"):
-        if "config" in archivo.name:
+    for archivo in sorted(data_dir.glob("*.json")):
+        if "config" in archivo.name or "api_usage" in archivo.name:
             continue
         
         try:
@@ -69,218 +70,332 @@ def cargar_estadisticas():
                 data = json.load(f)
             
             registros = data.get("registros", [])
-            n = len(registros)
+            ciudad = archivo.stem.title()
             
-            ciudad_stats = {
-                "nombre": archivo.stem.title(),
-                "total": n,
-                "telefono": sum(1 for r in registros if r.get("telefono")),
-                "email": sum(1 for r in registros if r.get("email")),
-                "web": sum(1 for r in registros if r.get("web")),
-            }
+            # Añadir ciudad a cada registro
+            for r in registros:
+                r["_ciudad"] = ciudad
+                todos_registros.append(r)
             
-            estadisticas["ciudades"].append(ciudad_stats)
-            estadisticas["total_registros"] += n
-            estadisticas["con_telefono"] += ciudad_stats["telefono"]
-            estadisticas["con_email"] += ciudad_stats["email"]
-            estadisticas["con_web"] += ciudad_stats["web"]
-            
+            # Stats por ciudad
+            ciudades_stats.append({
+                "ciudad": ciudad,
+                "total": len(registros),
+                "con_tel": sum(1 for r in registros if r.get("telefono")),
+                "con_email": sum(1 for r in registros if r.get("email")),
+                "con_web": sum(1 for r in registros if r.get("web")),
+                "con_dir": sum(1 for r in registros if r.get("direccion")),
+            })
         except:
             continue
     
-    return estadisticas
+    return todos_registros, ciudades_stats
+
+
+def cargar_uso_apis():
+    """Carga estadísticas de uso de APIs."""
+    api_path = Path("data/api_usage.json")
+    if not api_path.exists():
+        return {}
+    
+    try:
+        with open(api_path, "r") as f:
+            return json.load(f)
+    except:
+        return {}
 
 
 def verificar_apis():
-    """Verifica qué APIs están configuradas."""
+    """Verifica estado de APIs."""
     import os
     from dotenv import load_dotenv
     load_dotenv()
     
-    apis = {
-        "Firecrawl": bool(os.getenv("FIRECRAWL_API_KEY")),
-        "Google Search": bool(os.getenv("GOOGLE_API_KEY") and os.getenv("GOOGLE_CSE_ID")),
-        "Google Places": bool(os.getenv("GOOGLE_API_KEY")),
-        "Tavily": bool(os.getenv("TAVILY_API_KEY")),
-        "OpenAI": bool(os.getenv("OPENAI_API_KEY")),
+    return {
+        "Tavily": {"key": bool(os.getenv("TAVILY_API_KEY")), "limite": 1000},
+        "Firecrawl": {"key": bool(os.getenv("FIRECRAWL_API_KEY")), "limite": 500},
+        "Google": {"key": bool(os.getenv("GOOGLE_API_KEY")), "limite": 100},
+        "OpenAI": {"key": bool(os.getenv("OPENAI_API_KEY")), "limite": None},
     }
-    return apis
 
 
-def main():
-    # Header
-    st.markdown('<p class="main-header">⚖️ Buscador de Abogados de Extranjería</p>', unsafe_allow_html=True)
-    st.markdown('<p class="sub-header">Sistema multi-agente con IA para España</p>', unsafe_allow_html=True)
+def calcular_completitud(registro):
+    """Calcula nivel de completitud de un registro."""
+    campos = ["telefono", "email", "web", "direccion"]
+    completos = sum(1 for c in campos if registro.get(c))
+    return completos / len(campos) * 100
+
+
+# === CARGAR DATOS ===
+registros, ciudades_stats = cargar_todos_los_datos()
+api_usage = cargar_uso_apis()
+apis = verificar_apis()
+
+# === HEADER ===
+col_title, col_refresh = st.columns([5, 1])
+with col_title:
+    st.title("⚖️ Dashboard - Abogados de Extranjería")
+with col_refresh:
+    if st.button("🔄", help="Actualizar datos"):
+        st.rerun()
+
+# === MÉTRICAS PRINCIPALES ===
+st.markdown("### 📊 Resumen General")
+
+total = len(registros)
+con_tel = sum(1 for r in registros if r.get("telefono"))
+con_email = sum(1 for r in registros if r.get("email"))
+con_web = sum(1 for r in registros if r.get("web"))
+con_dir = sum(1 for r in registros if r.get("direccion"))
+completos = sum(1 for r in registros if r.get("telefono") and r.get("email") and r.get("web"))
+
+col1, col2, col3, col4, col5, col6 = st.columns(6)
+
+with col1:
+    st.metric("Total Registros", f"{total:,}")
+with col2:
+    pct_tel = con_tel/max(total,1)*100
+    st.metric("Con Teléfono", f"{con_tel:,}", f"{pct_tel:.0f}%")
+with col3:
+    pct_email = con_email/max(total,1)*100
+    st.metric("Con Email", f"{con_email:,}", f"{pct_email:.0f}%")
+with col4:
+    pct_web = con_web/max(total,1)*100
+    st.metric("Con Web", f"{con_web:,}", f"{pct_web:.0f}%")
+with col5:
+    pct_dir = con_dir/max(total,1)*100
+    st.metric("Con Dirección", f"{con_dir:,}", f"{pct_dir:.0f}%")
+with col6:
+    pct_comp = completos/max(total,1)*100
+    st.metric("Completos", f"{completos:,}", f"{pct_comp:.0f}%")
+
+# === FILA PRINCIPAL: Ciudades + Calidad + APIs ===
+st.markdown("---")
+col_ciudades, col_calidad, col_apis = st.columns([2, 2, 1.5])
+
+# --- Columna Ciudades ---
+with col_ciudades:
+    st.markdown("### 🏙️ Por Ciudad")
     
-    # Sidebar
-    with st.sidebar:
-        st.header("🔧 Configuración")
+    if ciudades_stats:
+        df_ciudades = pd.DataFrame(ciudades_stats)
+        df_ciudades = df_ciudades.sort_values("total", ascending=False)
         
-        # Estado de APIs
-        st.subheader("APIs Configuradas")
-        apis = verificar_apis()
-        for api, estado in apis.items():
-            if estado:
-                st.success(f"OK {api}")
-            else:
-                st.warning(f"X {api}")
+        # Gráfico de barras horizontal
+        chart_data = df_ciudades.set_index("ciudad")[["total", "con_tel", "con_email"]]
+        chart_data.columns = ["Total", "Teléfono", "Email"]
+        st.bar_chart(chart_data, horizontal=True, height=300)
         
-        st.divider()
-        
-        # Navegación rápida
-        st.subheader("📍 Accesos Rápidos")
-        if st.button("🔍 Nueva Búsqueda", use_container_width=True):
-            st.switch_page("pages/2_Buscar.py")
-        if st.button("📊 Ver Datos", use_container_width=True):
-            st.switch_page("pages/3_Datos.py")
-        if st.button("📥 Exportar", use_container_width=True):
-            st.switch_page("pages/5_Exportar.py")
-    
-    # Contenido principal
-    stats = cargar_estadisticas()
-    
-    # Métricas principales
-    st.subheader("📊 Resumen General")
-    
-    col1, col2, col3, col4 = st.columns(4)
-    
-    with col1:
-        st.metric(
-            label="Total Registros",
-            value=stats["total_registros"],
-            delta=None
-        )
-    
-    with col2:
-        st.metric(
-            label="Con Teléfono",
-            value=stats["con_telefono"],
-            delta=f"{stats['con_telefono']/max(stats['total_registros'],1)*100:.0f}%"
-        )
-    
-    with col3:
-        st.metric(
-            label="Con Email",
-            value=stats["con_email"],
-            delta=f"{stats['con_email']/max(stats['total_registros'],1)*100:.0f}%"
-        )
-    
-    with col4:
-        st.metric(
-            label="Con Web",
-            value=stats["con_web"],
-            delta=f"{stats['con_web']/max(stats['total_registros'],1)*100:.0f}%"
-        )
-    
-    # Costos de APIs
-    st.divider()
-    st.subheader("💰 Uso de APIs (Este Mes)")
-    
-    try:
-        api_usage_path = Path("data/api_usage.json")
-        if api_usage_path.exists():
-            with open(api_usage_path, "r") as f:
-                api_usage = json.load(f)
-            
-            from datetime import date
-            mes = date.today().strftime("%Y-%m")
-            uso_mes = {}
-            for fecha, apis in api_usage.get("dia_actual", {}).items():
-                if fecha.startswith(mes):
-                    for api, datos in apis.items():
-                        if api not in uso_mes:
-                            uso_mes[api] = {"requests": 0, "costo": 0}
-                        uso_mes[api]["requests"] += datos.get("requests", 0)
-                        uso_mes[api]["costo"] += datos.get("costo", 0)
-            
-            if uso_mes:
-                costo_total = sum(d["costo"] for d in uso_mes.values())
-                requests_total = sum(d["requests"] for d in uso_mes.values())
-                
-                col1, col2, col3 = st.columns(3)
-                with col1:
-                    st.metric("Requests", requests_total)
-                with col2:
-                    st.metric("Costo Estimado", f"${costo_total:.4f}")
-                with col3:
-                    if st.button("Ver Detalles", use_container_width=True):
-                        st.switch_page("pages/6_API_Costos.py")
-            else:
-                st.info("Sin uso de APIs este mes")
-        else:
-            st.info("Sin datos de uso de APIs")
-    except Exception as e:
-        st.warning(f"No se pudo cargar uso de APIs")
-    
-    st.divider()
-    
-    # Estadísticas por ciudad
-    st.subheader("🏙️ Registros por Ciudad")
-    
-    if stats["ciudades"]:
-        # Preparar datos para gráfico
-        ciudades_nombres = [c["nombre"] for c in stats["ciudades"]]
-        ciudades_totales = [c["total"] for c in stats["ciudades"]]
-        
-        # Gráfico de barras
-        import pandas as pd
-        df_ciudades = pd.DataFrame({
-            "Ciudad": ciudades_nombres,
-            "Registros": ciudades_totales
-        })
-        df_ciudades = df_ciudades.sort_values("Registros", ascending=True)
-        
-        st.bar_chart(df_ciudades.set_index("Ciudad"))
-        
-        # Tabla detallada
-        st.subheader("📋 Detalle por Ciudad")
-        
-        df_detalle = pd.DataFrame(stats["ciudades"])
-        df_detalle.columns = ["Ciudad", "Total", "Con Tel.", "Con Email", "Con Web"]
-        df_detalle["% Completo"] = (
-            (df_detalle["Con Tel."] > 0).astype(int) +
-            (df_detalle["Con Email"] > 0).astype(int) +
-            (df_detalle["Con Web"] > 0).astype(int)
-        ) / 3 * 100
-        df_detalle["% Completo"] = df_detalle["% Completo"].round(0).astype(int).astype(str) + "%"
-        
-        st.dataframe(
-            df_detalle.sort_values("Total", ascending=False),
-            use_container_width=True,
-            hide_index=True
-        )
+        # Tabla compacta
+        df_display = df_ciudades[["ciudad", "total", "con_tel", "con_email"]].copy()
+        df_display.columns = ["Ciudad", "Total", "Tel", "Email"]
+        df_display["% Tel"] = (df_display["Tel"] / df_display["Total"] * 100).round(0).astype(int).astype(str) + "%"
+        st.dataframe(df_display, use_container_width=True, hide_index=True, height=200)
     else:
-        st.info("No hay datos cargados. Ve a 'Buscar' para iniciar una búsqueda.")
+        st.info("No hay datos cargados")
+
+# --- Columna Calidad de Datos ---
+with col_calidad:
+    st.markdown("### 📈 Calidad de Datos")
     
-    st.divider()
+    if registros:
+        # Calcular niveles de completitud
+        niveles = {"Completo (4/4)": 0, "Alto (3/4)": 0, "Medio (2/4)": 0, "Bajo (1/4)": 0, "Mínimo (0/4)": 0}
+        
+        for r in registros:
+            campos = sum(1 for c in ["telefono", "email", "web", "direccion"] if r.get(c))
+            if campos == 4:
+                niveles["Completo (4/4)"] += 1
+            elif campos == 3:
+                niveles["Alto (3/4)"] += 1
+            elif campos == 2:
+                niveles["Medio (2/4)"] += 1
+            elif campos == 1:
+                niveles["Bajo (1/4)"] += 1
+            else:
+                niveles["Mínimo (0/4)"] += 1
+        
+        # Mostrar como barras de progreso
+        for nivel, count in niveles.items():
+            pct = count / max(total, 1) * 100
+            col_a, col_b = st.columns([3, 1])
+            with col_a:
+                st.progress(pct / 100, text=f"{nivel}")
+            with col_b:
+                st.write(f"{count} ({pct:.0f}%)")
+        
+        st.markdown("---")
+        
+        # Datos faltantes
+        st.markdown("**📋 Datos Faltantes:**")
+        col_f1, col_f2 = st.columns(2)
+        with col_f1:
+            st.write(f"Sin teléfono: **{total - con_tel}**")
+            st.write(f"Sin email: **{total - con_email}**")
+        with col_f2:
+            st.write(f"Sin dirección: **{total - con_dir}**")
+            st.write(f"Sin web: **{total - con_web}**")
+    else:
+        st.info("No hay datos para analizar")
+
+# --- Columna APIs ---
+with col_apis:
+    st.markdown("### 🔌 Estado APIs")
     
-    # Acciones rápidas
-    st.subheader("🚀 Acciones Rápidas")
+    for api_name, api_info in apis.items():
+        if api_info["key"]:
+            st.success(f"✓ {api_name}")
+        else:
+            st.error(f"✗ {api_name}")
     
-    col1, col2, col3 = st.columns(3)
+    st.markdown("---")
+    st.markdown("**💰 Uso Este Mes:**")
     
-    with col1:
-        st.markdown("### 🔍 Buscar")
-        st.write("Ejecuta búsquedas con múltiples APIs y agentes.")
-        if st.button("Ir a Búsqueda", key="btn_buscar"):
-            st.switch_page("pages/2_Buscar.py")
+    # Calcular uso del mes actual
+    mes_actual = date.today().strftime("%Y-%m")
+    uso_mes = {}
     
-    with col2:
-        st.markdown("### 📊 Explorar Datos")
-        st.write("Visualiza, filtra y edita los registros.")
-        if st.button("Ver Datos", key="btn_datos"):
+    for fecha, apis_data in api_usage.get("dia_actual", {}).items():
+        if fecha.startswith(mes_actual):
+            for api, datos in apis_data.items():
+                if api not in uso_mes:
+                    uso_mes[api] = {"requests": 0, "costo": 0}
+                uso_mes[api]["requests"] += datos.get("requests", 0)
+                uso_mes[api]["costo"] += datos.get("costo", 0)
+    
+    if uso_mes:
+        total_requests = sum(d["requests"] for d in uso_mes.values())
+        total_costo = sum(d["costo"] for d in uso_mes.values())
+        st.metric("Requests", total_requests)
+        st.metric("Costo Est.", f"${total_costo:.2f}")
+    else:
+        st.write("Sin uso este mes")
+
+# === FILA ACCIONES: Búsqueda Rápida + Acciones ===
+st.markdown("---")
+col_busqueda, col_acciones = st.columns([3, 2])
+
+# --- Búsqueda Rápida ---
+with col_busqueda:
+    st.markdown("### 🔍 Búsqueda Rápida")
+    
+    col_ciudad, col_btn = st.columns([3, 1])
+    
+    with col_ciudad:
+        ciudad_buscar = st.selectbox(
+            "Ciudad",
+            ["Madrid", "Barcelona", "Valencia", "Sevilla", "Málaga", 
+             "Zaragoza", "Murcia", "Palma", "Alicante", "Bilbao"],
+            label_visibility="collapsed"
+        )
+    
+    with col_btn:
+        buscar_clicked = st.button("🚀 Buscar", type="primary", use_container_width=True)
+    
+    if buscar_clicked:
+        with st.spinner(f"Buscando en {ciudad_buscar}..."):
+            try:
+                from core.orquestador import Orquestador, BusquedaConfig
+                
+                config = BusquedaConfig(
+                    ciudad=ciudad_buscar,
+                    apis_habilitadas=["tavily"],
+                    max_resultados_por_api=20,
+                    usar_places=False,
+                    scraping_profundo=False
+                )
+                
+                orq = Orquestador()
+                resultado = orq.ejecutar_busqueda(config)
+                
+                if resultado.consolidacion:
+                    st.success(f"✓ {resultado.consolidacion.total_nuevos} nuevos, {len(resultado.consolidacion.actualizados)} actualizados")
+                else:
+                    st.info(f"Encontrados: {resultado.total_encontrados}")
+                    
+            except Exception as e:
+                st.error(f"Error: {e}")
+
+# --- Acciones Rápidas ---
+with col_acciones:
+    st.markdown("### ⚡ Acciones Rápidas")
+    
+    col_a1, col_a2 = st.columns(2)
+    
+    with col_a1:
+        if st.button("📥 Enriquecer Datos", use_container_width=True):
+            st.switch_page("pages/4_Enriquecer.py")
+        
+        if st.button("🔧 Depurar", use_container_width=True):
+            st.switch_page("pages/4_Depurar.py")
+    
+    with col_a2:
+        if st.button("📊 Explorar Datos", use_container_width=True):
             st.switch_page("pages/3_Datos.py")
-    
-    with col3:
-        st.markdown("### 📥 Exportar")
-        st.write("Descarga en CSV, PDF, Excel o JSON.")
-        if st.button("Exportar", key="btn_exportar"):
+        
+        if st.button("📤 Exportar", use_container_width=True):
             st.switch_page("pages/5_Exportar.py")
+
+# === FILA INFERIOR: Registros Incompletos + Últimos Añadidos ===
+st.markdown("---")
+col_incompletos, col_ultimos = st.columns(2)
+
+# --- Registros que necesitan atención ---
+with col_incompletos:
+    st.markdown("### 🔧 Necesitan Enriquecimiento")
     
-    # Footer
-    st.divider()
-    st.caption("Sistema Multi-Agente de Búsqueda | Desarrollado con Streamlit + Python")
+    # Filtrar registros con web pero sin tel/email
+    necesitan = [
+        r for r in registros 
+        if r.get("web") and (not r.get("telefono") or not r.get("email"))
+    ][:10]
+    
+    if necesitan:
+        for r in necesitan:
+            with st.container(border=True):
+                col_info, col_btn = st.columns([4, 1])
+                with col_info:
+                    st.write(f"**{r.get('nombre', 'Sin nombre')[:40]}**")
+                    falta = []
+                    if not r.get("telefono"):
+                        falta.append("Tel")
+                    if not r.get("email"):
+                        falta.append("Email")
+                    if not r.get("direccion"):
+                        falta.append("Dir")
+                    st.caption(f"Falta: {', '.join(falta)} | {r.get('_ciudad', '')}")
+                with col_btn:
+                    st.button("📥", key=f"enrich_{r.get('nombre', '')[:20]}", help="Enriquecer")
+        
+        st.caption(f"Mostrando 10 de {len([r for r in registros if r.get('web') and (not r.get('telefono') or not r.get('email'))])} registros")
+    else:
+        st.success("Todos los registros con web tienen datos completos")
 
+# --- Últimos añadidos ---
+with col_ultimos:
+    st.markdown("### 🕐 Últimos Añadidos")
+    
+    # Ordenar por fecha de actualización
+    registros_con_fecha = [r for r in registros if r.get("fecha_actualizacion")]
+    registros_ordenados = sorted(
+        registros_con_fecha, 
+        key=lambda x: x.get("fecha_actualizacion", ""), 
+        reverse=True
+    )[:10]
+    
+    if registros_ordenados:
+        for r in registros_ordenados:
+            with st.container(border=True):
+                col_info, col_fecha = st.columns([3, 1])
+                with col_info:
+                    st.write(f"**{r.get('nombre', 'Sin nombre')[:35]}**")
+                    st.caption(r.get("_ciudad", ""))
+                with col_fecha:
+                    fecha = r.get("fecha_actualizacion", "")[:10]
+                    st.caption(fecha)
+    else:
+        st.info("No hay registros con fecha")
 
-if __name__ == "__main__":
-    main()
+# === FOOTER ===
+st.markdown("---")
+st.caption(f"Dashboard actualizado: {datetime.now().strftime('%Y-%m-%d %H:%M')} | Total: {total} registros en {len(ciudades_stats)} ciudades")
