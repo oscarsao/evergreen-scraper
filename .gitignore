@@ -1,0 +1,44 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Environment variables - IMPORTANTE: No subir secrets
+.env
+.env.local
+.env.*.local
+
+# Streamlit secrets (se configuran en Streamlit Cloud)
+.streamlit/secrets.toml
+
+# Datos locales (opcional - puedes comentar si quieres subir datos)
+# data/*.json
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Resultados y exports temporales
+resultados/
+exports/
+*.pdf
+*.xlsx
+*.csv
+
+# Cache
+.cache/

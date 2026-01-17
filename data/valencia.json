@@ -1,0 +1,83 @@
+{
+  "metadata": {
+    "ciudad": "Valencia",
+    "comunidad": "Comunidad Valenciana",
+    "fecha_actualizacion": "2026-01-17",
+    "fuente": "Investigación IA (Cursor WebSearch)",
+    "total_registros": 6
+  },
+  "registros": [
+    {
+      "nombre": "Ferrandis Abogados",
+      "tipo": "despacho",
+      "telefono": ["963 944 327"],
+      "email": "info@ferrandisabogados.com",
+      "web": "https://ferrandisabogados.com",
+      "direccion": "Calle la Paz 26, 1º-2, 46003 Valencia",
+      "ciudad": "Valencia",
+      "distrito": "Ciutat Vella",
+      "especialidades": ["extranjería"],
+      "valoracion": null
+    },
+    {
+      "nombre": "Selva & Lorente Abogados",
+      "tipo": "despacho",
+      "telefono": ["669 140 526"],
+      "email": "juanselva@selvalorente.com",
+      "web": "https://www.abogadoextranjeriavalencia.es",
+      "direccion": "C/ Almirante Cadarso 5, 1º puerta 2ª, 46005 Valencia",
+      "ciudad": "Valencia",
+      "distrito": "Eixample",
+      "especialidades": ["extranjería"],
+      "valoracion": null
+    },
+    {
+      "nombre": "José María Tena Abogados",
+      "tipo": "despacho",
+      "telefono": ["963 731 061", "651 452 815"],
+      "email": "josemariatenafranco@gmail.com",
+      "web": "https://www.josemariatenaabogados.com",
+      "direccion": "Calle Joaquín Costa 36, piso 1, 46005 Valencia",
+      "ciudad": "Valencia",
+      "distrito": "Eixample",
+      "especialidades": ["extranjería"],
+      "valoracion": null
+    },
+    {
+      "nombre": "Mi Abogado Extranjería",
+      "tipo": "despacho",
+      "telefono": ["+34 633 92 28 33"],
+      "email": "miabogadoextranjeriaesp@gmail.com",
+      "web": "https://miabogadoextranjeria.com",
+      "direccion": "Carrer del Periodista Azzati 5, Planta 5, Valencia",
+      "ciudad": "Valencia",
+      "distrito": null,
+      "especialidades": ["extranjería"],
+      "valoracion": null
+    },
+    {
+      "nombre": "Abogados Extranjería Valencia",
+      "tipo": "despacho",
+      "telefono": ["655 690 207", "627 716 379"],
+      "email": "amparoballester@icav.es",
+      "web": "https://abogadosextranjeriavalencia.es",
+      "direccion": "Camino de Moncada 330, 46025 Valencia",
+      "ciudad": "Valencia",
+      "distrito": null,
+      "especialidades": ["extranjería"],
+      "valoracion": null
+    },
+    {
+      "nombre": "ValenciaLawyers VL Abogados",
+      "tipo": "despacho",
+      "telefono": ["+34 601 023 725", "+34 963 52 96 42"],
+      "email": "info@valencialawyers.com",
+      "web": "https://www.valencialawyers.com",
+      "direccion": "Calle Salvá 10, 3º puerta 6, 46002 Valencia",
+      "ciudad": "Valencia",
+      "distrito": "Ciutat Vella",
+      "especialidades": ["extranjería"],
+      "valoracion": null
+    }
+  ]
+}

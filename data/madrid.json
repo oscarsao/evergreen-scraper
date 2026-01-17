@@ -1,0 +1,1532 @@
+{
+  "metadata": {
+    "fecha_actualizacion": "2026-01-17T03:50:46.045488",
+    "total_registros": 90,
+    "fuente": "consolidador_multiagente"
+  },
+  "registros": [
+    {
+      "nombre": "Abogados Extranjería Madrid",
+      "tipo": "despacho",
+      "telefono": [
+        "+34 616 482 664",
+        "+34 649 117 806",
+        "+34 918 533 386",
+        "+34911040993"
+      ],
+      "email": "info@abogadosextranjeriamadrid.com",
+      "web": "https://www.abogadosextranjeriamadrid.com",
+      "direccion": "C/ Marqués de Mondejar 16, 7A, 28028 Madrid",
+      "ciudad": "Madrid",
+      "distrito": "Salamanca",
+      "especialidades": [
+        "extranjería",
+        "inmigración",
+        "nacionalidad"
+      ],
+      "valoracion": null,
+      "idiomas": [],
+      "fecha_actualizacion": "2026-01-17T03:45:25.351644"
+    },
+    {
+      "nombre": "PFBernal - Abogacía Extranjería",
+      "tipo": "despacho",
+      "telefono": [
+        "+34 91 853 33 86",
+        "+34 649 117 806"
+      ],
+      "email": "info@abogaciaextranjeria.es",
+      "web": "https://abogaciaextranjeria.es",
+      "direccion": "C/ General Pardiñas 92, 1º Izquierda, 28006 Madrid",
+      "ciudad": "Madrid",
+      "distrito": "Salamanca",
+      "especialidades": [
+        "extranjería",
+        "recursos",
+        "denegaciones"
+      ],
+      "valoracion": "98% tasa de éxito"
+    },
+    {
+      "nombre": "Extranjería Abogados - Fbernal",
+      "tipo": "despacho",
+      "telefono": [
+        "91 104 0993",
+        "+34 649 117 806"
+      ],
+      "email": "informacion@extranjeria-abogados.es",
+      "web": "https://www.extranjeria-abogados.es",
+      "direccion": "C/ General Díaz Porlier 34, 2º Centro, 28001 Madrid",
+      "ciudad": "Madrid",
+      "distrito": "Salamanca",
+      "especialidades": [
+        "extranjería",
+        "urgencias 24h"
+      ],
+      "valoracion": null
+    },
+    {
+      "nombre": "Abogado Extranjería Madrid (Carretas)",
+      "tipo": "despacho",
+      "telefono": [
+        "91 142 69 59",
+        "606 246 075"
+      ],
+      "email": "info@abogadoextranjeriamadrid.eu",
+      "web": "https://www.abogadoextranjeriamadrid.eu",
+      "direccion": "Calle Carretas 33, 2ºA, 28012 Madrid",
+      "ciudad": "Madrid",
+      "distrito": "Centro",
+      "especialidades": [
+        "extranjería",
+        "urgencias"
+      ],
+      "valoracion": null
+    },
+    {
+      "nombre": "Larea & Co. International Legal Group",
+      "tipo": "despacho",
+      "telefono": [
+        "+34 912 45 47 62",
+        "+34 671 41 34 81"
+      ],
+      "email": "consultas@lareailg.com",
+      "web": "https://www.lareailg.com",
+      "direccion": "Calle O'Donnell 51, Bajo Centro, 28009 Madrid",
+      "ciudad": "Madrid",
+      "distrito": "Salamanca",
+      "especialidades": [
+        "extranjería",
+        "internacional"
+      ],
+      "valoracion": null
+    },
+    {
+      "nombre": "ExtranjeriaLegal.es",
+      "tipo": "despacho",
+      "telefono": [
+        "919 476 619",
+        "+34 622 180 772"
+      ],
+      "email": "extranjerialegal1@gmail.com",
+      "web": "https://extranjerialegal.es",
+      "direccion": "Calle Jesús Castellanos 1, Local 6, 28025 Madrid",
+      "ciudad": "Madrid",
+      "distrito": "Carabanchel",
+      "especialidades": [
+        "extranjería"
+      ],
+      "valoracion": null
+    },
+    {
+      "nombre": "GEMOVIR Abogados",
+      "tipo": "despacho",
+      "telefono": [
+        "+34 910 783 147"
+      ],
+      "email": null,
+      "web": "https://www.gemovir.com",
+      "direccion": null,
+      "ciudad": "Madrid",
+      "distrito": null,
+      "especialidades": [
+        "nacionalidad",
+        "visados",
+        "reagrupaciones"
+      ],
+      "valoracion": "4.8/5 (+100 reseñas)"
+    },
+    {
+      "nombre": "Ventura Extranjería",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": null,
+      "web": "https://venturaextranjeria.com",
+      "direccion": null,
+      "ciudad": "Madrid",
+      "distrito": null,
+      "especialidades": [
+        "extranjería",
+        "online"
+      ],
+      "valoracion": "4.9/5 (+14.000 reseñas)"
+    },
+    {
+      "nombre": "Tolentino Abogados",
+      "tipo": "despacho",
+      "telefono": [
+        "+34 918 272 222"
+      ],
+      "email": null,
+      "web": "https://tolentinoabogados.com",
+      "direccion": "Paseo de la Castellana, Madrid",
+      "ciudad": "Madrid",
+      "distrito": "Chamartín",
+      "especialidades": [
+        "recursos",
+        "denegaciones"
+      ],
+      "valoracion": "4.7/5 (+1.000 reseñas)"
+    },
+    {
+      "nombre": "ES Abogado Extranjería",
+      "tipo": "despacho",
+      "telefono": [
+        "910 14 43 12"
+      ],
+      "email": "info@esabogadoextranjeria.com",
+      "web": "https://esabogadoextranjeria.com",
+      "direccion": "Av. del Mediterráneo 5, 1°A, 28007 Madrid",
+      "ciudad": "Madrid",
+      "distrito": "Retiro",
+      "especialidades": [
+        "reagrupación familiar",
+        "arraigos"
+      ],
+      "valoracion": "4.8/5 (+200 reseñas)"
+    },
+    {
+      "nombre": "Vega Abogado",
+      "tipo": "despacho",
+      "telefono": [
+        "91 142 69 59",
+        "606 24 60 75"
+      ],
+      "email": "vegaabogados@hotmail.com",
+      "web": "https://vegaabogado.com",
+      "direccion": "C. de Carretas 14, 2-i5, 28012 Madrid",
+      "ciudad": "Madrid",
+      "distrito": "Centro",
+      "especialidades": [
+        "visados",
+        "permisos trabajo",
+        "nacionalidad",
+        "arraigo"
+      ],
+      "valoracion": "4.9/5 (+600 reseñas)"
+    },
+    {
+      "nombre": "Longobardo Pérez Abogado",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": null,
+      "web": "https://longobardoperezabogado.com",
+      "direccion": "Calle Marcelino Álvarez, Madrid",
+      "ciudad": "Madrid",
+      "distrito": null,
+      "especialidades": [
+        "asilo",
+        "protección internacional"
+      ],
+      "valoracion": "5/5 (~150 reseñas)"
+    },
+    {
+      "nombre": "EX24 Lawyers (Extranjería 24h)",
+      "tipo": "despacho",
+      "telefono": [
+        "+34 601 023 820"
+      ],
+      "email": "contacto@extranjeria24h.com",
+      "web": "https://www.extranjeria24h.com",
+      "direccion": "Pl. Pablo Ruiz Picasso 1, 28020 Madrid",
+      "ciudad": "Madrid",
+      "distrito": "Tetuán",
+      "especialidades": [
+        "extranjería",
+        "empresas",
+        "24h"
+      ],
+      "valoracion": "82% resueltos"
+    },
+    {
+      "nombre": "MDH Abogados (Nacionalidad)",
+      "tipo": "despacho",
+      "telefono": [
+        "+34 616 69 35 08"
+      ],
+      "email": "info@nacionalidad.com",
+      "web": "https://nacionalidad.com",
+      "direccion": "Avda. Alberto Alcocer 8, 2º A, 28036 Madrid",
+      "ciudad": "Madrid",
+      "distrito": "Chamartín",
+      "especialidades": [
+        "arraigo",
+        "nacionalidad"
+      ],
+      "valoracion": null
+    },
+    {
+      "nombre": "Garisoain & Varela",
+      "tipo": "despacho",
+      "telefono": [
+        "91 315 05 89"
+      ],
+      "email": "info@gavabogados.es",
+      "web": "https://nacionalidad-abogados.es",
+      "direccion": "C/ Hilarión Eslava 12, 4ºB, 28015 Madrid",
+      "ciudad": "Madrid",
+      "distrito": "Moncloa",
+      "especialidades": [
+        "nacionalidad española",
+        "arraigo"
+      ],
+      "valoracion": null
+    },
+    {
+      "nombre": "García Pando & Asociados",
+      "tipo": "despacho",
+      "telefono": [
+        "+34 915 308 640",
+        "+34 686 258 710"
+      ],
+      "email": "info@garciapandomoreno.com",
+      "web": "https://www.garciapandomoreno.com",
+      "direccion": "Calle Rafael de Riego 8, Piso 1, 28045 Madrid",
+      "ciudad": "Madrid",
+      "distrito": "Arganzuela",
+      "especialidades": [
+        "arraigo",
+        "nacionalidad",
+        "reagrupaciones"
+      ],
+      "valoracion": null
+    },
+    {
+      "nombre": "Abogados Alcalá 20",
+      "tipo": "despacho",
+      "telefono": [
+        "629 865 874",
+        "629 865 875"
+      ],
+      "email": "juandevelasco@icam.es",
+      "web": "https://abogadosalcala20.com",
+      "direccion": "Calle Alcalá 20, 2º despacho 212, 28014 Madrid",
+      "ciudad": "Madrid",
+      "distrito": "Centro",
+      "especialidades": [
+        "extranjería",
+        "nacionalidad",
+        "arraigo"
+      ],
+      "valoracion": null
+    },
+    {
+      "nombre": "Sánchez y Calderón Abogados",
+      "tipo": "despacho",
+      "telefono": [
+        "91 057 78 38",
+        "644 56 57 54",
+        "644 40 82 31"
+      ],
+      "email": null,
+      "web": "https://sanchezycalderon.com",
+      "direccion": "Calle General Arrando 10, 28010 Madrid",
+      "ciudad": "Madrid",
+      "distrito": "Chamberí",
+      "especialidades": [
+        "extranjería"
+      ],
+      "valoracion": null
+    },
+    {
+      "nombre": "Sanchidrián Abogados",
+      "tipo": "despacho",
+      "telefono": [
+        "+34 623 564 313"
+      ],
+      "email": null,
+      "web": "https://extranjeria.sanchidrianabogados.com",
+      "direccion": "Cuesta de Santo Domingo 20, 28013 Madrid",
+      "ciudad": "Madrid",
+      "distrito": "Centro",
+      "especialidades": [
+        "extranjería"
+      ],
+      "valoracion": null
+    },
+    {
+      "nombre": "Dianita Solutions Extranjería",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": "dianitasolutiosextranjeria@gmail.com",
+      "web": "https://www.dianitasolutionsextranjeria.es",
+      "direccion": "Calle del Tucán 7, 28025 Madrid",
+      "ciudad": "Madrid",
+      "distrito": "Carabanchel",
+      "especialidades": [
+        "extranjería"
+      ],
+      "valoracion": null
+    },
+    {
+      "nombre": "Losa & Martínez Abogados",
+      "tipo": "despacho",
+      "telefono": [
+        "914 620 264",
+        "651 115 364",
+        "622 801 599"
+      ],
+      "email": "abogadosoca31@gmail.com",
+      "web": "https://www.abogadosextranjeriacarabanchel.com",
+      "direccion": "Calle de la Oca 31, 28025 Madrid",
+      "ciudad": "Madrid",
+      "distrito": "Carabanchel",
+      "especialidades": [
+        "extranjería"
+      ],
+      "valoracion": null
+    },
+    {
+      "nombre": "EA Extranjería Abogados",
+      "tipo": "despacho",
+      "telefono": [
+        "91 024 08 01"
+      ],
+      "email": "info@extranjeriaabogados.es",
+      "web": "https://www.extranjeriaabogados.es",
+      "direccion": "Calle Jardín de la Duquesa 20A, 28032 Madrid",
+      "ciudad": "Madrid",
+      "distrito": "Vicálvaro",
+      "especialidades": [
+        "extranjería"
+      ],
+      "valoracion": null
+    },
+    {
+      "nombre": "Bedera Abogados",
+      "tipo": "despacho",
+      "telefono": [
+        "+34 625 315 030"
+      ],
+      "email": null,
+      "web": "https://extranjeriabedera.com",
+      "direccion": "Calle de Salas Barbadillo 70, 28017 Madrid",
+      "ciudad": "Madrid",
+      "distrito": "Ciudad Lineal",
+      "especialidades": [
+        "extranjería",
+        "protección internacional"
+      ],
+      "valoracion": null
+    },
+    {
+      "nombre": "Plusextranjería",
+      "tipo": "despacho",
+      "telefono": [
+        "+34 614 165 725"
+      ],
+      "email": null,
+      "web": "https://plusextranjeria.com",
+      "direccion": "Calle Gutiérre de Cetina 33, 28017 Madrid",
+      "ciudad": "Madrid",
+      "distrito": "Ciudad Lineal",
+      "especialidades": [
+        "extranjería"
+      ],
+      "valoracion": null
+    },
+    {
+      "nombre": "Orozco Abogados",
+      "tipo": "despacho",
+      "telefono": [
+        "+34 919 511 688",
+        "+34 615 188 242",
+        "+34 614 433 773"
+      ],
+      "email": null,
+      "web": "https://orozcoextranjeria.es",
+      "direccion": "Calle Velázquez 115, 28006 Madrid",
+      "ciudad": "Madrid",
+      "distrito": "Salamanca",
+      "especialidades": [
+        "extranjería"
+      ],
+      "valoracion": null
+    },
+    {
+      "nombre": "Abogados Extranjería Madrid (Velázquez)",
+      "tipo": "despacho",
+      "telefono": [
+        "91 108 94 48"
+      ],
+      "email": null,
+      "web": "https://abogadosextranjeriamadrid.es",
+      "direccion": "Calle Velázquez 27, 28001 Madrid",
+      "ciudad": "Madrid",
+      "distrito": "Salamanca",
+      "especialidades": [
+        "extranjería"
+      ],
+      "valoracion": null
+    },
+    {
+      "nombre": "Pedro Fernández Bernal",
+      "tipo": "abogado",
+      "telefono": [
+        "91 853 33 86",
+        "649 117 806"
+      ],
+      "email": "info@abogaciaextranjeria.es",
+      "web": "https://abogaciaextranjeria.es",
+      "direccion": "Calle General Pardiñas 92, 28006 Madrid",
+      "ciudad": "Madrid",
+      "distrito": "Salamanca",
+      "especialidades": [
+        "extranjería"
+      ],
+      "numero_colegiado": "68.283"
+    },
+    {
+      "nombre": "Luz Elena Jara Vera",
+      "tipo": "abogado",
+      "telefono": [
+        "914 464 493"
+      ],
+      "email": "ljabogados1@gmail.com",
+      "web": null,
+      "direccion": "C/ Monteleón 36, Bajo Izq., Madrid",
+      "ciudad": "Madrid",
+      "distrito": "Chamberí",
+      "especialidades": [
+        "extranjería"
+      ],
+      "numero_colegiado": null
+    },
+    {
+      "nombre": "Jose Manuel Sánchez Hernández",
+      "tipo": "abogado",
+      "telefono": [
+        "639 034 215"
+      ],
+      "email": "sanchezhernandezvk@icam.es",
+      "web": null,
+      "direccion": "C/ Arroyo del Olivar 24, Madrid",
+      "ciudad": "Madrid",
+      "distrito": null,
+      "especialidades": [
+        "extranjería"
+      ],
+      "numero_colegiado": null
+    },
+    {
+      "nombre": "Liliya Mykolayiv",
+      "tipo": "abogado",
+      "telefono": [
+        "650 816 396"
+      ],
+      "email": "liliya.mykolayiv@icam.es",
+      "web": null,
+      "direccion": "C/ Bárbara de Braganza 11, 3º D, Madrid",
+      "ciudad": "Madrid",
+      "distrito": "Centro",
+      "especialidades": [
+        "extranjería"
+      ],
+      "numero_colegiado": null
+    },
+    {
+      "nombre": "María Ángeles González San Millán",
+      "tipo": "abogado",
+      "telefono": [
+        "675 801 868"
+      ],
+      "email": "magelesgsm@yahoo.es",
+      "web": null,
+      "direccion": "Paseo General Martínez Campos 15, Madrid",
+      "ciudad": "Madrid",
+      "distrito": "Chamberí",
+      "especialidades": [
+        "extranjería"
+      ],
+      "numero_colegiado": "84.400"
+    },
+    {
+      "nombre": "Elena Garcia Cazorla",
+      "tipo": "abogado",
+      "telefono": [
+        "639 863 933"
+      ],
+      "email": "elena.garcia@abogadosextranjeria.es",
+      "web": null,
+      "direccion": "Calle Gran Vía 69, 7º 712, Madrid",
+      "ciudad": "Madrid",
+      "distrito": "Centro",
+      "especialidades": [
+        "extranjería"
+      ],
+      "numero_colegiado": "56.732"
+    },
+    {
+      "nombre": "Horacio López Molina",
+      "tipo": "abogado",
+      "telefono": [
+        "638 519 203"
+      ],
+      "email": "horacio@icam.es",
+      "web": null,
+      "direccion": "Calle Juan de Urbieta 6, 5ºA, Madrid",
+      "ciudad": "Madrid",
+      "distrito": "Retiro",
+      "especialidades": [
+        "extranjería"
+      ],
+      "numero_colegiado": "94.707"
+    },
+    {
+      "nombre": "Leonardo Ponce Medina",
+      "tipo": "abogado",
+      "telefono": [
+        "646 184 834"
+      ],
+      "email": "leoponmed@gmail.com",
+      "web": null,
+      "direccion": "Calle Teruel 11, Madrid",
+      "ciudad": "Madrid",
+      "distrito": null,
+      "especialidades": [
+        "extranjería"
+      ],
+      "numero_colegiado": "118.263"
+    },
+    {
+      "nombre": "Marta Ferreiro",
+      "tipo": "abogado",
+      "telefono": [
+        "650 112 761"
+      ],
+      "email": "martaferreiro@icam.es",
+      "web": "https://www.abogadasextranjeriateruelferreiro.com",
+      "direccion": "Calle Zurbano 49, 28010 Madrid",
+      "ciudad": "Madrid",
+      "distrito": "Chamberí",
+      "especialidades": [
+        "extranjería"
+      ],
+      "numero_colegiado": null
+    },
+    {
+      "nombre": "CEAR Madrid",
+      "tipo": "ong",
+      "telefono": [
+        "+34 91 555 06 98"
+      ],
+      "email": null,
+      "web": "https://www.cear.es",
+      "direccion": "Avenida de Asturias 33, 28029 Madrid",
+      "ciudad": "Madrid",
+      "distrito": "Tetuán",
+      "especialidades": [
+        "asilo",
+        "refugiados",
+        "gratuito"
+      ],
+      "valoracion": null
+    },
+    {
+      "nombre": "ACCEM Madrid",
+      "tipo": "ong",
+      "telefono": [
+        "+34 91 532 74 78",
+        "+34 91 532 74 79"
+      ],
+      "email": null,
+      "web": "https://www.accem.es",
+      "direccion": "Calle Magallanes 3, 8ª planta, 28015 Madrid",
+      "ciudad": "Madrid",
+      "distrito": "Chamberí",
+      "especialidades": [
+        "refugiados",
+        "inmigrantes",
+        "gratuito"
+      ],
+      "valoracion": null
+    },
+    {
+      "nombre": "Cruz Roja Española - Madrid",
+      "tipo": "ong",
+      "telefono": [
+        "900 221 122"
+      ],
+      "email": "informa@cruzroja.es",
+      "web": "https://www2.cruzroja.es",
+      "direccion": "Avenida Reina Victoria 26-28, 28003 Madrid",
+      "ciudad": "Madrid",
+      "distrito": "Moncloa",
+      "especialidades": [
+        "asistencia social",
+        "gratuito"
+      ],
+      "valoracion": null
+    },
+    {
+      "nombre": "SOJ Extranjería ICAM",
+      "tipo": "oficial",
+      "telefono": [
+        "900 814 815"
+      ],
+      "email": "soj.extranjeros@icam.madrid",
+      "web": "https://soj.icam.es/extranjeria/",
+      "direccion": null,
+      "ciudad": "Madrid",
+      "distrito": null,
+      "especialidades": [
+        "orientación jurídica",
+        "gratuito"
+      ],
+      "valoracion": null
+    },
+    {
+      "nombre": "MDR Abogados",
+      "tipo": "despacho",
+      "telefono": [
+        "91 029 11 54"
+      ],
+      "email": "info@mdrabogados.es",
+      "web": "https://www.mdrabogados.es",
+      "direccion": "Calle del Poeta Joan Maragall 51, Piso 3, 28020 Madrid",
+      "ciudad": "Madrid",
+      "distrito": "Tetuán",
+      "especialidades": [
+        "extranjería"
+      ],
+      "valoracion": null
+    },
+    {
+      "nombre": "Maribel Bonilla - Abogados Moratalaz",
+      "tipo": "abogado",
+      "telefono": [
+        "+34 656 27 66 77"
+      ],
+      "email": "abogadamaribelbonilla@gmail.com",
+      "web": "https://www.abogadosmoratalaz.es",
+      "direccion": null,
+      "ciudad": "Madrid",
+      "distrito": "Moratalaz",
+      "especialidades": [
+        "extranjería"
+      ],
+      "valoracion": null
+    },
+    {
+      "nombre": "Marisol Ferrero Abogada",
+      "tipo": "abogado",
+      "telefono": [
+        "+34 662 519 855"
+      ],
+      "email": null,
+      "web": null,
+      "direccion": "Calle Poeta Joan Maragall 60, 2º, 28020 Madrid",
+      "ciudad": "Madrid",
+      "distrito": "Tetuán",
+      "especialidades": [
+        "extranjería",
+        "nacionalidad"
+      ],
+      "valoracion": null
+    },
+    {
+      "nombre": "Máchelin Díaz - Abogada Inmigración",
+      "tipo": "abogado",
+      "telefono": [
+        "+34 91 060 19 78",
+        "+34 608 807 336"
+      ],
+      "email": null,
+      "web": "https://machelindiaz.com",
+      "direccion": "Calle Fortunata y Jacinta 23, 1-C, 28020 Madrid",
+      "ciudad": "Madrid",
+      "distrito": "Tetuán",
+      "especialidades": [
+        "inmigración",
+        "extranjería"
+      ],
+      "valoracion": null
+    },
+    {
+      "nombre": "Sánchez Cabral Abogados",
+      "tipo": "despacho",
+      "telefono": [
+        "+34 651 69 59 01"
+      ],
+      "email": null,
+      "web": "https://sanchezcabralabogados.com",
+      "direccion": "Calle del Arenal 20, 4º Derecha, Madrid",
+      "ciudad": "Madrid",
+      "distrito": "Centro",
+      "especialidades": [
+        "extranjería"
+      ],
+      "valoracion": null
+    },
+    {
+      "nombre": "Molinares Abogados",
+      "tipo": "despacho",
+      "telefono": [
+        "+34 914 361 695"
+      ],
+      "email": null,
+      "web": "https://molinaresabogados.com",
+      "direccion": null,
+      "ciudad": "Madrid",
+      "distrito": null,
+      "especialidades": [
+        "extranjería"
+      ],
+      "valoracion": null
+    },
+    {
+      "nombre": "Elena Abella - Abogada Extranjería",
+      "tipo": "abogado",
+      "telefono": [
+        "+34 91 530 96 95",
+        "+34 91 530 96 98",
+        "654 788 604"
+      ],
+      "email": "elena@abogadadeextranjeria.es",
+      "web": "https://www.abogadadeextranjeria.es",
+      "direccion": "Calle Embajadores 206, piso 1º A y B, Madrid",
+      "ciudad": "Madrid",
+      "distrito": "Arganzuela",
+      "especialidades": [
+        "extranjería"
+      ],
+      "valoracion": null
+    },
+    {
+      "nombre": "Extranjería Justa",
+      "tipo": "despacho",
+      "telefono": [
+        "661 264 993"
+      ],
+      "email": "abogado@extranjeriajusta.com",
+      "web": "https://extranjeriajusta.com",
+      "direccion": "Calle Velázquez 27, Madrid",
+      "ciudad": "Madrid",
+      "distrito": "Salamanca",
+      "especialidades": [
+        "extranjería"
+      ],
+      "valoracion": "4.2/5"
+    },
+    {
+      "nombre": "Extranjería Fácil",
+      "tipo": "despacho",
+      "telefono": [
+        "91 613 44 11"
+      ],
+      "email": "info@extranjeriafacil.es",
+      "web": "https://extranjeriafacil.es",
+      "direccion": "Avenida Constitución 37, 1º, Móstoles",
+      "ciudad": "Móstoles",
+      "distrito": null,
+      "especialidades": [
+        "extranjería"
+      ],
+      "valoracion": null
+    },
+    {
+      "nombre": "Derecho de Extranjería Móstoles",
+      "tipo": "despacho",
+      "telefono": [
+        "663 971 830"
+      ],
+      "email": "admin@derechodeextranjeria.com",
+      "web": "https://www.derechodeextranjeria.com",
+      "direccion": "Calle Teniente Ruiz 2, 28934 Móstoles",
+      "ciudad": "Móstoles",
+      "distrito": null,
+      "especialidades": [
+        "extranjería"
+      ],
+      "valoracion": null
+    },
+    {
+      "nombre": "Everest Abogados - Móstoles",
+      "tipo": "despacho",
+      "telefono": [
+        "91 035 90 91"
+      ],
+      "email": "mostoles@everestabogados.com",
+      "web": "https://www.everestabogados.com",
+      "direccion": null,
+      "ciudad": "Móstoles",
+      "distrito": null,
+      "especialidades": [
+        "extranjería",
+        "residencia",
+        "nacionalidad"
+      ],
+      "valoracion": null
+    },
+    {
+      "nombre": "Everest Abogados - Leganés",
+      "tipo": "despacho",
+      "telefono": [
+        "91 028 54 24"
+      ],
+      "email": "leganes@everestabogados.com",
+      "web": "https://www.everestabogados.com",
+      "direccion": null,
+      "ciudad": "Leganés",
+      "distrito": null,
+      "especialidades": [
+        "extranjería"
+      ],
+      "valoracion": null
+    },
+    {
+      "nombre": "Everest Abogados - Getafe",
+      "tipo": "despacho",
+      "telefono": [
+        "91 028 54 24"
+      ],
+      "email": "getafe@everestabogados.com",
+      "web": "https://www.everestabogados.com",
+      "direccion": null,
+      "ciudad": "Getafe",
+      "distrito": null,
+      "especialidades": [
+        "extranjería"
+      ],
+      "valoracion": null
+    },
+    {
+      "nombre": "Everest Abogados - Tres Cantos",
+      "tipo": "despacho",
+      "telefono": [
+        "91 032 64 68"
+      ],
+      "email": "3cantos@everestabogados.com",
+      "web": "https://www.everestabogados.com",
+      "direccion": "Avenida de los Labradores 1, 28760 Tres Cantos",
+      "ciudad": "Tres Cantos",
+      "distrito": null,
+      "especialidades": [
+        "extranjería"
+      ],
+      "valoracion": null
+    },
+    {
+      "nombre": "UM Abogados - Alcobendas",
+      "tipo": "despacho",
+      "telefono": [
+        "644 409 504",
+        "91 455 71 09"
+      ],
+      "email": "despacho@umabogados.es",
+      "web": "https://umabogados.es",
+      "direccion": "Avenida España 17, Planta 2, Alcobendas",
+      "ciudad": "Alcobendas",
+      "distrito": null,
+      "especialidades": [
+        "extranjería",
+        "residencia",
+        "nacionalidad"
+      ],
+      "valoracion": null
+    },
+    {
+      "nombre": "González-Sanguino Abogados",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": "anamariagonzalezmartin@icam.es",
+      "web": "https://www.gonzalezsanguinoabogados.es",
+      "direccion": "Plaza de la Concordia 2, 28100 Alcobendas",
+      "ciudad": "Alcobendas",
+      "distrito": null,
+      "especialidades": [
+        "extranjería"
+      ],
+      "valoracion": null
+    },
+    {
+      "nombre": "García Cámara Abogados",
+      "tipo": "despacho",
+      "telefono": [
+        "644 031 149"
+      ],
+      "email": "info@abogadosgarciacamara.com",
+      "web": "https://abogadosgarciacamara.es",
+      "direccion": "Calle Océano Índico 34, 3º B, 28760 Tres Cantos",
+      "ciudad": "Tres Cantos",
+      "distrito": null,
+      "especialidades": [
+        "extranjería"
+      ],
+      "valoracion": null
+    },
+    {
+      "nombre": "AJM Abogados - Tres Cantos",
+      "tipo": "despacho",
+      "telefono": [
+        "91 06 08 027"
+      ],
+      "email": "info@ajmabogados.es",
+      "web": "https://www.ajmabogados.es",
+      "direccion": "Av. de los Labradores 1, planta 4, 28760 Tres Cantos",
+      "ciudad": "Tres Cantos",
+      "distrito": null,
+      "especialidades": [
+        "extranjería"
+      ],
+      "valoracion": null
+    },
+    {
+      "nombre": "Servicio Municipal Extranjería - Moratalaz",
+      "tipo": "oficial",
+      "telefono": [
+        "915 021 915"
+      ],
+      "email": null,
+      "web": "https://www.madrid.es",
+      "direccion": "C/ Fuente Carrantona 12, Madrid",
+      "ciudad": "Madrid",
+      "distrito": "Moratalaz",
+      "especialidades": [
+        "orientación jurídica",
+        "gratuito"
+      ],
+      "valoracion": null
+    },
+    {
+      "nombre": "Servicio Municipal Extranjería - Vicálvaro",
+      "tipo": "oficial",
+      "telefono": [
+        "917 753 150"
+      ],
+      "email": null,
+      "web": "https://www.madrid.es",
+      "direccion": "C/ Calahorra 11, Madrid",
+      "ciudad": "Madrid",
+      "distrito": "Vicálvaro",
+      "especialidades": [
+        "orientación jurídica",
+        "gratuito"
+      ],
+      "valoracion": null
+    },
+    {
+      "nombre": "Servicio Municipal Extranjería - San Blas",
+      "tipo": "oficial",
+      "telefono": [
+        "913 717 384",
+        "917 432 406"
+      ],
+      "email": null,
+      "web": "https://www.madrid.es",
+      "direccion": "C/ Torre Arias 2, Madrid",
+      "ciudad": "Madrid",
+      "distrito": "San Blas",
+      "especialidades": [
+        "orientación jurídica",
+        "gratuito"
+      ],
+      "valoracion": null
+    },
+    {
+      "nombre": "Abogados de Extranjería | Pide Presupuestos Gratis - Easyoffer",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": null,
+      "web": "https://www.easyoffer.es/abogados-extranjeria/",
+      "direccion": null,
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [],
+      "valoracion": null,
+      "fuente": "firecrawl_search",
+      "url_origen": "https://www.easyoffer.es/abogados-extranjeria/",
+      "fecha_extraccion": "2026-01-17T03:42:27.640397",
+      "fecha_actualizacion": "2026-01-17T03:45:25.475153",
+      "idiomas": []
+    },
+    {
+      "nombre": "FranciscoBlázquez Martínez -Blázquez Abogados y Asociados",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": null,
+      "web": "https://www.easyoffer.es/profesionales/blazquez-abogados-y-asociados/francisco-blazquez-martinez/",
+      "direccion": null,
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [],
+      "valoracion": null,
+      "fuente": "firecrawl_search",
+      "url_origen": "https://www.easyoffer.es/profesionales/blazquez-abogados-y-asociados/francisco-blazquez-martinez/",
+      "fecha_extraccion": "2026-01-17T03:42:27.640779",
+      "fecha_actualizacion": "2026-01-17T03:45:25.338599",
+      "idiomas": []
+    },
+    {
+      "nombre": "Javier Fernández Giménez - Abogado en Servicios y ...",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": null,
+      "web": "https://www.easyoffer.es/profesionales/servicios-soluciones-juridicas/javier-fernandez-gimenez/",
+      "direccion": null,
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [],
+      "valoracion": null,
+      "fuente": "firecrawl_search",
+      "url_origen": "https://www.easyoffer.es/profesionales/servicios-soluciones-juridicas/javier-fernandez-gimenez/",
+      "fecha_extraccion": "2026-01-17T03:42:27.640811",
+      "fecha_actualizacion": "2026-01-17T03:43:26.304608",
+      "idiomas": []
+    },
+    {
+      "nombre": "Rodrigo Torres - Abogado en Madrid. Contacta ahora",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": null,
+      "web": "https://www.easyoffer.es/profesionales/rodrigo-torres/",
+      "direccion": null,
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [],
+      "valoracion": null,
+      "fuente": "firecrawl_search",
+      "url_origen": "https://www.easyoffer.es/profesionales/rodrigo-torres/",
+      "fecha_extraccion": "2026-01-17T03:42:27.640835",
+      "fecha_actualizacion": "2026-01-17T03:45:25.338638",
+      "idiomas": []
+    },
+    {
+      "nombre": "Coso & Juárez Abogados - Abogados recomendados en Madrid",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": null,
+      "web": "https://www.easyoffer.es/profesionales/coso-y-juarez-abogados/",
+      "direccion": null,
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [],
+      "valoracion": null,
+      "fuente": "firecrawl_search",
+      "url_origen": "https://www.easyoffer.es/profesionales/coso-y-juarez-abogados/",
+      "fecha_extraccion": "2026-01-17T03:42:27.640855",
+      "fecha_actualizacion": "2026-01-17T03:45:25.338614",
+      "idiomas": []
+    },
+    {
+      "nombre": "Teresa Río Rodríguez - Abogada en Madrid - Easyoffer",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": null,
+      "web": "https://www.easyoffer.es/profesionales/teresa-rio-rodriguez/",
+      "direccion": null,
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [],
+      "valoracion": null,
+      "fuente": "firecrawl_search",
+      "url_origen": "https://www.easyoffer.es/profesionales/teresa-rio-rodriguez/",
+      "fecha_extraccion": "2026-01-17T03:42:27.640874",
+      "fecha_actualizacion": "2026-01-17T03:45:25.338626",
+      "idiomas": []
+    },
+    {
+      "nombre": "Marta Asenjo Romo - Abogada en Madrid. Contacta ahora",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": null,
+      "web": "https://www.easyoffer.es/profesionales/marta-asenjo-romo/",
+      "direccion": null,
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [],
+      "valoracion": null,
+      "fuente": "firecrawl_search",
+      "url_origen": "https://www.easyoffer.es/profesionales/marta-asenjo-romo/",
+      "fecha_extraccion": "2026-01-17T03:42:27.640892",
+      "fecha_actualizacion": "2026-01-17T03:45:25.345072",
+      "idiomas": []
+    },
+    {
+      "nombre": "Los 10 Mejores Abogados en España | 3 Presupuestos Gratis",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": null,
+      "web": "https://www.easyoffer.es/abogados/",
+      "direccion": null,
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [],
+      "valoracion": null,
+      "fuente": "firecrawl_search",
+      "url_origen": "https://www.easyoffer.es/abogados/",
+      "fecha_extraccion": "2026-01-17T03:42:27.640912",
+      "fecha_actualizacion": "2026-01-17T03:45:25.345060",
+      "idiomas": []
+    },
+    {
+      "nombre": "Antonio Valero - Abogado en Valero Bufete Abogados",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": null,
+      "web": "https://www.easyoffer.es/profesionales/valero-bufete-abogados/antonio-valero/",
+      "direccion": null,
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [],
+      "valoracion": null,
+      "fuente": "firecrawl_search",
+      "url_origen": "https://www.easyoffer.es/profesionales/valero-bufete-abogados/antonio-valero/",
+      "fecha_extraccion": "2026-01-17T03:42:27.640929",
+      "fecha_actualizacion": "2026-01-17T03:43:26.315912",
+      "idiomas": []
+    },
+    {
+      "nombre": "Abogados Administrativos | Pide Presupuestos Gratis - Easyoffer",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": null,
+      "web": "https://www.easyoffer.es/abogados-administrativos/",
+      "direccion": null,
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [],
+      "valoracion": null,
+      "fuente": "firecrawl_search",
+      "url_origen": "https://www.easyoffer.es/abogados-administrativos/",
+      "fecha_extraccion": "2026-01-17T03:43:23.795497",
+      "fecha_actualizacion": "2026-01-17T03:45:25.351505",
+      "idiomas": []
+    },
+    {
+      "nombre": "Abogados de Extranjería en Ávila ciudad | 3 Presupuestos",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": null,
+      "web": "https://www.easyoffer.es/abogados-extranjeria.avila/",
+      "direccion": null,
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [],
+      "valoracion": null,
+      "fuente": "google_search",
+      "url_origen": "https://www.easyoffer.es/abogados-extranjeria.avila/",
+      "fecha_extraccion": "2026-01-17T03:43:25.758429",
+      "fecha_actualizacion": "2026-01-17T03:45:25.438942",
+      "idiomas": []
+    },
+    {
+      "nombre": "Abogados de Extranjería en Don Benito | 3 Presupuestos",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": null,
+      "web": "https://www.easyoffer.es/abogados-extranjeria.don-benito/",
+      "direccion": null,
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [],
+      "valoracion": null,
+      "fuente": "google_search",
+      "url_origen": "https://www.easyoffer.es/abogados-extranjeria.don-benito/",
+      "fecha_extraccion": "2026-01-17T03:43:25.758516",
+      "fecha_actualizacion": "2026-01-17T03:45:25.438956",
+      "idiomas": []
+    },
+    {
+      "nombre": "Abogado extranjería en Madrid | Rafael de la Vega Churruca",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": null,
+      "web": "https://delavegaabogado.com/abogado-extranjeria-madrid/",
+      "direccion": null,
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [],
+      "valoracion": null,
+      "fuente": "firecrawl_search",
+      "url_origen": "https://delavegaabogado.com/abogado-extranjeria-madrid/",
+      "fecha_extraccion": "2026-01-17T03:44:40.963062",
+      "fecha_actualizacion": "2026-01-17T03:45:25.358683"
+    },
+    {
+      "nombre": "Permiso de residencia por arraigo en España",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": null,
+      "web": "https://liliyamykolayiv.net/abogados-solicitud-de-arraigo-social-para-extranjeros-espana/",
+      "direccion": null,
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [],
+      "valoracion": null,
+      "fuente": "firecrawl_search",
+      "url_origen": "https://liliyamykolayiv.net/abogados-solicitud-de-arraigo-social-para-extranjeros-espana/",
+      "fecha_extraccion": "2026-01-17T03:44:40.963084",
+      "fecha_actualizacion": "2026-01-17T03:45:25.365440"
+    },
+    {
+      "nombre": "Cruz Guillén Abogados | CONTACTO",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": null,
+      "web": "https://cruzguillenabogados.com/contacto/",
+      "direccion": null,
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [],
+      "valoracion": null,
+      "fuente": "firecrawl_search",
+      "url_origen": "https://cruzguillenabogados.com/contacto/",
+      "fecha_extraccion": "2026-01-17T03:44:40.963119",
+      "fecha_actualizacion": "2026-01-17T03:45:25.371111"
+    },
+    {
+      "nombre": "Contacta con un abogado de extranjería",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": null,
+      "web": "https://quinteroabogado.com/contacto-abogado-extranjeria/",
+      "direccion": null,
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [],
+      "valoracion": null,
+      "fuente": "firecrawl_search",
+      "url_origen": "https://quinteroabogado.com/contacto-abogado-extranjeria/",
+      "fecha_extraccion": "2026-01-17T03:44:40.963136",
+      "fecha_actualizacion": "2026-01-17T03:45:25.376864"
+    },
+    {
+      "nombre": "mejores - English translation – Linguee",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": null,
+      "web": "https://www.linguee.com/spanish-english/translation/mejores.html",
+      "direccion": null,
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://www.linguee.com/spanish-english/translation/mejores.html",
+      "fecha_extraccion": "2026-01-17T03:44:49.899026",
+      "fecha_actualizacion": "2026-01-17T03:45:25.382698"
+    },
+    {
+      "nombre": "\" mejores \" in English",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": null,
+      "web": "https://www.online-translator.com/translation/spanish-english/mejores",
+      "direccion": null,
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://www.online-translator.com/translation/spanish-english/mejores",
+      "fecha_extraccion": "2026-01-17T03:44:49.900323",
+      "fecha_actualizacion": "2026-01-17T03:45:25.388081"
+    },
+    {
+      "nombre": "MEJORES translation in English",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": null,
+      "web": "https://dictionary.reverso.net/spanish-english/mejores",
+      "direccion": null,
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://dictionary.reverso.net/spanish-english/mejores",
+      "fecha_extraccion": "2026-01-17T03:44:49.900886",
+      "fecha_actualizacion": "2026-01-17T03:45:25.393503"
+    },
+    {
+      "nombre": "Mejores",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": null,
+      "web": "https://www.spanishdict.com/translate/mejores",
+      "direccion": null,
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://www.spanishdict.com/translate/mejores",
+      "fecha_extraccion": "2026-01-17T03:44:49.901402",
+      "fecha_actualizacion": "2026-01-17T03:45:25.398051"
+    },
+    {
+      "nombre": "English translation of 'mejor' - Collins Online Dictionary",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": null,
+      "web": "https://www.collinsdictionary.com/dictionary/spanish-english/mejor",
+      "direccion": null,
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://www.collinsdictionary.com/dictionary/spanish-english/mejor",
+      "fecha_extraccion": "2026-01-17T03:44:49.901904",
+      "fecha_actualizacion": "2026-01-17T03:45:25.405518"
+    },
+    {
+      "nombre": "mejores in English",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": null,
+      "web": "https://www.nglish.com/spanish/en/mejores",
+      "direccion": null,
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://www.nglish.com/spanish/en/mejores",
+      "fecha_extraccion": "2026-01-17T03:44:49.902417",
+      "fecha_actualizacion": "2026-01-17T03:45:25.410319"
+    },
+    {
+      "nombre": "MEJOR",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": null,
+      "web": "https://dictionary.cambridge.org/us/dictionary/spanish-english/mejor",
+      "direccion": null,
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [
+        "visados"
+      ],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://dictionary.cambridge.org/us/dictionary/spanish-english/mejor",
+      "fecha_extraccion": "2026-01-17T03:44:49.902795",
+      "fecha_actualizacion": "2026-01-17T03:45:25.414789"
+    },
+    {
+      "nombre": "mejores - Wiktionary, the free dictionary",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": null,
+      "web": "https://en.wiktionary.org/wiki/mejores",
+      "direccion": null,
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://en.wiktionary.org/wiki/mejores",
+      "fecha_extraccion": "2026-01-17T03:44:49.912549",
+      "fecha_actualizacion": "2026-01-17T03:45:25.421487"
+    },
+    {
+      "nombre": "Mejores - significado de mejores diccionario - ...",
+      "tipo": "despacho",
+      "telefono": [
+        "+34962209823"
+      ],
+      "email": null,
+      "web": "https://es.thefreedictionary.com/mejores",
+      "direccion": null,
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://es.thefreedictionary.com/mejores",
+      "fecha_extraccion": "2026-01-17T03:44:49.913004",
+      "fecha_actualizacion": "2026-01-17T03:45:25.428055"
+    },
+    {
+      "nombre": "Tramites_extranjeria",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": null,
+      "web": "https://tramites.extranjeria.gob.cl/tramites/ver_ficha/244",
+      "direccion": null,
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [
+        "visados",
+        "permisos",
+        "recursos",
+        "expulsiones"
+      ],
+      "valoracion": null,
+      "fuente": "tavily",
+      "url_origen": "https://tramites.extranjeria.gob.cl/tramites/ver_ficha/244",
+      "fecha_extraccion": "2026-01-17T03:44:59.776098",
+      "fecha_actualizacion": "2026-01-17T03:45:25.433642",
+      "idiomas": []
+    },
+    {
+      "nombre": "Abogado extranjeria: cómo solicitar la nacionalidad española ...",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": null,
+      "web": "https://www.catala-reinon.es/blog/abogado-extranjeria-solicitar-nacionalidad-espanola",
+      "direccion": null,
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [],
+      "valoracion": null,
+      "fuente": "google_search",
+      "url_origen": "https://www.catala-reinon.es/blog/abogado-extranjeria-solicitar-nacionalidad-espanola",
+      "fecha_extraccion": "2026-01-17T03:45:02.695010",
+      "fecha_actualizacion": "2026-01-17T03:45:25.483245"
+    },
+    {
+      "nombre": "Abogados en Madrid",
+      "tipo": "despacho",
+      "telefono": [
+        "+34914936630"
+      ],
+      "email": null,
+      "web": "https://www.ajmabogados.es/abogados-en-madrid/",
+      "direccion": null,
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [],
+      "valoracion": null,
+      "fuente": "google_search",
+      "url_origen": "https://www.ajmabogados.es/abogados-en-madrid/",
+      "fecha_extraccion": "2026-01-17T03:45:02.697416",
+      "fecha_actualizacion": "2026-01-17T03:45:25.497859",
+      "idiomas": []
+    },
+    {
+      "nombre": "Consideración de la vida familiar en Madrid | Català Reinón",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": null,
+      "web": "https://www.catala-reinon.es/blog/consideracion-vida-familiar-madrid",
+      "direccion": null,
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [],
+      "valoracion": null,
+      "fuente": "google_search",
+      "url_origen": "https://www.catala-reinon.es/blog/consideracion-vida-familiar-madrid",
+      "fecha_extraccion": "2026-01-17T03:45:02.697463",
+      "fecha_actualizacion": "2026-01-17T03:45:25.497629"
+    },
+    {
+      "nombre": "Consumo propio drogas en Madrid: diferencias con el delito de tráfico",
+      "tipo": "despacho",
+      "telefono": [],
+      "email": null,
+      "web": "https://www.catala-reinon.es/blog/consumo-propio-drogas-madrid-diferencias-delito-trafico",
+      "direccion": null,
+      "ciudad": null,
+      "distrito": null,
+      "especialidades": [],
+      "valoracion": null,
+      "fuente": "google_search",
+      "url_origen": "https://www.catala-reinon.es/blog/consumo-propio-drogas-madrid-diferencias-delito-trafico",
+      "fecha_extraccion": "2026-01-17T03:45:02.697525",
+      "fecha_actualizacion": "2026-01-17T03:45:25.507294"
+    }
+  ]
+}

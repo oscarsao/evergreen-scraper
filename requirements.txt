@@ -1,0 +1,19 @@
+# Framework Web
+streamlit>=1.29.0
+
+# APIs de Búsqueda
+firecrawl-py>=1.0.0
+tavily-python>=0.3.0
+openai>=1.0.0
+requests>=2.31.0
+
+# Procesamiento de datos
+pandas>=2.0.0
+rapidfuzz>=3.0.0
+
+# Exportación
+fpdf2>=2.7.0
+openpyxl>=3.1.0
+
+# Utilidades
+python-dotenv>=1.0.0

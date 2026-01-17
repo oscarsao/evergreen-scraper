@@ -1,0 +1,91 @@
+{
+  "ciudades": [
+    {
+      "nombre": "Madrid",
+      "archivo": "madrid.json",
+      "comunidad": "Comunidad de Madrid",
+      "queries": [
+        "abogados extranjería Madrid teléfono email contacto",
+        "despacho inmigración Madrid arraigo nacionalidad",
+        "ONG refugiados Madrid asistencia legal gratuita",
+        "abogados extranjería Madrid Carabanchel Usera Latina",
+        "abogado extranjería Madrid asilo protección internacional"
+      ]
+    },
+    {
+      "nombre": "Barcelona",
+      "archivo": "barcelona.json",
+      "comunidad": "Cataluña",
+      "queries": [
+        "abogados extranjería Barcelona teléfono email contacto",
+        "despacho inmigración Barcelona arraigo nacionalidad",
+        "abogado extranjería Barcelona Hospitalet Badalona"
+      ]
+    },
+    {
+      "nombre": "Valencia",
+      "archivo": "valencia.json",
+      "comunidad": "Comunidad Valenciana",
+      "queries": [
+        "abogados extranjería Valencia teléfono email contacto",
+        "despacho inmigración Valencia arraigo nacionalidad"
+      ]
+    },
+    {
+      "nombre": "Sevilla",
+      "archivo": "sevilla.json",
+      "comunidad": "Andalucía",
+      "queries": [
+        "abogados extranjería Sevilla teléfono email contacto",
+        "despacho inmigración Sevilla arraigo nacionalidad"
+      ]
+    },
+    {
+      "nombre": "Málaga",
+      "archivo": "malaga.json",
+      "comunidad": "Andalucía",
+      "queries": [
+        "abogados extranjería Málaga teléfono email contacto",
+        "despacho inmigración Málaga Costa del Sol"
+      ]
+    },
+    {
+      "nombre": "Bilbao",
+      "archivo": "bilbao.json",
+      "comunidad": "País Vasco",
+      "queries": [
+        "abogados extranjería Bilbao teléfono email contacto",
+        "despacho inmigración País Vasco arraigo"
+      ]
+    },
+    {
+      "nombre": "Zaragoza",
+      "archivo": "zaragoza.json",
+      "comunidad": "Aragón",
+      "queries": [
+        "abogados extranjería Zaragoza teléfono email contacto"
+      ]
+    },
+    {
+      "nombre": "Alicante",
+      "archivo": "alicante.json",
+      "comunidad": "Comunidad Valenciana",
+      "queries": [
+        "abogados extranjería Alicante teléfono email contacto"
+      ]
+    }
+  ],
+  "tipos_validos": ["despacho", "abogado", "ong", "oficial"],
+  "campos_requeridos_minimo": ["telefono", "email", "web"],
+  "especialidades_comunes": [
+    "extranjería",
+    "inmigración",
+    "nacionalidad",
+    "arraigo",
+    "asilo",
+    "refugiados",
+    "reagrupación familiar",
+    "visados",
+    "permisos trabajo"
+  ]
+}

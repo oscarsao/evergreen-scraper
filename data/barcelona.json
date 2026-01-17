@@ -1,0 +1,107 @@
+{
+  "metadata": {
+    "ciudad": "Barcelona",
+    "comunidad": "Cataluña",
+    "fecha_actualizacion": "2026-01-17",
+    "fuente": "Investigación IA (Cursor WebSearch)",
+    "total_registros": 8
+  },
+  "registros": [
+    {
+      "nombre": "Barcelona Extranjería",
+      "tipo": "despacho",
+      "telefono": ["93 272 29 28"],
+      "email": "info@barcelonaextranjeria.com",
+      "web": "https://www.barcelonaextranjeria.com",
+      "direccion": null,
+      "ciudad": "Barcelona",
+      "distrito": null,
+      "especialidades": ["extranjería"],
+      "valoracion": null
+    },
+    {
+      "nombre": "Immigration Spain",
+      "tipo": "despacho",
+      "telefono": ["+34 93 631 51 39"],
+      "email": "info@immigrationspain.es",
+      "web": "https://www.immigrationspain.es",
+      "direccion": "Rambla de Catalunya 124, 1º 2ª, 08008 Barcelona",
+      "ciudad": "Barcelona",
+      "distrito": "Eixample",
+      "especialidades": ["extranjería", "inmigración"],
+      "valoracion": null
+    },
+    {
+      "nombre": "Marín Fonseca Abogados",
+      "tipo": "despacho",
+      "telefono": ["93 410 87 54", "93 410 62 43"],
+      "email": "bufete@marinfonseca.com",
+      "web": "https://www.marinfonseca.com",
+      "direccion": "Pl. Francesc Macià 8-9, 3º 5ª, 08029 Barcelona",
+      "ciudad": "Barcelona",
+      "distrito": "Les Corts",
+      "especialidades": ["extranjería", "internacional"],
+      "valoracion": null
+    },
+    {
+      "nombre": "Abogados Extranjería Barcelona",
+      "tipo": "despacho",
+      "telefono": ["+34 932 01 57 27"],
+      "email": "info@abogadosextranjeriabarcelona.com",
+      "web": "https://abogadosextranjeriabarcelona.com",
+      "direccion": "Av. Diagonal 449, 2º, 08039 Barcelona",
+      "ciudad": "Barcelona",
+      "distrito": "Eixample",
+      "especialidades": ["extranjería"],
+      "valoracion": null
+    },
+    {
+      "nombre": "Abogados en Extranjería",
+      "tipo": "despacho",
+      "telefono": ["+34 93 141 86 86"],
+      "email": "info@abogadosenextranjeria.com",
+      "web": "https://www.abogadosenextranjeria.com",
+      "direccion": "Carrer de Muntaner 25, 08917 Barcelona",
+      "ciudad": "Barcelona",
+      "distrito": "Eixample",
+      "especialidades": ["extranjería"],
+      "valoracion": null
+    },
+    {
+      "nombre": "Bufete Hernández-Lin",
+      "tipo": "despacho",
+      "telefono": ["+34 675 983 752"],
+      "email": "alex@bufetehernandezlin.es",
+      "web": "https://abogadoextranjeriabarcelona.net",
+      "direccion": "Calle del Comte Borrell 241, 08029 Barcelona",
+      "ciudad": "Barcelona",
+      "distrito": "Eixample",
+      "especialidades": ["extranjería"],
+      "valoracion": null
+    },
+    {
+      "nombre": "AS Abogada Extranjería Barcelona",
+      "tipo": "despacho",
+      "telefono": ["+34 666 44 33 22"],
+      "email": "info@abogadoextranjeriabarcelona.pro",
+      "web": "https://abogadoextranjeriabarcelona.pro",
+      "direccion": "Travessera de Gràcia 18-20, 2º 1ª, Barcelona",
+      "ciudad": "Barcelona",
+      "distrito": "Gràcia",
+      "especialidades": ["extranjería"],
+      "valoracion": null
+    },
+    {
+      "nombre": "Barclier Abogados",
+      "tipo": "despacho",
+      "telefono": ["+34 651 03 04 31"],
+      "email": null,
+      "web": "https://barclier.com",
+      "direccion": null,
+      "ciudad": "Barcelona",
+      "distrito": null,
+      "especialidades": ["extranjería"],
+      "valoracion": null
+    }
+  ]
+}

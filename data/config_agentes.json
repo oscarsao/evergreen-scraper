@@ -1,0 +1,133 @@
+{
+  "version": "1.0",
+  "fecha_actualizacion": "2026-01-17",
+  
+  "apis": {
+    "firecrawl": {
+      "habilitado": true,
+      "prioridad": 1,
+      "descripcion": "Scraping y extracción estructurada",
+      "limite_mensual": 500,
+      "env_key": "FIRECRAWL_API_KEY"
+    },
+    "google_search": {
+      "habilitado": true,
+      "prioridad": 2,
+      "descripcion": "Google Custom Search API",
+      "limite_diario": 100,
+      "env_keys": ["GOOGLE_API_KEY", "GOOGLE_CSE_ID"]
+    },
+    "google_places": {
+      "habilitado": true,
+      "prioridad": 3,
+      "descripcion": "Google Places API para negocios locales",
+      "credito_mensual_usd": 200,
+      "env_key": "GOOGLE_API_KEY"
+    },
+    "tavily": {
+      "habilitado": true,
+      "prioridad": 4,
+      "descripcion": "Búsqueda web optimizada para IA",
+      "limite_mensual": 1000,
+      "env_key": "TAVILY_API_KEY"
+    },
+    "serper": {
+      "habilitado": false,
+      "prioridad": 5,
+      "descripcion": "Google Search alternativo",
+      "limite_mensual": 2500,
+      "env_key": "SERPER_API_KEY"
+    },
+    "openai": {
+      "habilitado": true,
+      "prioridad": 6,
+      "descripcion": "Estructuración de datos con IA",
+      "modelo": "gpt-4o-mini",
+      "costo_aprox_query": 0.01,
+      "env_key": "OPENAI_API_KEY"
+    }
+  },
+
+  "ciudades": {
+    "madrid": {
+      "nombre": "Madrid",
+      "comunidad": "Comunidad de Madrid",
+      "activo": true,
+      "zonas": ["Centro", "Salamanca", "Chamberí", "Tetuán", "Carabanchel", "Usera", "Latina", "Vallecas"],
+      "coordenadas": {"lat": 40.4168, "lng": -3.7038},
+      "prompts_keys": ["madrid_centro", "madrid_sur", "madrid_norte", "madrid_este", "madrid_directorios", "madrid_ongs", "madrid_especialidades"]
+    },
+    "barcelona": {
+      "nombre": "Barcelona",
+      "comunidad": "Cataluña",
+      "activo": true,
+      "zonas": ["Eixample", "Ciutat Vella", "Gràcia", "Sant Martí"],
+      "coordenadas": {"lat": 41.3851, "lng": 2.1734},
+      "prompts_keys": ["barcelona_centro", "barcelona_area"]
+    },
+    "valencia": {
+      "nombre": "Valencia",
+      "comunidad": "Comunidad Valenciana",
+      "activo": true,
+      "zonas": ["Ciutat Vella", "Eixample", "Poblats Marítims"],
+      "coordenadas": {"lat": 39.4699, "lng": -0.3763},
+      "prompts_keys": ["valencia"]
+    },
+    "sevilla": {
+      "nombre": "Sevilla",
+      "comunidad": "Andalucía",
+      "activo": false,
+      "zonas": ["Centro", "Triana", "Nervión"],
+      "coordenadas": {"lat": 37.3891, "lng": -5.9845},
+      "prompts_keys": ["sevilla"]
+    },
+    "malaga": {
+      "nombre": "Málaga",
+      "comunidad": "Andalucía",
+      "activo": false,
+      "zonas": ["Centro", "Málaga Este"],
+      "coordenadas": {"lat": 36.7213, "lng": -4.4214},
+      "prompts_keys": ["malaga"]
+    },
+    "bilbao": {
+      "nombre": "Bilbao",
+      "comunidad": "País Vasco",
+      "activo": false,
+      "zonas": ["Abando", "Deusto"],
+      "coordenadas": {"lat": 43.2630, "lng": -2.9350},
+      "prompts_keys": ["bilbao"]
+    }
+  },
+
+  "busqueda": {
+    "max_resultados_por_query": 10,
+    "max_queries_por_api": 5,
+    "delay_entre_requests_ms": 1000,
+    "max_paralelo": 3,
+    "timeout_segundos": 30
+  },
+
+  "consolidacion": {
+    "umbral_similitud_nombre": 85,
+    "umbral_similitud_telefono": 60,
+    "campos_fusion": ["telefono", "especialidades", "idiomas"],
+    "campos_completar": ["email", "web", "direccion", "ciudad", "distrito", "horario"]
+  },
+
+  "validacion": {
+    "campos_requeridos": ["nombre"],
+    "campos_contacto_minimo": ["telefono", "email", "web"],
+    "tipos_validos": ["despacho", "abogado", "ong"],
+    "especialidades_validas": [
+      "arraigo", "arraigo_social", "arraigo_laboral", "arraigo_familiar", "arraigo_formativo",
+      "asilo", "proteccion_internacional", "nacionalidad", "reagrupacion", "reagrupacion_familiar",
+      "visados", "permisos_trabajo", "autorizacion_residencia", "expulsiones", "recursos", "golden_visa"
+    ]
+  },
+
+  "exportacion": {
+    "formatos": ["csv", "pdf", "json", "excel"],
+    "directorio_salida": "resultados",
+    "incluir_timestamp": true
+  }
+}

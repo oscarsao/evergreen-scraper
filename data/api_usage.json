@@ -1,0 +1,28 @@
+{
+  "historico": [],
+  "dia_actual": {
+    "2026-01-17": {
+      "tavily": {
+        "requests": 1,
+        "creditos": 1,
+        "costo": 0.001
+      }
+    }
+  },
+  "mes_actual": {
+    "2026-01": {
+      "tavily": {
+        "requests": 1,
+        "creditos": 1,
+        "costo": 0.001
+      }
+    }
+  },
+  "totales": {
+    "tavily": {
+      "requests": 1,
+      "creditos": 1,
+      "costo": 0.001
+    }
+  }
+}
