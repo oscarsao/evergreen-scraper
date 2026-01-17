@@ -3,71 +3,71 @@
   "dia_actual": {
     "2026-01-17": {
       "tavily": {
-        "requests": 198,
-        "creditos": 198,
-        "costo": 0.19800000000000015
+        "requests": 204,
+        "creditos": 204,
+        "costo": 0.20400000000000015
       },
       "firecrawl": {
-        "requests": 22,
-        "creditos": 22,
-        "costo": 0.22000000000000006
+        "requests": 36,
+        "creditos": 36,
+        "costo": 0.36000000000000015
       },
       "google_search": {
-        "requests": 10,
-        "creditos": 10,
-        "costo": 0.049999999999999996
+        "requests": 20,
+        "creditos": 20,
+        "costo": 0.10000000000000002
       },
       "google_places": {
-        "requests": 3,
-        "creditos": 3,
-        "costo": 0.051000000000000004
+        "requests": 5,
+        "creditos": 5,
+        "costo": 0.085
       }
     }
   },
   "mes_actual": {
     "2026-01": {
       "tavily": {
-        "requests": 198,
-        "creditos": 198,
-        "costo": 0.19800000000000015
+        "requests": 204,
+        "creditos": 204,
+        "costo": 0.20400000000000015
       },
       "firecrawl": {
-        "requests": 22,
-        "creditos": 22,
-        "costo": 0.22000000000000006
+        "requests": 36,
+        "creditos": 36,
+        "costo": 0.36000000000000015
       },
       "google_search": {
-        "requests": 10,
-        "creditos": 10,
-        "costo": 0.049999999999999996
+        "requests": 20,
+        "creditos": 20,
+        "costo": 0.10000000000000002
       },
       "google_places": {
-        "requests": 3,
-        "creditos": 3,
-        "costo": 0.051000000000000004
+        "requests": 5,
+        "creditos": 5,
+        "costo": 0.085
       }
     }
   },
   "totales": {
     "tavily": {
-      "requests": 198,
-      "creditos": 198,
-      "costo": 0.19800000000000015
+      "requests": 204,
+      "creditos": 204,
+      "costo": 0.20400000000000015
     },
     "firecrawl": {
-      "requests": 22,
-      "creditos": 22,
-      "costo": 0.22000000000000006
+      "requests": 36,
+      "creditos": 36,
+      "costo": 0.36000000000000015
     },
     "google_search": {
-      "requests": 10,
-      "creditos": 10,
-      "costo": 0.049999999999999996
+      "requests": 20,
+      "creditos": 20,
+      "costo": 0.10000000000000002
     },
     "google_places": {
-      "requests": 3,
-      "creditos": 3,
-      "costo": 0.051000000000000004
+      "requests": 5,
+      "creditos": 5,
+      "costo": 0.085
     }
   }
 }

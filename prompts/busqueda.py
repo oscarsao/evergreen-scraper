@@ -85,47 +85,263 @@ PROMPTS_BUSQUEDA = {
     ],
     
     # -------------------------------------------------------------------------
-    # BARCELONA
+    # BARCELONA - Búsquedas exhaustivas
     # -------------------------------------------------------------------------
     "barcelona_centro": [
-        '"abogado extranjería" Barcelona "Eixample" OR "Ciutat Vella" teléfono',
-        'site:google.com/maps abogado inmigración Barcelona centro opiniones',
-        '"despacho extranjería" Barcelona "Gràcia" OR "Sant Martí" contacto',
-        '"arraigo" abogado Barcelona email -foro',
+        '"despacho de abogados" extranjería Barcelona "contacte" OR "llámenos" teléfono',
+        '"bufete" inmigración Barcelona "nuestro equipo" OR "sobre nosotros" -directorio',
+        '"abogados especialistas" extranjería Barcelona "@" email -listado',
+        'abogado extranjería Barcelona "C/" OR "Carrer" "piso" teléfono -ranking',
+        '"consulta" extranjería Barcelona "93" OR "6" teléfono despacho -gratis',
     ],
     
-    "barcelona_area": [
-        '"abogado extranjería" Hospitalet OR Badalona OR "Santa Coloma" teléfono',
-        '"inmigración" despacho Sabadell OR Terrassa contacto',
-        'site:icab.cat abogado extranjería directorio',
+    "barcelona_eixample": [
+        '"abogado extranjería" Barcelona Eixample "despacho" contacto -directorio',
+        'bufete inmigración "Passeig de Gràcia" OR "Rambla Catalunya" teléfono',
+        '"abogados" arraigo Barcelona Eixample "cita previa" -listado',
+        'despacho nacionalidad Barcelona "Diagonal" email -foro',
+    ],
+    
+    "barcelona_norte": [
+        '"abogado extranjería" "Sant Andreu" OR "Nou Barris" Barcelona teléfono',
+        'bufete inmigración "Horta" OR "Guinardó" Barcelona contacto -directorio',
+        '"abogados" extranjería "Sant Martí" Barcelona "cita" -ranking',
+        'despacho arraigo "Poblenou" Barcelona email -foro',
+    ],
+    
+    "barcelona_sur": [
+        '"abogado extranjería" "Sants" OR "Montjuïc" Barcelona teléfono -directorio',
+        'bufete inmigración "Les Corts" OR "Sarrià" Barcelona contacto',
+        '"abogados" extranjería "Ciutat Vella" OR "Raval" Barcelona -listado',
+        'despacho nacionalidad "Barceloneta" OR "Gòtic" Barcelona -foro',
+    ],
+    
+    "barcelona_metro": [
+        '"abogado extranjería" "L\'Hospitalet" OR "Hospitalet de Llobregat" teléfono',
+        'bufete inmigración Badalona OR "Santa Coloma de Gramenet" contacto',
+        '"abogados" extranjería "Sant Cugat" OR Cerdanyola despacho -directorio',
+        'despacho arraigo Sabadell OR Terrassa Barcelona email -listado',
+        '"abogado" nacionalidad Mataró OR Granollers teléfono -foro',
+        'bufete extranjería "Cornellà" OR "Esplugues" contacto -ranking',
+    ],
+    
+    "barcelona_especialidades": [
+        '"arraigo social" abogado Barcelona "nuestro despacho" teléfono -foro',
+        '"arraigo laboral" especialista Barcelona "consulta" contacto',
+        '"nacionalidad española" abogado Barcelona "tramitamos" -directorio',
+        '"reagrupación familiar" bufete Barcelona teléfono -listado',
+        '"permiso residencia" abogado Barcelona despacho "cita" -gratis',
+        '"recurso expulsión" abogado Barcelona "experiencia" contacto',
+        '"Golden Visa" OR "visa inversor" abogado Barcelona email',
     ],
     
     # -------------------------------------------------------------------------
-    # VALENCIA
+    # VALENCIA - Búsquedas exhaustivas
     # -------------------------------------------------------------------------
-    "valencia": [
-        '"abogado extranjería" Valencia ciudad teléfono email',
-        'site:google.com/maps abogado inmigración Valencia opiniones',
-        '"despacho extranjería" Valencia contacto -foro',
-        '"arraigo" OR "nacionalidad" abogado Valencia',
+    "valencia_centro": [
+        '"despacho de abogados" extranjería Valencia "contacte" OR "llámenos" teléfono',
+        '"bufete" inmigración Valencia "nuestro equipo" -directorio -listado',
+        '"abogados especialistas" extranjería Valencia "@" email',
+        'abogado extranjería Valencia "C/" OR "Calle" teléfono -ranking',
+        '"consulta" extranjería Valencia "96" teléfono despacho -gratis',
+    ],
+    
+    "valencia_centro_historico": [
+        '"abogado extranjería" Valencia "Ciutat Vella" OR Centro teléfono -directorio',
+        'bufete inmigración "L\'Eixample" OR Eixample Valencia contacto',
+        '"abogados" arraigo "Extramurs" OR "La Saïdia" Valencia -listado',
+        'despacho nacionalidad "Ruzafa" OR "Russafa" Valencia email -foro',
+    ],
+    
+    "valencia_norte": [
+        '"abogado extranjería" "Benimaclet" OR "Alboraya" Valencia teléfono',
+        'bufete inmigración "Campanar" OR "Benicalap" Valencia contacto -directorio',
+        '"abogados" extranjería "Poblats Marítims" Valencia "cita" -ranking',
+    ],
+    
+    "valencia_sur": [
+        '"abogado extranjería" "Patraix" OR "Jesús" Valencia teléfono -directorio',
+        'bufete inmigración "Quatre Carreres" Valencia contacto',
+        '"abogados" extranjería Torrent OR Aldaia despacho -listado',
+        'despacho arraigo "Mislata" OR "Quart de Poblet" Valencia -foro',
+    ],
+    
+    "valencia_metro": [
+        '"abogado extranjería" Torrent OR Paterna teléfono contacto',
+        'bufete inmigración "Burjassot" OR "Mislata" despacho -directorio',
+        '"abogados" extranjería Sagunto OR "Puerto de Sagunto" -listado',
+        'despacho arraigo Gandía OR Xàtiva Valencia email -foro',
+        '"abogado" nacionalidad Alzira OR Ontinyent teléfono -ranking',
+    ],
+    
+    "valencia_especialidades": [
+        '"arraigo social" abogado Valencia "nuestro despacho" teléfono -foro',
+        '"arraigo laboral" especialista Valencia "consulta" contacto',
+        '"nacionalidad española" abogado Valencia "tramitamos" -directorio',
+        '"reagrupación familiar" bufete Valencia teléfono -listado',
+        '"permiso residencia" abogado Valencia despacho "cita" -gratis',
+        '"recurso expulsión" abogado Valencia "experiencia" contacto',
     ],
     
     # -------------------------------------------------------------------------
-    # Otras ciudades
+    # SEVILLA - Búsquedas exhaustivas
     # -------------------------------------------------------------------------
-    "sevilla": [
-        '"abogado extranjería" Sevilla teléfono email contacto',
-        '"despacho inmigración" Sevilla "Triana" OR "Nervión"',
+    "sevilla_centro": [
+        '"despacho de abogados" extranjería Sevilla "contacte" OR "llámenos" teléfono',
+        '"bufete" inmigración Sevilla "nuestro equipo" -directorio -listado',
+        '"abogados especialistas" extranjería Sevilla "@" email',
+        'abogado extranjería Sevilla "C/" OR "Calle" teléfono -ranking',
+        '"consulta" extranjería Sevilla "95" teléfono despacho -gratis',
     ],
     
-    "malaga": [
-        '"abogado extranjería" Málaga teléfono contacto',
-        '"Golden Visa" abogado "Costa del Sol" Marbella',
+    "sevilla_distritos": [
+        '"abogado extranjería" Sevilla "Triana" OR "Nervión" teléfono -directorio',
+        'bufete inmigración "Macarena" OR "San Pablo" Sevilla contacto',
+        '"abogados" arraigo "Los Remedios" OR "Santa Cruz" Sevilla -listado',
+        'despacho nacionalidad "Casco Antiguo" Sevilla email -foro',
+        '"abogado" extranjería "Cerro Amate" OR "Este" Sevilla teléfono',
     ],
     
-    "bilbao": [
-        '"abogado extranjería" Bilbao OR "País Vasco" teléfono',
-        '"inmigración" despacho Vitoria OR "San Sebastián"',
+    "sevilla_metro": [
+        '"abogado extranjería" "Dos Hermanas" OR "Alcalá de Guadaíra" teléfono',
+        'bufete inmigración "Utrera" OR "Mairena del Aljarafe" contacto -directorio',
+        '"abogados" extranjería "San Juan de Aznalfarache" despacho -listado',
+        'despacho arraigo "Camas" OR "Gelves" Sevilla -foro',
+        '"abogado" nacionalidad "La Rinconada" OR Bormujos teléfono',
+    ],
+    
+    "sevilla_especialidades": [
+        '"arraigo social" abogado Sevilla "nuestro despacho" teléfono -foro',
+        '"nacionalidad española" abogado Sevilla "tramitamos" -directorio',
+        '"reagrupación familiar" bufete Sevilla teléfono -listado',
+        '"permiso residencia" abogado Sevilla despacho "cita" -gratis',
+    ],
+    
+    # -------------------------------------------------------------------------
+    # MÁLAGA - Búsquedas exhaustivas (incluye Costa del Sol)
+    # -------------------------------------------------------------------------
+    "malaga_centro": [
+        '"despacho de abogados" extranjería Málaga "contacte" OR "llámenos" teléfono',
+        '"bufete" inmigración Málaga "nuestro equipo" -directorio -listado',
+        '"abogados especialistas" extranjería Málaga "@" email',
+        'abogado extranjería Málaga "C/" OR "Calle" teléfono -ranking',
+        '"consulta" extranjería Málaga "95" teléfono despacho -gratis',
+    ],
+    
+    "malaga_distritos": [
+        '"abogado extranjería" Málaga Centro OR "Centro Histórico" teléfono -directorio',
+        'bufete inmigración "Teatinos" OR "Puerto de la Torre" Málaga contacto',
+        '"abogados" arraigo "Carretera de Cádiz" OR "Cruz de Humilladero" -listado',
+        'despacho nacionalidad "El Palo" OR "Pedregalejo" Málaga email -foro',
+    ],
+    
+    "malaga_costa_sol": [
+        '"abogado extranjería" Marbella teléfono despacho contacto -directorio',
+        '"Golden Visa" abogado Marbella OR "Puerto Banús" email',
+        'bufete inmigración Fuengirola OR "Benalmádena" teléfono -listado',
+        '"abogados" extranjería Torremolinos OR Mijas contacto -ranking',
+        'despacho arraigo Estepona OR "San Pedro Alcántara" -foro',
+        '"abogado" nacionalidad "Rincón de la Victoria" OR Nerja teléfono',
+        '"inversores extranjeros" abogado "Costa del Sol" email',
+    ],
+    
+    "malaga_especialidades": [
+        '"arraigo social" abogado Málaga "nuestro despacho" teléfono -foro',
+        '"Golden Visa" especialista Málaga "inversión inmobiliaria"',
+        '"nacionalidad española" abogado Málaga "tramitamos" -directorio',
+        '"permiso residencia" abogado "Costa del Sol" despacho "cita"',
+    ],
+    
+    # -------------------------------------------------------------------------
+    # ZARAGOZA
+    # -------------------------------------------------------------------------
+    "zaragoza_centro": [
+        '"despacho de abogados" extranjería Zaragoza "contacte" teléfono',
+        '"bufete" inmigración Zaragoza "nuestro equipo" -directorio',
+        'abogado extranjería Zaragoza "C/" teléfono -ranking -listado',
+        '"consulta" extranjería Zaragoza "976" teléfono despacho',
+    ],
+    
+    "zaragoza_distritos": [
+        '"abogado extranjería" "Delicias" OR "Casco Histórico" Zaragoza teléfono',
+        'bufete inmigración "Actur" OR "Universidad" Zaragoza contacto -directorio',
+        '"abogados" arraigo "San José" OR "Las Fuentes" Zaragoza -listado',
+        'despacho nacionalidad "Torrero" OR "La Paz" Zaragoza email',
+    ],
+    
+    "zaragoza_especialidades": [
+        '"arraigo social" abogado Zaragoza teléfono -foro',
+        '"nacionalidad española" abogado Zaragoza "tramitamos" -directorio',
+        '"reagrupación familiar" bufete Zaragoza teléfono -listado',
+    ],
+    
+    # -------------------------------------------------------------------------
+    # MURCIA
+    # -------------------------------------------------------------------------
+    "murcia_centro": [
+        '"despacho de abogados" extranjería Murcia "contacte" teléfono',
+        '"bufete" inmigración Murcia "nuestro equipo" -directorio',
+        'abogado extranjería Murcia ciudad teléfono -ranking -listado',
+        '"consulta" extranjería Murcia "968" teléfono despacho',
+    ],
+    
+    "murcia_region": [
+        '"abogado extranjería" Cartagena teléfono despacho -directorio',
+        'bufete inmigración Lorca OR "Molina de Segura" contacto',
+        '"abogados" extranjería "Alcantarilla" OR Cieza despacho -listado',
+        'despacho arraigo "Torre Pacheco" OR "San Javier" -foro',
+    ],
+    
+    # -------------------------------------------------------------------------
+    # PALMA DE MALLORCA
+    # -------------------------------------------------------------------------
+    "palma_centro": [
+        '"despacho de abogados" extranjería Palma Mallorca teléfono',
+        '"bufete" inmigración "Palma de Mallorca" -directorio',
+        'abogado extranjería Baleares "C/" teléfono -ranking -listado',
+        '"consulta" extranjería Mallorca "971" teléfono despacho',
+    ],
+    
+    "palma_isla": [
+        '"abogado extranjería" Ibiza OR Eivissa teléfono despacho',
+        'bufete inmigración Menorca OR "Mahón" contacto -directorio',
+        '"abogados" extranjería "Calvià" OR "Llucmajor" Mallorca -listado',
+        '"Golden Visa" abogado Mallorca OR Ibiza inversión email',
+    ],
+    
+    # -------------------------------------------------------------------------
+    # ALICANTE
+    # -------------------------------------------------------------------------
+    "alicante_centro": [
+        '"despacho de abogados" extranjería Alicante "contacte" teléfono',
+        '"bufete" inmigración Alicante "nuestro equipo" -directorio',
+        'abogado extranjería Alicante "C/" teléfono -ranking -listado',
+        '"consulta" extranjería Alicante "96" teléfono despacho',
+    ],
+    
+    "alicante_costa": [
+        '"abogado extranjería" Benidorm teléfono despacho -directorio',
+        'bufete inmigración Elche OR "Elx" contacto -listado',
+        '"abogados" extranjería Torrevieja OR "Orihuela Costa" -ranking',
+        'despacho arraigo "Santa Pola" OR "Guardamar" -foro',
+        '"Golden Visa" abogado "Costa Blanca" inversión email',
+    ],
+    
+    # -------------------------------------------------------------------------
+    # BILBAO / PAÍS VASCO
+    # -------------------------------------------------------------------------
+    "bilbao_centro": [
+        '"despacho de abogados" extranjería Bilbao teléfono',
+        '"bufete" inmigración Bilbao "nuestro equipo" -directorio',
+        'abogado extranjería "País Vasco" Bizkaia teléfono -ranking',
+        '"consulta" extranjería Bilbao "94" teléfono despacho',
+    ],
+    
+    "pais_vasco": [
+        '"abogado extranjería" "San Sebastián" OR Donostia teléfono',
+        'bufete inmigración Vitoria OR "Vitoria-Gasteiz" contacto -directorio',
+        '"abogados" extranjería Barakaldo OR Getxo despacho -listado',
+        'despacho arraigo Irún OR Eibar "País Vasco" -foro',
     ],
 }
 
@@ -199,47 +415,45 @@ URLS_DIRECTORIOS = {
 
 QUERIES_PLACES = {
     "madrid": [
-        {
-            "query": "abogado extranjería",
-            "location": (40.4168, -3.7038),  # Centro
-            "radius": 5000,
-        },
-        {
-            "query": "despacho inmigración",
-            "location": (40.3850, -3.7125),  # Sur
-            "radius": 8000,
-        },
-        {
-            "query": "abogado nacionalidad española",
-            "location": (40.4500, -3.6900),  # Norte
-            "radius": 10000,
-        },
-        {
-            "query": "abogado arraigo",
-            "location": (40.4000, -3.7300),  # Oeste
-            "radius": 7000,
-        },
+        {"query": "abogado extranjería", "location": (40.4168, -3.7038), "radius": 5000},
+        {"query": "despacho inmigración", "location": (40.3850, -3.7125), "radius": 8000},
+        {"query": "abogado nacionalidad española", "location": (40.4500, -3.6900), "radius": 10000},
+        {"query": "abogado arraigo", "location": (40.4000, -3.7300), "radius": 7000},
     ],
-    
     "barcelona": [
-        {
-            "query": "abogado extranjería",
-            "location": (41.3851, 2.1734),
-            "radius": 8000,
-        },
-        {
-            "query": "abogado inmigración",
-            "location": (41.4036, 2.1744),  # Norte
-            "radius": 10000,
-        },
+        {"query": "abogado extranjería", "location": (41.3851, 2.1734), "radius": 6000},
+        {"query": "despacho inmigración", "location": (41.4036, 2.1744), "radius": 8000},
+        {"query": "abogado arraigo", "location": (41.3700, 2.1500), "radius": 7000},
+        {"query": "abogado nacionalidad", "location": (41.4100, 2.2000), "radius": 10000},
     ],
-    
     "valencia": [
-        {
-            "query": "abogado extranjería",
-            "location": (39.4699, -0.3763),
-            "radius": 8000,
-        },
+        {"query": "abogado extranjería", "location": (39.4699, -0.3763), "radius": 6000},
+        {"query": "despacho inmigración", "location": (39.4800, -0.3600), "radius": 8000},
+        {"query": "abogado arraigo", "location": (39.4500, -0.4000), "radius": 7000},
+    ],
+    "sevilla": [
+        {"query": "abogado extranjería", "location": (37.3891, -5.9845), "radius": 6000},
+        {"query": "despacho inmigración", "location": (37.4000, -6.0000), "radius": 8000},
+    ],
+    "malaga": [
+        {"query": "abogado extranjería", "location": (36.7213, -4.4214), "radius": 6000},
+        {"query": "abogado Golden Visa", "location": (36.5100, -4.8900), "radius": 15000},  # Marbella
+    ],
+    "zaragoza": [
+        {"query": "abogado extranjería", "location": (41.6488, -0.8891), "radius": 8000},
+    ],
+    "murcia": [
+        {"query": "abogado extranjería", "location": (37.9922, -1.1307), "radius": 8000},
+    ],
+    "palma": [
+        {"query": "abogado extranjería", "location": (39.5696, 2.6502), "radius": 10000},
+    ],
+    "alicante": [
+        {"query": "abogado extranjería", "location": (38.3452, -0.4810), "radius": 8000},
+        {"query": "abogado inmigración", "location": (38.5411, -0.1225), "radius": 15000},  # Benidorm
+    ],
+    "bilbao": [
+        {"query": "abogado extranjería", "location": (43.2630, -2.9350), "radius": 8000},
     ],
 }
 
